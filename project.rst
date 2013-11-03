@@ -26,8 +26,7 @@ Research Statement: Human-Robot Interaction, From the Lab to our Doors
 
 Amodal representation and reasoning
 -----------------------------------
-
-Toto
+service robot , and even more Companions robot have to handle more perceptual modalities than many other families  of robots: beside proprioception and perception of their environment for navigation and manipulation, these robots need to model the humans. Not only the physical features (location, posture), but also mental features:  cognitive capabilities, believes, desires. These features are not directly observable and usually require inference based on others cueslike gestures or book channel communication (nodding for instance ) The correct interpretation of these cues requires to build new modality-independent representations that support three analysis perspectives:temporal, geometric and semantic. 
 
 Long term acceptance of robots
 ------------------------------
