@@ -4,23 +4,6 @@
 
    \providecommand*\DUrolecite[1]{\cite{#1}}
 
-
-.. Direction générale : "Du labo au monde réel, faire franchir à la HRI la
-   porte de notre quotidien"
-
-.. Les thèmes de recherche :
-   - identification et interprétation des situations d'interaction en terme
-   de superposition de contexte sociaux, spatiaux, temporels, culturels, etc.
-   - facteurs psycho-sociaux d'acceptance d'un robot en environnement
-   domestique, sur le long terme ( <- travail de mon post-doc actuel)
-   - relation entre controle au niveau sémantique et autonomie longue durée
-   - représentations amodales et raisonnement hybride sémantique et
-   géométrique/temporel
-
-.. Milestone "phare" :
-   - la mise en place d'une expérience longue durée (> 1 mois) avec un
-   robot type PR2 dans une famille
-
 Research Statement: Human-Robot Interaction, From the Lab to our Doors
 ======================================================================
 
@@ -72,6 +55,9 @@ support, we can mention:
 - representing fields (e.g. the field of reachability of an object for
   an agent, a traversability map, etc.)
 
+
+Principled hybrid temporal/geometric/semantic reasoning is the natural follow-up
+of the design and implemenation of a versatile amodal representation scheme.
 
 Long term acceptance of robots
 ++++++++++++++++++++++++++++++

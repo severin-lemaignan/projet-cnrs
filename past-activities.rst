@@ -31,6 +31,15 @@ Semantic tools for grounded interaction
 
 PhD LAAS/TUM
 
+
+postdoc LAAS
+
+Social factors of long-term acceptance
+--------------------------------------
+
+postdoc EPFL
+
+
 Involvment in the scientific community
 --------------------------------------
 
@@ -54,11 +63,16 @@ Organization of the first international workshop on MORSE in 2012, with 15 parti
 Involvment in the ROS ecosystem
 +++++++++++++++++++++++++++++++
 
-Cited as one of the major contributor to ROS Electric for the port to Python3,
+Acknowledged as a major contributor to ROS Electric for the port to Python3,
 support of ROS on Nao robot.
 
 Technical background
 --------------------
+
+Software development
+++++++++++++++++++++
+
+Management of large software projects
 
 Several open-source packages that are used beyond the walls of the original lab
 (knowledge base for robotics, natural language processing package, versatile 3D
