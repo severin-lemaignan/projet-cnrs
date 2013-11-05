@@ -30,6 +30,7 @@ bib: $(TARGET:.rst=.bbl)
 %.pdf: %.tex $(SVG:.svg=.pdf) $(DOT:.dot=.pdf)
 
 	TEXFONTS=:./fonts TEXINPUTS=:./fonts:./sty pdflatex $(<)
+	touch $(<)
 
 clean:
 	rm -f *.bbl *.blg *.aux *.log *.snm *.out *.toc *.nav *intermediate *~ *.glo *.ist $(TARGET:.rst=.tex) $(SVG:.svg=.pdf) $(DOT:.dot=.svg) $(DOT:.dot=.pdf)
