@@ -24,8 +24,12 @@
 Research Statement: Human-Robot Interaction, From the Lab to our Doors
 ======================================================================
 
+Research themes
+---------------
+
 Towards semantic control for extended autonomy
-----------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++++++
+
 
 Until now, most control techniques for robots that rely on semantic tools have
 focus on storing data and supporting simple grounding. Also: 
@@ -33,17 +37,50 @@ focus on storing data and supporting simple grounding. Also:
 
 
 Amodal representation and hybrid reasoning
-------------------------------------------
+++++++++++++++++++++++++++++++++++++++++++
 
-service robot , and even more Companions robot have to handle more perceptual modalities than many other families  of robots: beside proprioception and perception of their environment for navigation and manipulation, these robots need to model the humans. Not only the physical features (location, posture), but also mental features:  cognitive capabilities, believes, desires. These features are not directly observable and usually require inference based on others cueslike gestures or book channel communication (nodding for instance ) The correct interpretation of these cues requires to build new modality-independent representations that support three analysis perspectives:temporal, geometric and semantic. 
+
+In the stack of software components required for an autonomous robot, the
+layer that provide an uniform representation of the robot's environment not
+only suitable, but even convenient for decision making, is crucial.
+
+Service robots, and even more companions robot, have to handle more perceptual
+modalities than many other families of robots: beside proprioception and
+perception of their environment for navigation and manipulation, these robots
+need to account for the humans. Not only their (dynamic) physical features
+(location, posture, gestures...), but also mental features:  cognitive
+capabilities, believes, desires. These features are not directly observable and
+usually require inference based on others cues like gestures or backchannel
+communication (nodding for instance).
+
+The correct interpretation of these cues requires to build new
+modality-independent (thus, amodal) representations that support three parallel
+and interleaved analysis perspectives: temporal, geometric and semantic.
+
+Amongst the research challenges that such an amodal representation would
+support, we can mention:
+
+- ensuring physically realistic model of the world (also known as the
+  "flying video tapes" issue)
+- managing several level of refinement of object's model (from partial
+  point clouds to accurate CAD models)
+- managing plausible states for unseen/not visible/occluded objects
+  (probabilistic modeling, physics reasoning)
+- managing world discontinuities (e.g., one single blob turns out to be
+  two different objects, next to each other)
+- representing suppositions (e.g. a human tells the robot that a box is behind him)
+- representing fields (e.g. the field of reachability of an object for
+  an agent, a traversability map, etc.)
+
 
 Long term acceptance of robots
-------------------------------
+++++++++++++++++++++++++++++++
+
 
 Tata
 
 On interaction contexts
------------------------
++++++++++++++++++++++++
 
 One of the directions that seems both critical and under-studied in our
 community is what we can call *context management* in a broad sense.
@@ -92,6 +129,48 @@ important direction to examine.
 
 Much remain to be done to this regard, starting with a formal analysis of what
 are the relevant contexts for our robots.
+
+Research roadmap: aiming at ambitious field experiment
+------------------------------------------------------
+
+This section aims at sketching a research roadmap to bootstrap this research
+project.
+
+I propose to materialize the scientific themes I have introduced in the
+previous sections around an ambitious experimental challenge: bringing a
+state-of-the-art mobile manipulator (like the Willow Garage's PR2) to a
+non-expert household for a long duration (at least a month).
+
+Relevance
++++++++++
+
+Robots in domestic environments are not new. The `robotcup@home` challenge,
+for instance, gathers since 2006 robots from many part of the world, tasking
+them with various missions. These include following a person in a robust way,
+navigating in a domestic environment to find and recognize persons, delivering
+objects to specific recipients, complex pick and place tasks in non-controlled
+environments, fetching groceries in a real supermarket, initially unknown.
+
+Online semantic mapping, speech recognition, event-based control, object
+recognition and manipulation are a few of the technical capabilities required by
+these tests. These are all active research topics of their own, that are also
+fields researched at LAAS-CNRS.
+
+Such technical skills make most of the challenges offered by projects like
+`robotcup@home`. As hard and important as they are, they leave out a large set
+of difficult issues that arise when facing long term autonomy and interaction: 
+what does it really takes to have a robot in a real household for a full month?
+
+
+
+
+Faisability
++++++++++++
+
+
+
+.. note::
+    Mention Horizon2020
 
 
 .. raw:: latex
