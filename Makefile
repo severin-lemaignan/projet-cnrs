@@ -20,9 +20,12 @@ project: $(TARGET:.rst=.pdf)
 
 	twopi -Tsvg -o$(@) $(<)
 
-bib: $(TARGET:.rst=.aux)
+bib: $(TARGET:.rst=.bbl)
+
+%.bbl: %.aux
 
 	bibtex $(<)
+	touch $(<:.aux=.tex)
 
 %.pdf: %.tex $(SVG:.svg=.pdf) $(DOT:.dot=.pdf)
 
