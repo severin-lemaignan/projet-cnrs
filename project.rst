@@ -4,8 +4,68 @@
 
    \providecommand*\DUrolecite[1]{\cite{#1}}
 
-Research Statement: Human-Robot Interaction, From the Lab to our Doors
-======================================================================
+Research Statement: From Artificial Intelligence to Cognition for Human-Robot Interaction
+=========================================================================================
+
+
+Overview
+--------
+
+Human-Robot interaction is an area filled with challenges for artificial
+intelligence: dynamic, partially unknown environments that are not originally
+designed for autonomous machines; a large variety of situations and objects to
+deal with, with possibly complex semantics; physical interactions with objects
+and humans that requires dexterity, accurate monitoring, fine, low-latency
+control; good communication skills...the list goes on.
+
+For a robot to further share space and tasks with a human, key cognitive issues
+are to be addressed:
+
+1. real-time situation assessment that builds on semantic mapping and supports
+   perspective-taking and affordances analysis, 
+
+2. interleaved geometric, temporal and symbolic reasoning that supports
+   identification of situations and actions, 
+
+3. management and exploitation of independent, possibly contradictory, belief
+   models for each agent the robot interacts with, 
+
+4. identification and representation of overlapping and multi-scale interaction
+   contexts: temporal, spatial, but also social and cultural,
+
+5. natural multi-modal communication, also including *backchannel* communication
+   like nodding and facial expressions, 
+
+6. human-aware task planning and execution, that produces and control realistic
+   behaviours for joint goal achievement.
+
+
+Each of these questions have been independently researched in the scientific
+community, as we may summarize in the next sections. However, these issues,
+taken as a whole, lead to new fundamental scientific challenge: how to shift the
+development of robot from an *engineering perspective* where a set of
+pre-existing algorithms are integrated, to a *cognitive perspective* where the
+robot is considered as a complex, embodied agent.
+
+As complex as it may appear, I believe the global challenge formed by these
+items to be actually tractable by adopting an innovative holistic approach to
+design the cognitive architecture of the robots.
+
+The first key idea is to research and develop new *amodal representations* of the
+environments that the robot inhabits. These novel representations aim at merging
+perceptual and interaction modalities into hybrid models which incorporate a
+time dimension and several semantic dimensions, besides 3D geometric models. A
+typical example would be the representation of the meaning of such a sentence:
+"Be careful, a child is passing by behind you!". To make sense of such a
+sentence, *i.e.* for the robot to acquire its *qualia*, the robot must imagine a
+possible human-like object whose position must be estimated and change over
+time.
+
+The second
+
+.. note::
+  Also mention long-term interaction
+
 
 Research themes
 ---------------
@@ -57,7 +117,7 @@ support, we can mention:
 
 
 Principled hybrid temporal/geometric/semantic reasoning is the natural follow-up
-of the design and implemenation of a versatile amodal representation scheme.
+of the design and implementation of a versatile amodal representation scheme.
 
 Long term acceptance of robots
 ++++++++++++++++++++++++++++++
