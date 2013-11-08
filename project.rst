@@ -8,18 +8,58 @@ Research Statement: From Artificial Intelligence to Cognition for Human-Robot In
 =========================================================================================
 
 
-Overview
---------
+Robotic Cognition for Interaction
+---------------------------------
 
-Human-Robot interaction is an area filled with challenges for artificial
-intelligence: dynamic, partially unknown environments that are not originally
-designed for autonomous machines; a large variety of situations and objects to
-deal with, with possibly complex semantics; physical interactions with objects
-and humans that requires dexterity, accurate monitoring, fine, low-latency
-control; good communication skills...the list goes on.
+Human-robot interaction is a challenge for artificial intelligence. This field
+indeed lays at the crossroad of several other domains of AI and requires to
+tackle them in a holistic manner: Modeling humans and human cognition;
+acquiring, representing, manipulating in a tractable way abstract knowledge;
+reasoning on this knowledge to make decisions; and eventually instantiating
+those decisions into physical actions in coordination with humans. Many AI
+techniques are invited, from visual processing to symbolic reasoning, from task
+planning to *theory of mind* building, from reactive control to action
+recognition and learning.
 
-For a robot to further share space and tasks with a human, key cognitive issues
-are to be addressed:
+Each of these questions have been and still are research fields of their own
+right. What I suggest here is to look at the challenges that human-robot
+interaction pose to artificial intelligence from a different perspective: a
+shift in the development of robot from an *engineering perspective* where a set
+of independent functions are integrated, to an holistic *inclusive cognitive
+perspective* where the robot is considered as a whole, embodied agent.
+
+The Cognitive Foundations
++++++++++++++++++++++++++
+
+This cognitive take on robot design must be supported by adequate foundations.
+My PhD thesis was focused on the practical meaning of the idea of "knowledge"
+for robots. This was the required groundwork to further elaborate on the
+cognitive skills of robots.
+
+Besides the concept of knowledge, cognition for embodied agents like robots
+implies three more facets: *embodied cognition*, or how to ground knowledge in
+the physical world, *cognition for interaction*, or how to model the
+interactors, and *agency*, or how knowledge supports decision-making.
+
+I suggest that the cognitive foundations that are required to further advance
+research on human-robot interaction must answer these questions:
+
+1. how can I represent my environment and my beliefs in such a way that
+   perception modalities as diverse as my own sensors, verbal descriptions of
+   distant objects or events, or symbolic common-sense knowledge extracted from
+   on-line bases could be mixed?
+
+2. how do I identify the current situation which is a complex combination of
+   diverse, changing circumstances. How do I project myself in other situations
+   to predict, remember, explain, learn?
+
+3. how do I access and represent mental models of the agents I interact with?
+
+To design and implement on robots basic cognitive bricks to effectively support
+these three questions would fulfil my definition of cognitive foundations for
+autonomy and interaction.
+
+These questions can be reformulated into explicit research questions:
 
 1. real-time situation assessment that builds on semantic mapping and supports
    perspective-taking and affordances analysis, 
@@ -36,48 +76,35 @@ are to be addressed:
 5. natural multi-modal communication, also including *backchannel* communication
    like nodding and facial expressions, 
 
-6. human-aware task planning and execution, that produces and control realistic
-   behaviours for joint goal achievement.
-
-
-Each of these questions have been independently researched in the scientific
-community, as we may summarize in the next sections. However, these issues,
-taken as a whole, lead to new fundamental scientific challenge: how to shift the
-development of robot from an *engineering perspective* where a set of
-pre-existing algorithms are integrated, to a *cognitive perspective* where the
-robot is considered as a complex, embodied agent.
-
 As complex as it may appear, I believe the global challenge formed by these
 items to be actually tractable by adopting an innovative holistic approach to
 design the cognitive architecture of the robots.
 
-The first key idea is to research and develop new *amodal representations* of the
-environments that the robot inhabits. These novel representations aim at merging
-perceptual and interaction modalities into hybrid models which incorporate a
-time dimension and several semantic dimensions, besides 3D geometric models. A
-typical example would be the representation of the meaning of such a sentence:
-"Be careful, a child is passing by behind you!". To make sense of such a
-sentence, *i.e.* for the robot to acquire its *qualia*, the robot must imagine a
-possible human-like object whose position must be estimated and change over
-time.
+The first key idea is to research and develop a new *amodal representation* of
+the environments that the robot inhabits. This novel representation aims at
+merging perceptual and interaction modalities into hybrid models which
+incorporate a time dimension and several semantic dimensions besides 3D
+geometric models.
 
-The second
+To take an example, we aim at being able to *represent an interpretation* of
+such a sentence: "Be careful, a child is passing by behind you!". For the robot
+to make sense of it, to access to the *qualia* of the sentence, the robot must
+*imagine* an unknown child whose position must be estimated over time.
+Representations such as we plan to research would allow to build an hybrid model
+mixing (uncertain) geometric features with semantic annotations and timeline
+supporting future and past extrapolation.
+
+The second idea is to build a control model that relies on *hierarchical
+overlapping contexts*.
 
 .. note::
   Also mention long-term interaction
 
+.. note::
+  Assessment of cognitive capabilities
 
 Research themes
 ---------------
-
-Towards semantic control for extended autonomy
-++++++++++++++++++++++++++++++++++++++++++++++
-
-
-Until now, most control techniques for robots that rely on semantic tools have
-focus on storing data and supporting simple grounding. Also: 
-
-
 
 Amodal representation and hybrid reasoning
 ++++++++++++++++++++++++++++++++++++++++++
@@ -119,23 +146,32 @@ support, we can mention:
 Principled hybrid temporal/geometric/semantic reasoning is the natural follow-up
 of the design and implementation of a versatile amodal representation scheme.
 
-Long term acceptance of robots
-++++++++++++++++++++++++++++++
-
-
-Tata
-
-On interaction contexts
-+++++++++++++++++++++++
+Redefining interaction contexts for cognitive agents
+++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 One of the directions that seems both critical and under-studied in our
 community is what we can call *context management* in a broad sense.
 Proper context management should allow the robot to mentally *move around
 its own experiences* to place itself in the mental situation where the
 interpretation of an event, an interaction or a situation makes sense.
+
+Some projects model offer the possibility to jump in the past or to
+switch to another agent's perspective, but in current approaches, selecting a
+context always basically consists in retrieving a set of beliefs corresponding
+to a situation, and temporarily replacing the current beliefs by those other
+ones. This misses the fact that at a given moment, not one but many contexts
+co-exist at different scales. We do not want to retrieve one monolithic set of
+beliefs, but instead carefully craft a context from several *atomic*
+contexts. Techniques for representation of overlapping pools of knowledge
+largely remain to be developed, as well as efficient algorithms to retrieve (or
+discard) such context-related pools of knowledge. This is a challenge not only
+for robotics, but more generally for artificial intelligence.
+
 Cognitive functions like episodic memory, theory of mind, projection, diagnosis
 and many other can be seen as special cases of a generic context management
 capability.
+
+
 
 Managing context means at least two things: recognising contexts and
 representing contexts. Depending on what context we talk about, recognising
@@ -175,6 +211,46 @@ important direction to examine.
 
 Much remain to be done to this regard, starting with a formal analysis of what
 are the relevant contexts for our robots.
+
+Towards semantic control for extended autonomy
+++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Until now, most control techniques for robots that rely on semantic tools have
+focus on storing data and supporting simple grounding. Also: 
+
+We split the interaction situations stemming from the situation assessment and
+communication components in two categories: *desires* (performative act)
+and *experiences* (assertive act).
+
+*Desires* are typically human orders ("Give me that book"). The nature
+of the desired action (to pick, give, look, bring, show...), along with the
+action parametrization (what is acted on? who should perform the action? etc.)
+are extracted from the knowledge base, and either passed to a task planner
+(presented in the previous section) or executed if the procedure is directly
+available.
+
+*Experiences*, on the other hand, comprise of emotions, states and
+questions (when asking a question, we consider the human to be in an
+*interrogative state*). When the knowledge base states that an agent
+*experiences* a particular emotion or state, the execution controller may
+decide to handle it, typically by trying to answer the question or using the
+emotional or physical state as a parameter for subsequent actions. As an
+example, when the speaker says "I feel tired", we change the motion planner
+parametrization to lower the effort the human needs to provide for the
+following joint manipulation tasks. Note that this example has been implemented
+as a proof-of-concept. A broader framework that would support action alteration
+based on the user's experienced states is yet to be devised.
+
+
+
+Interaction on the long term
+++++++++++++++++++++++++++++
+
+- managing long term (>week) autonomy
+- managing long term cognition for interaction (building deep cognitive model of
+  interactors)
+- managing long term engagement (acceptance, interest)
 
 Research roadmap: aiming at ambitious field experiment
 ------------------------------------------------------
