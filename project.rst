@@ -4,12 +4,55 @@
 
    \providecommand*\DUrolecite[1]{\cite{#1}}
 
-Research Statement: From Artificial Intelligence to Cognition for Human-Robot Interaction
-=========================================================================================
+Project of Research Programme
+=============================
+
+From Artificial Intelligence to Cognition for Human-Robot Interaction
+=====================================================================
+
+As presented in the Report on Past Research Activities, my PhD has been focused
+on defining what *knowledge* actually means in the context of service robotics.
+This led me to propose a design and implementation of a robotic architecture
+where symbolic knowledge is preeminent, and to start exploring the opportunities
+that such a design opens for human-robot interaction, with contributions in the
+fields of natural speech grounding, semantic situation assessment, *theory of
+mind* for robots, or high-level semantic control of robots.
+
+This project proposes to further build upon these results, from two converging
+perspectives: from one side, accurately defining the *cognitive foundations*
+pre-supposed by the next generation of companion robots, and from the other
+side, exploring the *cognitive correlates of long-term interaction*.
+
+The *cognitive foundations* are the basic cognitive base required to elaborate
+upper-cognitive mechanisms. The nature and perimeter of these foundations is a
+research question I would like to address. Two components seem however already
+relevant and not yet satisfactorily addressed in the community: first, dynamic,
+*amodal mental models* of the robot's broad environment, that interleave
+temporal and semantic representations with geometric models. Such models should
+endow the robot with a framework to seamlessly represent (uncertain) beliefs,
+predict, recognize and remember situations, ground symbols into physical
+entities.  Second, the ability to identify, select, alter mental *contexts*, be
+they spatial, temporal, cultural, social. Current approaches for context
+management do not correctly address the real complexity of this cognitive skill,
+in particular because contexts are both *overlapping* and *multi-scale*
+dimensions of our experience.
+
+One the other hand, the *cognitive correlates of long-term interaction* question
+the cognitive prerequisites for a robot that is set to autonomously interact
+with humans for a long period of time (weeks). This perspective embraces
+scientific challenges that are already actively researched (like multi-modal
+communication with humans, joint task achievement or autonomous control over a
+long period of time) and add new dimensions whose impacts on the robot's
+cognition have not been studied: which cognitive skills may influence *long-term
+acceptance* of the robot by humans, how to build *fine-grained mental models of
+humans*, that take into account uncertainty, unconsistencies, evolution over
+time, and how such models impact decision-making.
+
+We postulate that an *holistic* approach of cognition for robots may lead.
 
 
-Robotic Cognition for Interaction
----------------------------------
+Bootstrapping Robotic Cognition for Interaction
+-----------------------------------------------
 
 Human-robot interaction is a challenge for artificial intelligence. This field
 indeed lays at the crossroad of several other domains of AI and requires to
@@ -25,8 +68,15 @@ Each of these questions have been and still are research fields of their own
 right. What I suggest here is to look at the challenges that human-robot
 interaction pose to artificial intelligence from a different perspective: a
 shift in the development of robot from an *engineering perspective* where a set
-of independent functions are integrated, to an holistic *inclusive cognitive
-perspective* where the robot is considered as a whole, embodied agent.
+of independent functions are integrated, to an *holistic cognitive perspective*
+where the robot is considered as a whole, embodied agent.
+
+To quote Langley :cite:`Langley2006`:
+
+  The conventional wisdom of software engineering is that one should
+  develop independent modules that have minimal interaction. In contrast, a
+  cognitive architecture offers a *unified* theory of cognition with tightly
+  interleaved modules that support synergistic effects.
 
 The Cognitive Foundations
 +++++++++++++++++++++++++
@@ -74,7 +124,7 @@ These questions can be reformulated into explicit research questions:
    contexts: temporal, spatial, but also social and cultural,
 
 5. natural multi-modal communication, also including *backchannel* communication
-   like nodding and facial expressions, 
+   like nodding and facial expressions
 
 As complex as it may appear, I believe the global challenge formed by these
 items to be actually tractable by adopting an innovative holistic approach to
@@ -97,11 +147,10 @@ supporting future and past extrapolation.
 The second idea is to build a control model that relies on *hierarchical
 overlapping contexts*.
 
-.. note::
-  Also mention long-term interaction
+From the foundations to long-term interaction
++++++++++++++++++++++++++++++++++++++++++++++
 
-.. note::
-  Assessment of cognitive capabilities
+
 
 Research themes
 ---------------
@@ -251,6 +300,31 @@ Interaction on the long term
 - managing long term cognition for interaction (building deep cognitive model of
   interactors)
 - managing long term engagement (acceptance, interest)
+
+Metrics for robotic cognition
++++++++++++++++++++++++++++++
+
+Assessing the cognitive skills of robots is difficult because tools for
+quatitative measurement of such skills are currently lacking.
+
+The robotic community thus relies mostly on qualitative assessement that
+Langley et al. :cite:`Langley2006` propose five such dimensions of evaluation:
+the *generality* of the system (can it adapt easily to new tasks?), the
+*rationality* or relevant of the inference/reasoning/decisions the system take,
+the *reactivity* and *persistence* that evaluates if the behaviour of a
+cognitive system is appropriate under unpredicted changes, the *improvability*
+of the system as a function of the knowledge added to it, and finally, the
+resulting *autonomy* of the system.
+
+Cognitive performance can also be evaluated with the support of tools developed
+in cognitive psychology. Several standard tests (like False-Belief experiments
+:cite:`Leslie2000` or the Token test :cite:`DiSimoni1978`) have been used to
+assess the cognitive abilities of robots :cite:`Mavridis2006, Breazeal2006`.
+
+
+In :cite:`Lemaignan2013`, I have proposed to explore how the frequency of
+interactions between the software modules of the robot and a central knowledge
+base could be used as a metric for the *cognitive load* of the robot.
 
 Research roadmap: aiming at ambitious field experiment
 ------------------------------------------------------
