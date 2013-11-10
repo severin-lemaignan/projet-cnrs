@@ -19,23 +19,22 @@ fields of natural speech grounding, semantic situation assessment, *theory of
 mind* for robots, or high-level semantic control of robots.
 
 This project proposes to further build upon these results, from two converging
-perspectives: from one side, accurately defining the *cognitive foundations*
-pre-supposed by the next generation of companion robots, and from the other
-side, exploring the *cognitive correlates of long-term interaction*.
+perspectives: on one side, by accurately defining the *cognitive foundations*
+pre-supposed by the next generation of companion robots, and on the other
+side, by exploring the *cognitive correlates of long-term interaction*.
 
-The *cognitive foundations* are the basic cognitive base required to elaborate
-upper-cognitive mechanisms. The nature and perimeter of these foundations is a
-research question I would like to address. Two components seem however already
-relevant and not yet satisfactorily addressed in the community: first, dynamic,
-*amodal mental models* of the robot's broad environment, that interleave
-temporal and semantic representations with geometric models. Such models should
-endow the robot with a framework to seamlessly represent (uncertain) beliefs,
-predict, recognize and remember situations, ground symbols into physical
-entities.  Second, the ability to identify, select, alter mental *contexts*, be
-they spatial, temporal, cultural, social. Current approaches for context
-management do not correctly address the real complexity of this cognitive skill,
-in particular because contexts are both *overlapping* and *multi-scale*
-dimensions of our experience.
+The *cognitive foundations* are the cognitive base required to develop
+upper-cognitive functions and processing. The nature and perimeter of these
+foundations is a research question I would like to address. Two components seem
+already of particular importance and not yet satisfactorily addressed in the
+community: first, dynamic, *amodal mental models* of the robot's environment,
+that interleave geometric models with temporal and semantic representations.
+Such models should endow the robot with a framework to seamlessly represent
+(uncertain) beliefs, predict, recognize and remember situations, ground symbols
+into physical entities. Second, the ability to identify, appropriately select or
+alter mental *contexts*, be they spatial, temporal, cultural, social. Current
+approaches for context management do not correctly address the real complexity
+of this cognitive skill, in particular the fact that these dimensions of our experience are *overlapping* and *multi-scale*.
 
 One the other hand, the *cognitive correlates of long-term interaction* question
 the cognitive prerequisites for a robot that is set to autonomously interact
@@ -45,7 +44,7 @@ communication with humans, joint task achievement or autonomous control over a
 long period of time) and add new dimensions whose impacts on the robot's
 cognition have not been studied: which cognitive skills may influence *long-term
 acceptance* of the robot by humans, how to build *fine-grained mental models of
-humans*, that take into account uncertainty, unconsistencies, evolution over
+humans*, that take into account uncertainty, inconsistencies, evolution over
 time, and how such models impact decision-making.
 
 We postulate that an *holistic* approach of cognition for robots may lead.
