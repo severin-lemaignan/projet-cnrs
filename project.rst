@@ -4,8 +4,8 @@
 
    \providecommand*\DUrolecite[1]{\cite{#1}}
 
-Project of Research Programme
-=============================
+Project of Research Program
+===========================
 
 From Artificial Intelligence to Cognition for Human-Robot Interaction
 =====================================================================
@@ -13,28 +13,30 @@ From Artificial Intelligence to Cognition for Human-Robot Interaction
 As presented in the Report on Past Research Activities, my PhD has been focused
 on defining what *knowledge* actually means in the context of service robotics.
 This led me to propose a design and implementation of a robotic architecture
-where symbolic knowledge is preeminent, and to start exploring the opportunities
-that such a design opens for human-robot interaction, with contributions in the
-fields of natural speech grounding, semantic situation assessment, *theory of
-mind* for robots, or high-level semantic control of robots.
+where symbolic knowledge is preeminent, and to amorce the investigation of the
+opportunities that such a design opens for human-robot interaction, with
+effective contributions in the fields of natural speech grounding, semantic
+situation assessment, *theory of mind* for robots, or high-level semantic
+control of robots.
 
-This project proposes to further build upon these results, from two converging
+This project proposes to build upon these results, from two converging
 perspectives: on one side, by accurately defining the *cognitive foundations*
-pre-supposed by the next generation of companion robots, and on the other
-side, by exploring the *cognitive correlates of long-term interaction*.
+pre-supposed by the next generation of companion robots, and on the other side,
+by exploring the *cognitive correlates of long-term interaction*.
 
 The *cognitive foundations* are the cognitive base required to develop
 upper-cognitive functions and processing. The nature and perimeter of these
 foundations is a research question I would like to address. Two components seem
 already of particular importance and not yet satisfactorily addressed in the
 community: first, dynamic, *amodal mental models* of the robot's environment,
-that interleave geometric models with temporal and semantic representations.
-Such models should endow the robot with a framework to seamlessly represent
+that interleave geometric 3D models with temporal and semantic representations.
+Such models should endow the robot with a mental framework to seamlessly represent
 (uncertain) beliefs, predict, recognize and remember situations, ground symbols
-into physical entities. Second, the ability to identify, appropriately select or
-alter mental *contexts*, be they spatial, temporal, cultural, social. Current
-approaches for context management do not correctly address the real complexity
-of this cognitive skill, in particular the fact that these dimensions of our experience are *overlapping* and *multi-scale*.
+into physical entities. Second, the ability to identify, appropriately select
+and alter mental *contexts*, be they spatial, temporal, cultural, social.
+Current approaches for context management do not correctly address the real
+complexity of this cognitive skill, in particular the fact that these dimensions
+of our experience are *overlapping* and *multi-scale*.
 
 One the other hand, the *cognitive correlates of long-term interaction* question
 the cognitive prerequisites for a robot that is set to autonomously interact
@@ -42,13 +44,25 @@ with humans for a long period of time (weeks). This perspective embraces
 scientific challenges that are already actively researched (like multi-modal
 communication with humans, joint task achievement or autonomous control over a
 long period of time) and add new dimensions whose impacts on the robot's
-cognition have not been studied: which cognitive skills may influence *long-term
-acceptance* of the robot by humans, how to build *fine-grained mental models of
-humans*, that take into account uncertainty, inconsistencies, evolution over
-time, and how such models impact decision-making.
+cognition have been less studied: which cognitive skills may influence
+*long-term acceptance* of the robot by humans? How to build at runtime
+*fine-grained mental models of humans*, that take into account uncertainty,
+inconsistencies, evolution over time? How such models impact decision-making?
 
-We postulate that an *holistic* approach of cognition for robots may lead.
+The broader hypothesis I aim to test with these two perspectives can be
+rephrased: is an *holistic approach of cognition for robots* (i.e. neither
+bottom-up nor top-down) a key to overcome the obstacles we currently face in the
+field of human-robot interaction?
 
+To effectively answer this question, I propose to support this research program
+with a set of ambitious experimental targets, including long-duration (over a
+month) experiments with autonomous human-robot interaction in ecologically valid
+environments (typically, real households).
+
+At ISIR, both robotic cognition at the neuro-level and human-robot interaction are
+strong research themes. The laboratory would be well suited to support both
+basic research on robotic cognition and complex field experiments, and I am glad
+that they accepted to support my application.
 
 Bootstrapping Robotic Cognition for Interaction
 -----------------------------------------------
