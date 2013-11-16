@@ -64,8 +64,8 @@ strong research themes. The laboratory would be well suited to support both
 basic research on robotic cognition and complex field experiments, and I am glad
 that they accepted to support my application.
 
-Bootstrapping Robotic Cognition for Interaction
------------------------------------------------
+Research Frame: The Missing Pieces of Robotic Cognition for Interaction
+-----------------------------------------------------------------------
 
 Human-robot interaction is a challenge for artificial intelligence. This field
 indeed lays at the crossroad of several other domains of AI and requires to
@@ -81,7 +81,7 @@ Each of these questions have been and still are research fields of their own
 right. What I suggest here is to look at the challenges that human-robot
 interaction pose to artificial intelligence from a different perspective: a
 shift in the development of robot from an *engineering perspective* where a set
-of independent functions are integrated, to an *holistic cognitive perspective*
+of independent functions are integrated, to an holistic *cognitive perspective*
 where the robot is considered as a whole, embodied agent.
 
 To quote Langley :cite:`Langley2006`:
@@ -90,6 +90,38 @@ To quote Langley :cite:`Langley2006`:
   develop independent modules that have minimal interaction. In contrast, a
   cognitive architecture offers a *unified* theory of cognition with tightly
   interleaved modules that support synergistic effects.
+
+Robotics is indeed traditionally regarded as the prototypical instance of
+*embodied* artificial intelligence, and this dimension is especially prevalent
+in human-robot interaction, where agents have to share a joint physical
+environment.
+
+It results in a tight coupling between the symbolic and the geometric realms:
+while AI at its origins was mostly a matter of symbolic models, it has been
+since recognised that not only the mind is not a purely abstract system,
+disconnected from the physical world, but even more, cognition fundamentally
+relies on its relation to the physical world (so-called *embodied
+cognition*). Varela :cite:`Varela1992` is one of the main discoverer of these
+mechanisms, and coined the concept of *enactivism* as the theoretical
+framework that study the links between cognition, embodiment and actions.
+
+The *symbol grounding* challenge is emblematic of the embodied nature of robotic
+cognition. *Symbol grounding* is the task of identifying or creating, and then,
+maintaining of a link between the symbol (the syntactic form of knowledge the
+computer will manipulate) and its semantics, i.e. its meaning, anchored in the
+world (the relations between the symbol, the referent of the symbol, and
+mediating minds is classically referred as the *semantic triangle*, and has been
+extensively studied in linguistics). The issue of grounding is well known in
+cognitive science and is summarised by Harnard :cite:`Harnad1990` by this
+question: "how the semantic interpretation of a formal symbol system can be made
+intrinsic to the system?". This issue has a major practical importance in
+robotic: for a robot to be both endowed with a symbolic representational and
+reasoning system, and able to *act* in the physical world, it must ground its
+knowledge.
+
+.. note::
+  Coradeshi and co :cite:`Coradeschi2003` :cite:`Loutfi2008`
+
 
 The Cognitive Foundations
 +++++++++++++++++++++++++
@@ -165,7 +197,7 @@ From the foundations to long-term interaction
 
 
 
-Research themes
+Research Themes
 ---------------
 
 Amodal representation and hybrid reasoning
@@ -175,6 +207,29 @@ Amodal representation and hybrid reasoning
 In the stack of software components required for an autonomous robot, the
 layer that provide an uniform representation of the robot's environment not
 only suitable, but even convenient for decision making, is crucial.
+
+As expected, a large body of literature discusses approaches and techniques to
+build such representations, collectively designated as *situation assessment*
+techniques.
+
+I propose to briefly present four approaches that take very different
+perspectives on this question, and articulate afterwards a novel direction that
+would support a new level of human-robot interaction.
+
+The four approaches of situation assessement I propose to examinate are amodal
+*proxies* :cite:`Jacobsson2008`, grounded amodal representations
+:cite:`Mavridis2006`, semantic maps :cite:`Nuechter2008, Galindo2008,
+Blodow2011` and affordance-based planning and object classification
+:cite:`Lorken2008, Varadarajan2011`.
+
+.. note::
+  Situation assessment for HRI, someone?
+
+.. note::
+  mention DyKNOW approach as well?
+
+.. note::
+  TODO :-)
 
 Service robots, and even more companions robot, have to handle more perceptual
 modalities than many other families of robots: beside proprioception and
@@ -277,9 +332,35 @@ are the relevant contexts for our robots.
 Towards semantic control for extended autonomy
 ++++++++++++++++++++++++++++++++++++++++++++++
 
+Cognitive control architectures for robotics is a research field in its own right.
+Our originality of our contribution relates to the interleaving of a
+semantic-aware architecture designed for autonomy with human-aware decisional
+components. To our knowledge, no other robotic architecture covers in depth
+those two perspectives.
 
-Until now, most control techniques for robots that rely on semantic tools have
-focus on storing data and supporting simple grounding. Also: 
+The Ke Jia project :cite:`Chen2010` is maybe one of the closest approach. It
+integrates on a mobile platform a knowledge representation language with
+natural language processing, task planning and motion planning. Default and
+non-monotonic reasoning has been especially researched within the Ke Jia
+project for symbolic task planing :cite:`Ji2011` and underspecified natural
+language processing.
+
+The Ke Jia robot has been demonstrated in several tasks involving human-robot
+interaction with natural language. These tasks include a task with multiple
+*pick \& carry* that are globally optimised, naive physics reasoning via
+taught rules or more complex scenarios with the robot delivering drinks, taking
+into account changing and mutually exclusive preferences of users.
+
+Also notable, Beetz et al. :cite:`Beetz2010` proposes a cognitive architecture
+called ``CRAM`` (Cognitive Robot Abstract Machine) that integrates
+\textsc{KnowRob} :cite:`Tenorth2009a`, a knowledge processing framework based on
+Prolog. Its underlying storage is based on an OWL ontology, derived from
+``OpenCyc``. ``CRAM`` and ``KnowRob`` have been demonstrated on
+several real-world scenarios, where natural language recipes extracted from the
+Internet had to be translated into plans and executed in a kitchen environment,
+perceived and rebuilt on-line by the robots. This architecture has however not
+been deployed in scenarios involving human-robot interactions.
+
 
 We split the interaction situations stemming from the situation assessment and
 communication components in two categories: *desires* (performative act)
@@ -335,7 +416,7 @@ in cognitive psychology. Several standard tests (like False-Belief experiments
 assess the cognitive abilities of robots :cite:`Mavridis2006, Breazeal2006`.
 
 
-In :cite:`Lemaignan2013`, I have proposed to explore how the frequency of
+In :cite:`lemaignan2013explicit`, I have proposed to explore how the frequency of
 interactions between the software modules of the robot and a central knowledge
 base could be used as a metric for the *cognitive load* of the robot.
 

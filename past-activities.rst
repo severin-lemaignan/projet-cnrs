@@ -19,19 +19,6 @@ paper, with over 80 citations.
 Since that time, my research activities have focused on bridging the gap between
 techniques from the semantic 
 
-International experience
-++++++++++++++++++++++++
-
-ENSAM/KIT
-
-PSI
-
-World tour
-
-LAAS/TUM
-
-EPFL
-
 Semantic tools for robotics
 ---------------------------
 
@@ -60,7 +47,7 @@ PhD LAAS/TUM
 
 :cite:`alami2011when`
 :cite:`Lemaignan2012`
-:cite:`lemaignan2013ai`
+:cite:`lemaignan2014human`
 
 postdoc LAAS
 
@@ -166,6 +153,23 @@ ontologies, advanced Java, ADA, advanced databases.
 Several tutorials at both local and international levels, on technical topics
 ranging from software development techniques (code versioning, building tools)
 and programming (Python) to robotics simulation (including a tutorial during EURON2012 conference, Danemark).
+
+Conclusion
+----------
+
+
+An International Experience
++++++++++++++++++++++++++++
+
+ENSAM/KIT
+
+PSI
+
+World tour
+
+LAAS/TUM
+
+EPFL
 
 
 .. raw:: latex
