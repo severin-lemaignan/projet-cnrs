@@ -272,6 +272,33 @@ Proper context management should allow the robot to mentally *move around
 its own experiences* to place itself in the mental situation where the
 interpretation of an event, an interaction or a situation makes sense.
 
+The role and importance of context identification for correct interpretation of
+a situation is well understood in cognitive science. A classical example, cited
+by Zimbardo et Gerrig in :cite:`zimbardo2002foundations` considers two series of
+words:
+
+  FOX; OWL; SNAKE; TURKEY; SWAN; D?CK
+
+  BOB; RAY; DAVE; BILL; HENRY; D?CK
+
+If you read through these lines, you are likely to have guessed the last words of
+each row, *DUCK* and *DICK*, only from the context induced by the others words.
+
+Applied to service robotics in households, an example of context-dependent
+interpretation of two similir situation could be:
+
+  *A cat walks in the living room*
+
+  *A baby crawls towards a power socket*
+
+The example involves perception issues (distinguishing between a cat and a
+baby), but even if we consider that the scene is perceptually recognised, its
+interpretation relies on selecting relevant contexts (for instance, the
+*caregiver* context: what is the role of the robot in presence of a cat/baby?
+the *baby* context: knowledge about the baby capabilities, predictions of baby
+intentions, salient features of the room for a baby, the *cat* context, etc.)
+
+As far as I know, no epistemologic study of contexts in robotics has been conducted. 
 Some projects model offer the possibility to jump in the past or to
 switch to another agent's perspective, but in current approaches, selecting a
 context always basically consists in retrieving a set of beliefs corresponding
@@ -399,9 +426,9 @@ Metrics for robotic cognition
 +++++++++++++++++++++++++++++
 
 Assessing the cognitive skills of robots is difficult because tools for
-quatitative measurement of such skills are currently lacking.
+quantitative measurement of such skills remain mostly to be devised.
 
-The robotic community thus relies mostly on qualitative assessement that
+The robotic community thus relies mostly on qualitative assessement.
 Langley et al. :cite:`Langley2006` propose five such dimensions of evaluation:
 the *generality* of the system (can it adapt easily to new tasks?), the
 *rationality* or relevant of the inference/reasoning/decisions the system take,
@@ -410,15 +437,41 @@ cognitive system is appropriate under unpredicted changes, the *improvability*
 of the system as a function of the knowledge added to it, and finally, the
 resulting *autonomy* of the system.
 
-Cognitive performance can also be evaluated with the support of tools developed
-in cognitive psychology. Several standard tests (like False-Belief experiments
-:cite:`Leslie2000` or the Token test :cite:`DiSimoni1978`) have been used to
-assess the cognitive abilities of robots :cite:`Mavridis2006, Breazeal2006`.
+Recent work from Zhang et al. :cite:`zhang2013evaluation` survey frameworks and
+metrics for performance evaluation of cognitive robots, but they underline that
+most of these benchmarks are focused on physical capabilities that do not
+necessarly require advanced knowledge representation and manipulation. They
+hence introduce their own metrics based on a (partially automatic) measurement
+of *Fitness to Ideal Model* (FIM) of a behaviour, correlated to the *Description
+Length* (DLen) of the command that triggered the behaviour. Their hypothesis is
+that the better the cognitive skills, the shorter the DLen for a constant FIM
+level: instead of "go to the counter, take the green glass, pour a beer into it,
+and bring it back to me", we could say "bring me a drink". This approach,
+combined with a rating of task difficulty, is interesting.  It possibly allows
+for reasonable quantification of the capabilities of a robot to deal with
+underspecified tasks, which are notorious for requiring good cognitive
+capabilities to "fill the gaps". It however needs to be refined to take into
+account other aspects of cognition that are important for human-robot
+interaction.
 
+Here, assessement of cognitive performances can benefit from the support of
+tools developed in cognitive psychology. Several classical tests, like the
+False-Belief experiment :cite:`Leslie2000`, related to the Theory of Mind, or
+the Token test :cite:`DiSimoni1978`, have been used to assess the cognitive
+abilities of robots :cite:`Mavridis2006, Breazeal2006`. Much remains to be done,
+however, to draw a complete picture of the know-how in cognitive psychology when
+projected onto robots: what are the existing metrics, and how suitable and
+applicable to embodied artifical agents they are.
 
-In :cite:`lemaignan2013explicit`, I have proposed to explore how the frequency of
-interactions between the software modules of the robot and a central knowledge
-base could be used as a metric for the *cognitive load* of the robot.
+My hope is to research and build a solid, operational framework for the
+assessment of cognitive skills of robots, that would address both individual
+facets of cognition (performance for dealing with underspecified tasks, theory
+of mind, language tests, etc.) and *global measurements of the cognitive
+activity*. In :cite:`lemaignan2013explicit`, I propose a first idea to explore
+this last point. By plotting the frequency of interactions between the software
+modules of the robot and a central knowledge base during an hour-long
+experiment, I have build a diagram that could be interpreted as a metric for the
+*cognitive load* of the robot.
 
 Research roadmap: aiming at ambitious field experiment
 ------------------------------------------------------
