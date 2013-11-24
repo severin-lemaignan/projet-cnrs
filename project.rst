@@ -437,7 +437,7 @@ Metrics for robotic cognition
 Assessing the cognitive skills of robots is difficult because tools for
 quantitative measurement of such skills remain mostly to be devised.
 
-The robotic community thus relies mostly on qualitative assessement.
+The robotic community thus relies mostly on qualitative assessment.
 Langley et al. :cite:`Langley2006` propose five such dimensions of evaluation:
 the *generality* of the system (can it adapt easily to new tasks?), the
 *rationality* or relevant of the inference/reasoning/decisions the system take,
@@ -449,7 +449,7 @@ resulting *autonomy* of the system.
 Recent work from Zhang et al. :cite:`zhang2013evaluation` survey frameworks and
 metrics for performance evaluation of cognitive robots, but they underline that
 most of these benchmarks are focused on physical capabilities that do not
-necessarly require advanced knowledge representation and manipulation. They
+necessarily require advanced knowledge representation and manipulation. They
 hence introduce their own metrics based on a (partially automatic) measurement
 of *Fitness to Ideal Model* (FIM) of a behaviour, correlated to the *Description
 Length* (DLen) of the command that triggered the behaviour. Their hypothesis is
@@ -463,14 +463,14 @@ capabilities to "fill the gaps". It however needs to be refined to take into
 account other aspects of cognition that are important for human-robot
 interaction.
 
-Here, assessement of cognitive performances can benefit from the support of
+Here, assessment of cognitive performances can benefit from the support of
 tools developed in cognitive psychology. Several classical tests, like the
 False-Belief experiment :cite:`Leslie2000`, related to the Theory of Mind, or
 the Token test :cite:`DiSimoni1978`, have been used to assess the cognitive
 abilities of robots :cite:`Mavridis2006, Breazeal2006`. Much remains to be done,
 however, to draw a complete picture of the know-how in cognitive psychology when
 projected onto robots: what are the existing metrics, and how suitable and
-applicable to embodied artifical agents they are.
+applicable to embodied artificial agents they are.
 
 My hope is to research and build a solid, operational framework for the
 assessment of cognitive skills of robots, that would address both individual
@@ -518,41 +518,92 @@ what does it really takes to have a robot in a real household for a full month?
 .. note::
     Mention Horizon2020
 
-Five Major Experiments
-++++++++++++++++++++++
+Five Experimental Milestones
+++++++++++++++++++++++++++++
 
 Conducting experiments in human-robot interaction is notoriously difficult, both
 from technical (bringing a robot in a natural human environment is technically
 demanding) and methodological (roboticists often lack the required
 background to conduct sound ethnographic studies) standpoints.
 
-I propose to organise the first years of my research around five 
+I propose to organise the first years of my research around five experimental
+milestones.
 
+The first one (*Experiment A*) is focused on benchmarking robotic cognitive
+skills with a formal and sound methodology. As mentioned earlier in this
+project, assessment of cognitive capabilities of robots is currently conducted
+on a case by case basis, often by fitting one specific test (typically) stemming
+from cognitive psychology on a given robotic architecture. While valuable, this
+proves often difficult to reproduce on different robots, and does not give a
+general, integrated view of the cognitive skills of the robot.
+
+*Experiment A* aims at tackling this question, by designing a broader, holistic
+framework for assessment of cognitive skills and demonstrating an implementation
+on at least three different robots and robot software architectures (including
+one robot from an external partner lab, if possible).
+
+
+The second experiment (*Experiment B*) is interested in demonstrating the power
+of low-level hybrid (geometric, temporal, symbolic) reasoning for interaction.
+The exact experimental scenario is to be defined later on, but it will take
+place in a dynamic natural human environment, and will involve perception and
+interpretation of difficult, subtle behaviours (back-channel communication like
+nodding, fast gestures like glancing, brief pointing). This experiment aims at
+being deployed on a PR2-class mobile robot.
+
+
+The third experiment (*Experiment C*) focuses on the cognitive correlates of
+long-term interaction. This experiment is meant to last for a full 6 months.
+During this period, one robot (or possibly more, depending on available
+resources) is to be permanently installed in an household, and tasked with
+simple interactions for everyday life (to be defined, but typically kitchen
+assistance with recipes or simple games/storytelling with the young ones). The
+experiment aims first at investigating what are the behavioural and cognitive
+prerequisites to sustain engagement on the long run. It will also bring solid
+experience on long duration, real world deployments of robots. This know-how is
+essential to successfully conduct experiments D and E.
+
+
+These milestones are ambitious, and realistic only if they are supported by a
+pre-existing high-standard experimental platform, such as the one provided at
+ISIR. [...]
+
+The next section proposes a tentative research agenda for the first three years,
+that includes these five experiments.
 
 3-years Tentative Agenda
 ++++++++++++++++++++++++
 
+
 - *+8 months*: survey of pyscho-cognitive benchmarks for robotics.
 
 - *+12 months*: design of a methodologically-sound experimental
-  platform for reproductible pyscho-cognitive benchmarks. *Experiment A*.
+  platform for reproducible pyscho-cognitive benchmarks. *Experiment A*.
 
 - *+12 months*: middleware for geometric, temporal, semantic hybrid assessment
   and reasoning released.
 
 - *+18 months*: lab experiments that explore the opportunities of hybrid
-  assessment and resoning. *Experiment B*.
+  assessment and reasoning. *Experiment B*.
 
-- *+18 months*:
+- *+20 months*: Start of *Experiment C*: cognitive correlates of long-term
+  interaction.
 
 - *+24 months*: preparation for the long-term experiment: design of the
   experiment, definition of metrics, selection process for host families.
+
+- *+26 months*: End of *Experiment C*.
 
 - *+26 months*: one-week in-situ deployment in three selected families.
   *Experiment D*.
 
 - *+30 months*: one-month long field experiment in one family. *Experiment E*.
 
+
+
+..  The fulfillment of this tight programme with the proposed agenda is bound to
+    the anchoring of this proposal into a larger, funded research project, that
+    would allow students to join.
 
 
 .. raw:: latex
