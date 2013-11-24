@@ -154,13 +154,13 @@ To design and implement on robots basic cognitive bricks to effectively support
 these three questions would fulfil my definition of cognitive foundations for
 autonomy and interaction.
 
-These questions can be reformulated into explicit research questions:
+These questions can be reformulated into explicit research objects:
 
 1. real-time situation assessment that builds on semantic mapping and supports
    perspective-taking and affordances analysis, 
 
-2. interleaved geometric, temporal and symbolic reasoning that supports
-   identification of situations and actions, 
+2. interleaved geometric, temporal and symbolic reasoning that supports in
+   particular identification of situations and actions, 
 
 3. management and exploitation of independent, possibly contradictory, belief
    models for each agent the robot interacts with, 
@@ -212,7 +212,7 @@ As expected, a large body of literature discusses approaches and techniques to
 build such representations, collectively designated as *situation assessment*
 techniques.
 
-I propose to briefly present four approaches that take very different
+I briefly present four approaches that take very different
 perspectives on this question, and articulate afterwards a novel direction that
 would support a new level of human-robot interaction.
 
@@ -247,17 +247,26 @@ and interleaved analysis perspectives: temporal, geometric and semantic.
 Amongst the research challenges that such an amodal representation would
 support, we can mention:
 
-- ensuring physically realistic model of the world (also known as the
-  "flying video tapes" issue)
-- managing several level of refinement of object's model (from partial
-  point clouds to accurate CAD models)
+- ensuring physically realistic model of the world (colloquially known as the
+  "flying books" issue: perception inaccuracies lead to physically impossible
+  environments),
+
 - managing plausible states for unseen/not visible/occluded objects
-  (probabilistic modeling, physics reasoning)
-- managing world discontinuities (e.g., one single blob turns out to be
-  two different objects, next to each other)
-- representing suppositions (e.g. a human tells the robot that a box is behind him)
-- representing fields (e.g. the field of reachability of an object for
-  an agent, a traversability map, etc.)
+  (probabilistic modeling, physics reasoning),
+
+- managing non-monotonic models (e.g., upon closer inspection, one single
+  perceived blob turns out to be two different objects, next to each other. The
+  initial blob is removed, and replaced by two new objects),
+
+- representing suppositions (e.g. a human tells the robot that a box lays behind
+  it. Even if the robot can not see it, it represents a likely shape and
+  location for the object.)
+
+- representing fields (e.g. the field of reachability of an object for an agent,
+  a traversability map, etc.)
+
+- managing several level of refinement of object's model (from partial point
+  clouds to accurate CAD models)
 
 
 Principled hybrid temporal/geometric/semantic reasoning is the natural follow-up
@@ -473,16 +482,17 @@ modules of the robot and a central knowledge base during an hour-long
 experiment, I have build a diagram that could be interpreted as a metric for the
 *cognitive load* of the robot.
 
-Research roadmap: aiming at ambitious field experiment
-------------------------------------------------------
+Research roadmap: aiming at ambitious field experiments
+-------------------------------------------------------
 
 This section aims at sketching a research roadmap to bootstrap this research
 project.
 
-I propose to materialize the scientific themes I have introduced in the
-previous sections around an ambitious experimental challenge: bringing a
-state-of-the-art mobile manipulator (like the Willow Garage's PR2) to a
-non-expert household for a long duration (at least a month).
+I propose to materialize the scientific themes I have introduced in the previous
+sections around five experimental challenges, that range from the design of an
+experimental methodology to assess the cognitive capabilities of robots, to
+bringing a state-of-the-art mobile manipulator (like the Willow Garage's PR2) to
+a non-expert household for a long duration (a month).
 
 Relevance
 +++++++++
@@ -505,15 +515,44 @@ of difficult issues that arise when facing long term autonomy and interaction:
 what does it really takes to have a robot in a real household for a full month?
 
 
-
-
-Faisability
-+++++++++++
-
-
-
 .. note::
     Mention Horizon2020
+
+Five Major Experiments
+++++++++++++++++++++++
+
+Conducting experiments in human-robot interaction is notoriously difficult, both
+from technical (bringing a robot in a natural human environment is technically
+demanding) and methodological (roboticists often lack the required
+background to conduct sound ethnographic studies) standpoints.
+
+I propose to organise the first years of my research around five 
+
+
+3-years Tentative Agenda
+++++++++++++++++++++++++
+
+- *+8 months*: survey of pyscho-cognitive benchmarks for robotics.
+
+- *+12 months*: design of a methodologically-sound experimental
+  platform for reproductible pyscho-cognitive benchmarks. *Experiment A*.
+
+- *+12 months*: middleware for geometric, temporal, semantic hybrid assessment
+  and reasoning released.
+
+- *+18 months*: lab experiments that explore the opportunities of hybrid
+  assessment and resoning. *Experiment B*.
+
+- *+18 months*:
+
+- *+24 months*: preparation for the long-term experiment: design of the
+  experiment, definition of metrics, selection process for host families.
+
+- *+26 months*: one-week in-situ deployment in three selected families.
+  *Experiment D*.
+
+- *+30 months*: one-month long field experiment in one family. *Experiment E*.
+
 
 
 .. raw:: latex
