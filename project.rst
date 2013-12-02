@@ -7,42 +7,49 @@
 Project of Research Programme
 =============================
 
-[option1] From Artificial Intelligence to Cognition for Human-Robot Interaction
-===============================================================================
-
-[option2] Holistic Approach of Upper-Cognition for Companion Robots
-===================================================================
+An Integrative Approach of Upper-Cognition for Companion Robots
+===============================================================
 
   *"Beware robot! A child is passing by behind you!"*
 
 If robots are to enter our households, we may expect them to understand such a
-sentence, along with the hand waving and worried face that are likely to
-accompany it.
+sentence, as well as the worried face of the parents.
 
-We, as the scientific community, are however not yet there.  The robot has
-indeed to be able to *build and represent an interpretation* of such a sentence.
-To make sense of it, to access to the *qualia* of the sentence, the robot must
-*imagine* an unknown child whose possible position must be predicted over time.
-It must as well, in a fraction of time, relate this model to the gestures and
-the facial expressions of the speaker. To be applicable for decision making,
-these perceptions must be *interpreted* within a set of overlapping contexts
-(like *children playing*, *expectations and behaviours of adults in presence of
-children*), to be eventually turned into an abstract (likely symbolic)
-representation, suitable for taking decision and acting appropriately.
+To make sense of it, to access to the *qualia* of the sentence, the robot has to
+be able to *build and represent an interpretation* of such a sentence. It must
+*imagine* an unseen child, whose possible position must be estimated and
+predicted over time. It must as well recognize and integrate the gestures and
+facial expressions of the speaker to the model. Then, to be applicable for
+decision making, these perceptions must be *interpreted* within a set of
+overlapping contexts (*``playing children''*, *``expectations and behaviours of
+adults in presence of children''*, *``quick motion in presence of
+humans''*,...), to be eventually turned into an abstract (likely symbolic)
+representation, suitable for making decision and acting appropriately. Such
+situation assessment and interpretation must take place in a couple of
+milliseconds.
 
 The challenge of the situated (therefore, grounded) interpretation of situations
 is the first pillar of my research project. My previous researches suggest that
-to address this challenge, we need to adopt an *holistic* approach to cognition
+to address this challenge, we need to adopt an *integrative* approach to cognition
 for robots: each of cognitive skills can not be successfully treated independently.
 
-I call this first pillar the *Cognitive Foundations* of human-robot interaction.
-The second pillar focuses on the cognitive requirements for *real* interactions with a companion robot. By *real*, I mean both in a real human environment: we want to bring robots to families, and realistic durations: we do not want to limit ourselves to 2 or 3 hours long experiment, but week of month-long interactions.  *cognitive correlates of long-term interaction*
+Because it builds a common ground to design and implement higher-level cognitive
+functions, I call this first pillar the *Cognitive Foundations* of human-robot
+interaction.
+
+The second pillar focuses on the cognitive requirements for *real* interactions
+with a companion robot. By *real*, I mean both in a real human environment: we
+want to bring robots to families, and realistic durations: we do not target
+experiments that last 2 or 3 hours, but week of month-long interactions. Such an
+ambition implies demanding technical challenges, and, more importantly, opens
+the perspective to a cognitive *terra incognita*: the *cognitive correlates of
+long-term interaction* both for the *user* and the *robot*.
 
 As presented in the Report on Past Research Activities, my PhD has been focused
 on defining what *knowledge* actually means in the context of service robotics.
 This led me to propose a design and implementation of a robotic architecture
 where symbolic knowledge is preeminent :cite:`Lemaignan2010, Lemaignan2012,
-lemaignan2014human`, and to investigate of the opportunities that such a design
+lemaignan2014human`, and to investigate the opportunities that such a design
 opens for human-robot interaction, with effective contributions in the fields of
 natural speech grounding :cite:`Lemaignan2011, lemaignan2011what,
 Lemaignan2011a`, semantic situation assessment :cite:`ros2010which`, *theory of
@@ -51,9 +58,14 @@ mind* for robots :cite:`Warnier2012a`, or high-level semantic control of robots
 
 This project proposes to build upon these results, from the two converging
 perspectives I have previously mentioned: on one side, by accurately defining
-the *cognitive foundations*, and accordingly designing the software components
-required to build the next generation of companion robots, and on the other side, by
-exploring the long term *cognitive correlates* of interaction.
+the *cognitive foundations*, and accordingly designing and implementing a
+software platform for cognitive applications, and on the other side, by
+exploring the long term *cognitive correlates* of interaction. Those two
+perspectives connect and extend by both ends the current state of the art in
+cognitive robotics. They propose at the same time to consolidate the cognitive
+basis, and to set a challenging agenda for robotic cognition in human-robot
+interaction. As such, this research programme suggests a novel holistic approach
+of upper-cognition in HRI.
 
 The *cognitive foundations* are the cognitive base required to develop
 upper-cognitive functions and processing. The very nature and perimeter of these
