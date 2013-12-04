@@ -7,43 +7,8 @@
 Project of Research Programme
 =============================
 
-An Integrative Approach of Upper-Cognition for Companion Robots
-===============================================================
-
-  *"Beware robot! A child is passing by behind you!"*
-
-If robots are to enter our households, we may expect them to understand such a
-sentence, as well as the worried face of the parents.
-
-To make sense of it, to access to the *qualia* of the sentence, the robot has to
-be able to *build and represent an interpretation* of such a sentence. It must
-*imagine* an unseen child, whose possible position must be estimated and
-predicted over time. It must as well recognize and integrate the gestures and
-facial expressions of the speaker to the model. Then, to be applicable for
-decision making, these perceptions must be *interpreted* within a set of
-overlapping contexts (*``playing children''*, *``expectations and behaviours of
-adults in presence of children''*, *``quick motion in presence of
-humans''*,...), to be eventually turned into an abstract (likely symbolic)
-representation, suitable for making decision and acting appropriately. Such
-situation assessment and interpretation must take place in a couple of
-milliseconds.
-
-The challenge of the situated (therefore, grounded) interpretation of situations
-is the first pillar of my research project. My previous researches suggest that
-to address this challenge, we need to adopt an *integrative* approach to cognition
-for robots: each of cognitive skills can not be successfully treated independently.
-
-Because it builds a common ground to design and implement higher-level cognitive
-functions, I call this first pillar the *Cognitive Foundations* of human-robot
-interaction.
-
-The second pillar focuses on the cognitive requirements for *real* interactions
-with a companion robot. By *real*, I mean both in a real human environment: we
-want to bring robots to families, and realistic durations: we do not target
-experiments that last 2 or 3 hours, but week of month-long interactions. Such an
-ambition implies demanding technical challenges, and, more importantly, opens
-the perspective to a cognitive *terra incognita*: the *cognitive correlates of
-long-term interaction* both for the *user* and the *robot*.
+An Integrative Approach of Higher-Order Cognition for Companion Robots
+======================================================================
 
 As presented in the Report on Past Research Activities, my PhD has been focused
 on defining what *knowledge* actually means in the context of service robotics.
@@ -57,57 +22,67 @@ mind* for robots :cite:`Warnier2012a`, or high-level semantic control of robots
 :cite:`lemaignan2014human`.
 
 This project proposes to build upon these results, from the two converging
-perspectives I have previously mentioned: on one side, by accurately defining
-the *cognitive foundations*, and accordingly designing and implementing a
-software platform for cognitive applications, and on the other side, by
-exploring the long term *cognitive correlates* of interaction. Those two
-perspectives connect and extend by both ends the current state of the art in
-cognitive robotics. They propose at the same time to consolidate the cognitive
-basis, and to set a challenging agenda for robotic cognition in human-robot
-interaction. As such, this research programme suggests a novel holistic approach
-of upper-cognition in HRI.
+perspectives: on one hand, I propose to accurately define the *cognitive
+foundations* of human-robot interaction, and to accordingly translate it into a
+design and implementation on robots; on the other hand, I suggest to explore the
+long term *cognitive correlates* of interaction. Those two perspectives connect
+and extend by both ends the current state of the art in cognitive robotics. They
+propose to consolidate the cognitive basis, and in parallel to set a challenging
+agenda for robotic cognition in human-robot interaction. As such, this research
+programme suggests a novel **integrative approach of upper-cognition in HRI**.
 
-The *cognitive foundations* are the cognitive base required to develop
-upper-cognitive functions and processing. The very nature and perimeter of these
-foundations is a research question I would like to address. Two components seem
-already of particular importance and not yet satisfactorily addressed in the
-community: first, dynamic, *amodal mental models* of the robot's environment,
-that interleave geometric 3D models with temporal and semantic representations.
-Such models should endow the robot with a mental framework to seamlessly
-represent (uncertain) beliefs, predict, recognize and remember situations,
-ground symbols into physical entities. Second, the ability to identify,
-appropriately select and alter mental *contexts*, be they spatial, temporal,
-cultural, social. Current approaches for context management do not correctly
-address the real complexity of this cognitive skill, in particular the fact that
-at any moment, the experienced situation belongs to many overlapping and
-interrelated contexts.
+Let examplify this proposal:
 
-On the other hand, the *cognitive correlates of long-term interaction* question
-the cognitive prerequisites for a robot that is set to autonomously interact
-with humans for a long period of time (weeks). This perspective embraces
-scientific challenges that are already actively researched (like multi-modal
-communication with humans, joint task achievement or autonomous control over a
-long period of time) and add new dimensions whose impacts on the robot's
-cognition have been less studied: which cognitive skills may influence
-*long-term acceptance* of the robot by humans? How to build at runtime
-*fine-grained mental models of humans*, that take into account uncertainty,
-inconsistencies, evolution over time? How such models should impact
-decision-making to sustain human engagement?
+  *"Beware robot! A child is passing by behind you!"*
 
-The broader hypothesis I aim to test with these two perspectives can be
-rephrased: is an *holistic approach of cognition for robots* (i.e. neither
-bottom-up nor top-down) a key to overcome the obstacles we currently face in the
-field of human-robot interaction?
+If robots are to enter our households, we may expect them to understand such a
+sentence, as well as the worried face of the parents.
 
-To effectively answer this question, I propose to support this research program
-with a set of ambitious experimental targets, including long-duration (over a
-month) experiments with autonomous human-robot interaction in an ecologically valid
-environment (typically, a real household).
+To make sense of it, to access to the *qualia* of the sentence, the robot has to
+be able to *build and represent an interpretation* of such a sentence. It must
+*imagine* an unseen child, whose possible position must be estimated and
+predicted over time. It must as well recognize and integrate the gestures and
+facial expressions of the speaker to the model. Then, to be applicable for
+decision making, these perceptions must be *interpreted* within a set of
+overlapping contexts (*``playing children''*, *``expectations and behaviours of
+adults in presence of children''*, *``quick motion in presence of humans''*,
+etc.), to be eventually turned into an abstract (likely symbolic)
+representation, suitable for decision making and actions. Such situation
+assessment must take place in a couple of milliseconds.
 
-At ISIR, both robotic cognition at the neuro-level and human-robot interaction
-are strong research themes. The laboratory would be particulary well suited to
-support both basic research on robotic cognition and complex field experiments,
-and I am glad that they accepted to support my application.
+As of today, this challenge is an open research question, at the crossroads of
+robotic perception, knowledge representation & reasoning, and cognitive
+psychology.  This is the **first pillar** of my research project, and my previous
+researches suggest that we need to adopt an *integrative* approach to cognition
+for robots to address this challenge of situated (therefore, grounded)
+interpretation of situations.
+
+Because situation assessment is such a basic ground to design and implement
+higher-level cognitive functions, I call this first pillar the *Cognitive
+Foundations* of human-robot interaction.
+
+The **second pillar** focuses on the cognitive requirements for *real*
+interactions with a companion robot. By *real*, I mean both in a real human
+environment -- we want to bring robots to households, to families -- and
+realistic durations -- we do not target experiments that last 2 or 3 hours, but
+weeks or months of interactions. Such an ambition implies demanding technical
+challenges, but also question the *cognitive correlates of long-term
+interaction* both for the *user* and the *robot*. I propose to explore theses,
+and to translate them into the definition and implementation of principles
+applicable to interaction of long duration.
+
+To effectively validate these research orientations, I also propose to define a
+set of ambitious **experimental milestones**, including long-duration (over a
+month) experiments with autonomous human-robot interaction in an *ecologically
+valid* environment (a real household).
+
+I would like to conduct this research at the Institut des Systèmes Intelligents
+et de Robotique (ISIR): both robotic cognition (down to the neuro-level) and
+human-robot interaction are strong research themes of this laboratory, and it
+would be particulary well suited to support basic research on robotic cognition.
+Besides, the laboratory has a remarkable experimental platform with several
+robots designed for complex interaction and field experiments, which is key for
+this project. I am glad that they accepted to support my application.
 
 Research Context: The Missing Pieces of Robotic Cognition for Interaction
 -------------------------------------------------------------------------
@@ -182,6 +157,21 @@ The Cognitive Foundations
 +++++++++++++++++++++++++
 
 This cognitive take on robot design must be supported by adequate foundations.
+The *cognitive foundations* are the cognitive base required to develop
+upper-cognitive functions and processing. The very nature and perimeter of these
+foundations is a research question I would like to address. Two components seem
+already of particular importance and not yet satisfactorily addressed in the
+community: first, dynamic, *amodal mental models* of the robot's environment,
+that interleave geometric 3D models with temporal and semantic representations.
+Such models should endow the robot with a mental framework to seamlessly
+represent (uncertain) beliefs, predict, recognize and remember situations,
+ground symbols into physical entities. Second, the ability to identify,
+appropriately select and alter mental *contexts*, be they spatial, temporal,
+cultural, social. Current approaches for context management do not correctly
+address the real complexity of this cognitive skill, in particular the fact that
+at any moment, the experienced situation belongs to many overlapping and
+interrelated contexts.
+
 My PhD thesis was focused on the practical meaning of the idea of "knowledge"
 for robots. This was the required groundwork to further elaborate on the
 cognitive skills of robots.
@@ -247,6 +237,17 @@ overlapping contexts*.
 From the foundations to long-term interaction
 +++++++++++++++++++++++++++++++++++++++++++++
 
+On the other hand, the *cognitive correlates of long-term interaction* question
+the cognitive prerequisites for a robot that is set to autonomously interact
+with humans for a long period of time (weeks). This perspective embraces
+scientific challenges that are already actively researched (like multi-modal
+communication with humans, joint task achievement or autonomous control over a
+long period of time) and add new dimensions whose impacts on the robot's
+cognition have been less studied: which cognitive skills may influence
+*long-term acceptance* of the robot by humans? How to build at runtime
+*fine-grained mental models of humans*, that take into account uncertainty,
+inconsistencies, evolution over time? How such models should impact
+decision-making to sustain human engagement?
 
 
 Research Themes
@@ -308,7 +309,7 @@ support, we can mention:
 
 - managing non-monotonic models (e.g., upon closer inspection, one single
   perceived blob turns out to be two different objects, next to each other. The
-  initial blob is removed, and replaced by two new objects),
+  initial blob is replaced by two new objects),
 
 - representing suppositions (e.g. a human tells the robot that a box lays behind
   it. Even if the robot can not see it, it represents a likely shape and
@@ -359,44 +360,32 @@ interpretation relies on selecting relevant contexts (for instance, the
 the *baby* context: knowledge about the baby capabilities, predictions of baby
 intentions, salient features of the room for a baby, the *cat* context, etc.)
 
-As far as I know, no epistemologic study of contexts in robotics has been conducted. 
-Some projects model offer the possibility to jump in the past or to
-switch to another agent's perspective, but in current approaches, selecting a
-context always basically consists in retrieving a set of beliefs corresponding
-to a situation, and temporarily replacing the current beliefs by those other
-ones. This misses the fact that at a given moment, not one but many contexts
-co-exist at different scales. We do not want to retrieve one monolithic set of
-beliefs, but instead carefully craft a context from several *atomic*
-contexts. Techniques for representation of overlapping pools of knowledge
-largely remain to be developed, as well as efficient algorithms to retrieve (or
-discard) such context-related pools of knowledge. This is a challenge not only
-for robotics, but more generally for artificial intelligence.
-
 Cognitive functions like episodic memory, theory of mind, projection, diagnosis
-and many other can be seen as special cases of a generic context management
+amongst others can be seen as special cases of a generic context management
 capability.
 
+As far as I know, neither an epistemologic study nor a theoretical framework for
+context application in robotics have been devised.
 
-
-Managing context means at least two things: recognising contexts and
-representing contexts. Depending on what context we talk about, recognising
-contexts can be relatively easy (who is talking to me? where am I?) to
-difficult (what past experience does my interactor implicitly refers to?). One
-of the main problem we see with context identification is that it is a
-fundamentally *multi-scale* problem: at any moment, several temporal,
-spatial, social, cultural context co-exist and overlap.
+Managing context means at least three things: context identification, context
+representation, context restitution. Depending on what context we talk about,
+identifying contexts can be relatively easy (who is talking to me? where am I?)
+to difficult (what past experience does my interactor implicitly refers to?).
+One of the main problem we see with context identification is that it is a
+fundamentally *multi-scale* problem: at any moment, several temporal, spatial,
+social, cultural context co-exist and overlap.
 
 This lead to the second aspect, context representation. Contexts are currently
-often limited to the current spatial and temporal situation. Some projects
-model offer the possibility to jump in the past or to switch to another agent's
+often limited to the current spatial and temporal situation. Some projects model
+offer the possibility to jump in the past or to switch to another agent's
 perspective, but in current approaches, selecting a context always basically
 consists in retrieving a set of beliefs corresponding to a situation, and
 temporarily replacing the current beliefs by those other ones. This misses the
 fact that at a given moment, not one but many contexts co-exist at different
 scales. We do not want to retrieve one monolithic set of beliefs, but instead
-carefully craft a context from several *atomic* contexts. Techniques for
-representation of overlapping pools of knowledge largely remain to be
-developed, as well as efficient algorithms to retrieve (or discard) such
+carefully craft a context (i.e. to *restore* it) from several *atomic* contexts.
+Techniques for representation of overlapping pools of knowledge largely remain
+to be developed, as well as efficient algorithms to retrieve (or discard) such
 context-related pools of knowledge.
 
 The ability to explicitly manage contexts and context switches would endow the
@@ -416,6 +405,14 @@ important direction to examine.
 
 Much remain to be done to this regard, starting with a formal analysis of what
 are the relevant contexts for our robots.
+
+.. note::
+  **Section summary** I propose to address the question of *context*
+  representation and restitution at both the theoretical level (how to think of
+  spatial, temporal, cultural contexts in robotics?) and at the implementation
+  level (how context management integrates to and complements situation assessment
+  and knowledge representation? how this may practicaly improve human-robot
+  interaction).
 
 Towards semantic control for extended autonomy
 ++++++++++++++++++++++++++++++++++++++++++++++
@@ -472,8 +469,6 @@ parametrization to lower the effort the human needs to provide for the
 following joint manipulation tasks. Note that this example has been implemented
 as a proof-of-concept. A broader framework that would support action alteration
 based on the user's experienced states is yet to be devised.
-
-
 
 Interaction on the long term
 ++++++++++++++++++++++++++++
@@ -533,6 +528,11 @@ this last point. By plotting the frequency of interactions between the software
 modules of the robot and a central knowledge base during an hour-long
 experiment, I have build a diagram that could be interpreted as a metric for the
 *cognitive load* of the robot.
+
+.. note::
+  **Section summary** The robotic community lacks metrics and reproducible
+  benchmarks to assess cognitive skills of robots. I propose to construct such a
+  toolset, building on the large literature corpus from experimental psychology.
 
 Research roadmap: aiming at ambitious field experiments
 -------------------------------------------------------
