@@ -503,11 +503,11 @@ Length* (DLen) of the command that triggered the behaviour. Their hypothesis is
 that the better the cognitive skills, the shorter the DLen for a constant FIM
 level: instead of "go to the counter, take the green glass, pour a beer into it,
 and bring it back to me", we could say "bring me a drink". This approach,
-combined with a rating of task difficulty, is interesting.  It possibly allows
+combined with a rating of task difficulty, is interesting. It possibly allows
 for reasonable quantification of the capabilities of a robot to deal with
 underspecified tasks, which are notorious for requiring good cognitive
-capabilities to "fill the gaps". It however needs to be refined to take into
-account other aspects of cognition that are important for human-robot
+capabilities to "fill the gaps". It however needs to be extended to take into
+account the other aspects of cognition that are important for human-robot
 interaction.
 
 Here, assessment of cognitive performances can benefit from the support of
