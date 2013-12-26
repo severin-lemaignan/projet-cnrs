@@ -1,0 +1,442 @@
+\documentclass[a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{fixme}
+\usepackage{biblatex}
+
+\usepackage{hyperref}
+\addbibresource{biblio.bib}
+
+\newcommand{\eg}{{\textit{e.g.~}}}
+\newcommand{\etal}{{\textit{et al.~}}}
+\newcommand{\ie}{{\textit{i.e.~}}}
+
+
+\title{Dossier de candidature CNRS}
+
+\author{}
+\date{}
+
+%%% Body
+\begin{document}
+\maketitle
+
+\section{Activités de recherches passées}
+\newrefsection
+
+\subsection{Aperçu}
+\label{apercu}
+
+Ma première contribution dans une conférence internationale remonte à 2006,
+lorsque j'étais étudiant en master à l'École Nationale des Arts et Métiers
+(ENSAM/ParisTech). Cet article formalisait une ontologie pour décrire les
+processsus industriels, et étudiait comment elle pouvait être appliquée à
+l'automatisation des lignes de production, via un paradigme
+multi-agent~\cite{lemaignan2006mason} (cette publication a été citée depuis
+plus de 80 fois).
+
+Depuis cette période, mes activités de recherche se sont focalisées sur cette
+question: quels ponts bâtir entre intelligence artificielle (et en particulier,
+les techniques de l'ingéneurie des connaissances) et interaction homme-robot.
+
+Je propose de présenter ces travaux en adoptant quatre perspectives
+complémentaires : tout d'abord, mon travail sur les outils sémantiques pour la
+robotique, ensuite, mes recherches sur le lien entre connaissance et
+interaction située, puis mes contributions plus récentes sur le lien entre
+cognition robotique et interaction, et enfin, les travaux expérimentaux que
+j'ai menés ces dernières années.
+
+Je terminerais cette première partie de mon dossier de candidature en
+présentant les autres activités de support scientifique (enseignement,
+organisation de colloques et de rencontres scientifiques, développement
+logiciels notables).
+
+Toutes les références mentionnées dans cette première partie sont des références
+vers des publications dont je suis auteur ou co-auteur.
+
+\subsection{Outils sémantiques pour la robotique%
+  \label{semantic-tools-for-robotics}%
+}
+
+Paris 5?
+
+ENSAM, MASON
+\cite{lemaignan2006mason}, over 80 citations
+
+INRIA, semantic V2V networking, control framework
+\cite{mehani2007networking}
+
+\cite{Lemaignan2010} ORO
+
+Talk at INNOROBOT2013
+
+\cite{lemaignan2013explicit}
+
+
+\subsection{Connaissance et interaction située%
+  \label{semantic-tools-for-grounded-interaction}%
+}
+
+PhD LAAS/TUM
+
+\cite{ros2010which} (ROMAN best paper award)
+
+\cite{Lemaignan2011} (HRI Pioneers)
+
+
+\subsection{Applications to interaction%
+  \label{applications-to-interaction}%
+}
+
+Interaction with grounded verbal communication.
+
+\cite{Lemaignan2011a}
+
+\cite{Ros2010a}
+\cite{lemaignan2011what}
+\cite{lemaignan2011dialogue}
+\cite{lemaignan2013talking}
+
+Joint action,...
+
+full paper
+The 'CHRIS' suite
+\cite{Lallee2010b, Lallee2011, Lallee2012}
+
+workshop
+\cite{gharbi2013natural}
+\cite{clodic2013on}
+
+\subsection{Cognition pour interaction%
+  \label{cognition-for-interaction}%
+}
+
+Le travail que j'ai mené sur la représentation et la manipulation de la
+connaissance pour l'interaction située a naturellement débordé de son périmètre
+initial, pour s'éárgir à la question plus générale de la \emph{cognition chez
+les robots pour l'interaction}.
+
+Ce champ de recherche est vaste, et est au c\oe ur du projet de recherche que je
+présente dans la seconde partie de ce dossier.
+
+J'ai travaillé sur cette question sous deux angles : une perspective
+intégrative, d'une part, et une perspective exploratoire \fxnote{...quel mot}.
+
+J'ai ainsi coordonné l'écriture de plusieurs articles de journaux
+\cite{alami2011when, Lemaignan2012, lemaignan2014human} qui présentent comment
+la manipulation explicite de connaissances symboliques ouvre des voies nouvelles
+pour l'intégration des multiples processus décisionels au sein d'une
+architecture robotique complexe.
+
+Dans~\cite{lemaignan2014human} en particulier, je présente en particulier les
+principaux défis que l'interaction homme-robot pose à l'intelligence
+artificielle, en termes de \emph{grounding}, de modèles mentaux, d'attention et
+d'action conjointe, d'interaction naturelle multi-modale ou encore d'analyse
+spatiale, temporelle et contextualisée de situation. Je montre aussi que ces
+questions peuvent être en partie abordées de manière commune en définissant les
+interfaces entre modules décisionels en terme de sémantique échangée.
+
+Parallèlement à cet effort de synthèse au niveau de l'architecture globale du
+robot, j'ai mené plusieurs expériences centrées sur des aspects cognitifs
+précis. Ainsi, les expériences de \emph{False Beliefs}~\cite{Warnier2012a},
+étroitement liées à la mise en place d'une théorie de l'esprit chez le robot.
+
+Ainsi aussi, le travail que j'ai mené durant mon post-doctorat au LAAS-CNRS
+(2012-2013) sur les besoins spécifiques de représentations pour l'interaction.
+L'objectif était de concevoir une technique de représentation fusionnant le
+\emph{Umwelt} (\emph{monde propre}) spatial et temporel du robot en un modèle
+amodal pouvant servir de point d'entrée pour les fonctions cognitives
+supérieures du robot.
+
+Le prototype que j'ai developpé est construit autour de l'idée de \emph{mondes}
+que le robot peut manipuler en fonction de son contexte et de ses besoins.
+Chaque monde consiste en une représentation géométrique et une histoire dans
+lequel on peut librement naviguer. Les différents mondes peuvent se synchroniser
+entre eux, mais aussi évoluer independament (on peut alors les concevoir comme
+des mondes hypothétiques, adaptés par exemple pour simuler et représenter le
+résultat d'une planification).
+
+Par ailleurs, je me suis aussi intéressé à la question de la cognition pour
+l'interaction sous l'angle complémentaire des mécanismes cognitifs
+\emph{humains} en jeu durant une interaction.
+
+J'ai commencé à m'interesser à cet aspect dans le cadre de la robotique
+pédagogique. D'abord de manière expérimentale au sein de l'association Planète
+Sciences~\cite{stinckwich2007squeakbot}, puis de manière plus théorique en
+suivant un Master Recherche à l'Université Paris 5 dans le domaine des
+Environments Informatiques pour l'Apprentissage Humain (EIAH), ce qui n'a permis
+d'acquérir un certain nombre de bases en Human-Computer Interaction (HCI), en
+particulier en ergonomie.
+
+Ces deux premières expériences ont facilité choix de mon post-doctorat à l'École
+POlytechnique Fédérale de Lausanne, où j'ai pris en charge la coordination des
+activités robotiques au sein du laboratoire d'ergonomie éducative. Ce
+laboratoire (CHILI-EPFL) est connu pour son expertise dans l'étude des
+interactions homme-machine et homme-homme durant les phases d'apprentissage. J'y
+ai acquis le savoir-faire nécessaire à la menée et l'analyse d'expériences
+in-situ (écologiquement valides) et controllées.
+
+Je supervise deux projets principaux. Le premier s'intéresse aux interactions
+sur la durée entre le robot Ranger et des enfants~\cite{fink2014which}. Il m'a
+permis, entre autres, d'étudier l'impact des comportements anthropomorphiques
+sur l'interaction homme-robot sur le long terme~\cite{lemaignan2014dynamics}. Il
+apparait en particulier que les mécanismes cognitifs en jeu chez l'homme lors
+d'une interaction suivie dans le temps ont été peu étudié, alors qu'ils sont
+critiques pour concevoir et adapter le comportement du robot sur le long terme.
+
+Le second projet repose sur l'idée du \emph{learning by teaching}, et propose de
+mettre en place une interaction enfant-robot durant laquelle l'enfant
+\emph{montre} au robot (un Nao) comment écrire. La question que l'on se pose est
+de savoir si une telle situation peut créer une forme interaction originale qui
+permette d'établir une relation pérenne et qui soutienne efficacement
+l'apprentissage.
+
+\subsection{Conducting human-robot experiments%
+  \label{conducting-human-robot-experiments}%
+}
+
+Table \ref{experiences} lists the main experiments I have conducted over the
+last 4 years.
+
+\begin{table*}
+\begin{center}
+
+\begin{tabular}{lll}
+\bf{Expérimence} & Focus & Réference \\
+\hline
+{\it Point \& Learn} (2010) & Interactive knowledge acquisition & \cite{Lemaignan2010} \\
+{\it Spy Game} (2010) & Interactive object discrimination & \cite{ros2010which} \\
+{\it Moving to London} (2011) & Multi-modal interaction, perspective taking & \cite{lemaignan2011what} \\
+{\it Roboscopie} (2011) & Theater, reflection on the future of HRI & \cite{lemaignan2012roboscopie} \\
+{\it Cleaning the table} (2011) & Full stack integration & \cite{alami2011when} \\
+{\it I'm in your shoes} (2012) & False beliefs & \cite{Warnier2012a} \\
+{\it Give me this} (2012) & Natural joint object manipulation & \cite{gharbi2013natural} \\
+{\it Aperitif time} (2012) & Multi-modal interaction, perspective taking & \cite{lemaignan2013talking} \\
+{\it CoWriter 1} (2013) & \emph{Child-child experiment}, interaction protocols, field experiment &  \\
+{\it Ranger} (2013) & Child-robot experiment, cognitive projections in HRI &  \\
+\hline
+
+\end{tabular}
+\end{center}
+\caption{Main experiments conducted in human-robot interaction.}
+\label{experiences}
+\end{table*}
+
+postdoc EPFL
+
+\cite{fink2014which}
+
+\subsection{Field experiments%
+  \label{field-experiments}%
+}
+
+
+postdoc EPFL
+
+
+
+\subsection{Autres activités de support scientifique}
+
+Dans cette dernière section, je propose de parcourir brièvement mes autres
+activités scientiques, afin d'inscrire ma candidature dans le cadre plus large
+de l'animation de la vie scientifique.
+
+\subsubsection{Associations scientifiques et dissémination}
+
+
+Vice-chair of InCOGnu, Toulouse local chapter of the national FRESCO Union of Young Reseacher in Cognitive Sciences
+
+Organization of CJCSC
+
+Organization of the first international workshop on MORSE in 2012, with 15 participants from 4 countries.
+
+Roboscopie~\cite{lemaignan2012roboscopie}
+
+\subsubsection{Contributions logicielles notables}
+
+Au-delà des développements logiciels directement en lien avec mon travail de
+doctorat, et précédemment mentionnés (ORO~\cite{Lemaignan2010}, {\sc
+Dialogs}~\cite{Lemaignan2011a}), je me suis impliqué dans le développement de
+plusieurs autres projets dont la portée est significative dans la communauté
+robotique.
+
+Le premier de ces projets est le simulateur MORSE~\cite{Echeverria2011,
+echeverria2012simulating}. Le projet a pris une ampleur certaine, avec plus de
+25 contributeurs du monde entier, son intégration officielle dans le projet
+Debian, et un workshop annuel.
+
+J'en suis le concepteur initial, l'un des principaux contributeurs, et le
+principal animateur de la communauté des développeurs. J'ai en particulier
+travaillé sur l'utilisation de MORSE pour simuler des interactions
+homme-robot~\cite{lemaignan2012morse}.
+
+ROS (Robot Operating System) est un autre projet dans lequel je suis impliqué.
+J'ai plusieurs contributions dans le noyau de ROS et je me suis aussi fortement
+impliqué dans l'adaptation de ROS au robot Nao, en particulier pour faciliter
+l'installation de ROS sur ce robot.
+
+Je suis aussi impliqué dans la conception d'outils logiciels plus spécialisés,
+comme GenoM~\cite{mallet2010genom3}.
+
+\subsubsection{Enseignement}
+
+
+
+Teaching assistant (\emph{moniteur}) at INSA Toulouse for 3 years: Prolog,
+ontologies, advanced Java, ADA, advanced databases.
+
+Several tutorials at both local and international levels, on technical topics
+ranging from software development techniques (code versioning, building tools)
+and programming (Python) to robotics simulation (including a tutorial during EURON2012 conference, Danemark).
+
+
+\subsection{Conclusion%
+  \label{conclusion}%
+}
+
+
+\subsubsection{An International Experience%
+  \label{an-international-experience}%
+}
+
+ENSAM/KIT
+
+PSI
+
+World tour
+
+LAAS/TUM
+
+EPFL
+
+\printbibliography
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projet de programme de recherche}
+\newrefsection
+
+La présentation de mes activités de recherche passées peut être comprise comme
+plusieurs regards sur la question de la cognition sociale chez les robots : la
+question de la représentation et de la manipulation des connaissances en premier
+lieu, la question des pré-supposés à l'interaction naturelle (et verbale en
+particulier) ensuite, la question de la cohérence et de la faisabilité d'une
+architecture cognitive intégrée, la question de l'évaluation de l'engagement
+homme-robot sur le long terme...
+
+Ces différentes facettes sont autant de pièces d'un puzzle auquel je propose de
+travailler directement : \emph{comment comprendre l'idée de \emph{cognition
+sociale} chez le robot, comment la construire, comment l'évaluer ?}
+
+Ce projet articule plusieurs axes, que j'expose plus en détails ci-après. La
+première question que l'on peut poser est : Que nous enseignent les sciences
+cognitives \emph{humaines} en terme de compétences cognitives nécessaires à
+l'interaction entre agents, et en terme d'évaluation de ces compétences ? Une
+synthèse des travaux existants en science humaines, et le travail d'adaptation
+à la robotique sont des manques bien identifiés pour avancer sur les questions
+d'interaction sociale entre hommes et robots.
+
+L'axe de recherche fondamental que cela ouvre est le travail de compréhension,
+de définition et d'application de l'idée de cognition sociale en robotique. Il
+s'agit ici d'articuler une problématique aujourd'hui floue car complexe, en
+re-pensant l'existant ((neuro-)sciences cognitives, donc, mais aussi
+architectures cognitives telle qu'on les connait en intelligence artificielle)
+dans le cadre de la robotique sociale, avec ses dimensions incarnées,
+sous-spécifiées et dynamiques.
+
+Ensuite un axe de recherche opérationel particulier sur lequel je propose de
+travailler est la question de la \emph{représentation} de l'environement
+spatial, temporel, social et contextuel du robot. La litérature s'intéresse
+essentiellement aux deux premiers points. Il me semble que les deux derniers
+sont des objets de recherche peu étudiés et essentiels pour une prise de
+décision autonome et complexe dans l'interaction homme-robot.
+
+Enfin, je souhaite inscrire ce programme de recherche dans une perspective
+expérimentale forte. La menée systématique d'expériences d'interaction en milieux
+écologiquement valides reste rare et sujette à des faiblesses méthodologiques.
+En m'appuyant sur l'expérience que j'ai acquise dans ce domaine, je pense
+travailler à la mise en place d'un référentiel expérimental dont la méthodologie
+est solide, et sur lequel je pourrais m'appuyer pour valider la réflexion sur la
+cognition sociale chez le robot.
+
+\subsection{La cognition robotique dans les sciences cognitives}
+
+\subsubsection{Métriques de la cognition en robotique}
+
+L'une des difficultés importantes à laquelle la communauté de la robotique
+cognitive fait face est le manque de référentiel permettant d'évaluer (et donc
+de comparer et mesurer les progrès) les capacités cognitives de nos robots.
+Cela tient à deux raisons principales : d'une part, comme nous venons de le
+voir, le périmètre de ce qu'on appelle la robotique cognitive est relativement
+mal défini, ce qui rend difficile la création d'une mesure globale des capacités
+cognitives ; d'autre part la plupart des outils d'évaluation à notre disposition
+viennent de l'étude de la cognition humaine, et sont concrètrement souvent
+difficile à appliquer aux robots car la ``hiérarchie'' des compétences
+cognitives chez les robots est très différente de ce que l'on rencontre chez
+l'homme : les compétences langagières, pour prendre exemple symbolique, sont
+difficilement comparable. La production verbale est considérée pour un robot
+comme un problème moins difficile (essentiellement traitée par la synthèse
+vocale) que la compréhension orale (qui requiert, outre la reconnaissance
+vocale, une analyse syntaxique et sémantique). Or les tests de langage que l'on
+rencontre en psychologie cognitive vont typiquement tester la capacité à parler
+en assumant que l'enfant peut comprendre ce qu'on lui dit.
+
+De fait, la communauté robotique s'appuie aujourd'hui essentiellement sur des
+évaluations qualitatives. Langley~\etal\cite{Langley2006} suggère ainsi cinq
+dimensions d'évaluation : la \emph{généralité} du système (peut-il s'adapter à
+une nouvelle tâche?), la \emph{rationalité} ou pertinence des
+inférences/raisonnements/décisions que le système prend, la \emph{réactivité} et
+la \emph{persistance} qui évalue si le comportement du système est approprié en
+cas de changements non-anticipés, la capacité du système à \emph{ameliorer sa
+performance} comme fonction des connaissances supplémentaires qu'on lui fournit,
+et enfin, \emph{l'autonomie} du système. On le voit, ces dimensions sont
+générales, et peu opérationelles.
+
+Un certain nombre d'outils issus de la psychologie cognitive ont déjà été
+explorés de manière concrête sur des robots, comme les expériences d'inversion
+de rôle~\cite{Lallee2010b}, de croyances fausses (\emph{False
+Beliefs}~\cite{Leslie2000}), lié à la théorie de l'esprit~\cite{Breazeal2006,
+Warnier2012a}, ou encore le \emph{Token test}~\cite{DiSimoni1978} pour
+l'évaluation de certaines compétences linguistiques~\cite{Mavridis2006}. Ces
+expériences ont montré qu'il était possible et utile de ré-utiliser en les
+adaptant des tests de psychologie cognitive en robotique. Elles restent
+cependant ponctuelles, et une travail plus systématique et plus global reste à
+faire. D'autant plus que, comme l'ont récemment souligné
+Zhang~\etal\cite{zhang2013evaluation}, les environements et métriques existants
+pour l'évaluation des performances cognitives des robots se focalisent pour la
+plupart sur des capacités physiques, et ne requièrent pas de capacités avancées
+de représentation et manipulation de connaissance.
+
+Eux-même proposent leur une métrique basée sur la mesure du \emph{Fitness to Ideal Model} (FIM) d'un
+comportement, qu'ils corrèlent à la \emph{longueur de description} (DLen) de la
+commande qui a déclenchée le comportement. L'hypothèse étant que, pour un
+comportement donné, plus le robot a des capacités cognitives avancées, plus
+courte (c'est à dire, sous-spécifiée) pourra être la commande, le robot inférant
+le reste. Cette piste est intéressante, et est à mettre en relation avec
+d'autres approches issues des sciences cognitives humaines.
+
+Mon objectif est ici de rechercher et de construire un référentiel solide et
+opérationnel pour l'évaluation des compétences cognitives des robots, en
+s'intéressant à la fois à l'évaluation de chaque capacité cognitive
+indépendente, et à la fois à des métriques globales de l'activité cognitive du
+robot. Dans~\cite{lemaignan2013explicit}, je propose une piste à explorer à ce
+sujet en définissant la notion de \emph{charge cognitive} du roboten terme de
+flux de connaissances à l'intérieur de l'architecture logicielle du robot.
+
+\subsection{La représentation du monde comme fondation de la cognition}
+
+\includegraphics[width=\textwidth]{figs/robots_home_baby_socket.jpg}
+
+\subsection{Un programme expérimental ambitieux}
+
+
+
+
+\printbibliography
+
+\end{document}
