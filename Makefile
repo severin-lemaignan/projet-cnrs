@@ -4,7 +4,7 @@ TARGET=project.rst past-activities.rst
 DOT=$(wildcard images/*.dot)
 SVG=$(wildcard images/*/*.svg)
 
-all: project
+all: project projet.pdf
 
 project: $(TARGET:.rst=.pdf)
 

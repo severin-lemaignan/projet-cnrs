@@ -57,54 +57,110 @@ vers des publications dont je suis auteur ou co-auteur.
   \label{semantic-tools-for-robotics}%
 }
 
-Paris 5?
+Le point de départ de mes recherches se situe dans l'application des techniques
+sémantiques à la robotique. J'ai initialement été introduit aux outils de
+l'ingéneurie des connaissances durant mon master recherche à l'université Paris
+5, que je menais en parallèle de ma formation d'ingénieur à l'ENSAM/ParisTech et
+au Karslruhe Institute of Technology (KIT). Mon projet de fin d'étude étudiait
+comment les ontologies pouvaient être utilisée pour contrôler des systèmes
+multi-agents dans un contexte industriel, et à débouché sur une
+publication~\cite{lemaignan2006mason}, depuis citée plus de 80 fois.
 
-ENSAM, MASON
-\cite{lemaignan2006mason}, over 80 citations
+J'ai ensuite rejoint pendant un an l'INRIA en tant qu'ingénieur de recherche,
+sous la supervision de Michel Parent.  J'y ai proposé une architecture de
+contrôle de véhicules autonomes basée sur un réseau d'ontologies dynamiques et
+partagées entre robots. Ce travail est présenté
+dans~\cite{mehani2007networking}.
 
-INRIA, semantic V2V networking, control framework
-\cite{mehani2007networking}
+Ces deux premières expériences ont été le point de départ de mon travail de
+doctorat au LAAS/CNRS, sous la supervision de Rachid Alami. La problématique
+initiale qui se posait alors était la suivante : les robots d'interaction
+développés dans le laboratoire manipulent des états internes complexes et
+dynamiques, mais difficilement observables. L'intuition poussait à croire qu'en
+rendant \emph{explicites} les flux de connaissances entre composants logiciels
+du robot, non seulement le comportement du robot serait plus facile à
+interpréter, mais de plus, cela ouvrirait de nouvelles opportunités pour les
+tâches décisionelles du robot, comme la planification symbolique ou la
+supervision du robot.
 
-\cite{Lemaignan2010} ORO
+J'ai donc proposé de concevoir un ``tableau noir'' sémantique à travers lequel
+les différents modules décisionels du robot communiquent, en échangeant des
+messages dont la sémantique est explicite. Ce projet, \emph{OpenRobots
+Ontology}, est une des contributions importante de mon
+doctorat~\cite{Lemaignan2010}, et représente le ``fil rouge'' des projets
+suivants que j'ai mené.
 
-Talk at INNOROBOT2013
+Je présente dans~\cite{lemaignan2013explicit} les principales leçons tirées du
+déploiement d'une base de connaissances active comme \emph{OpenRobots Ontology}
+dans des architectures robotiques complexes (près de 70 modules logiciels
+fonctionnant en parallèle lors des expériences menées avec le robot PR2). Un
+premier aspect, en terme d'architecture logicielle, est un changement de
+paradigme : les composants du robot ne sont plus définis en termes d'interface de
+programmation (API), mais en termes d'interfaces sémantiques. Un composant
+devient interchangeable sur la base des connaissances dont il a besoin et des
+connaissances qu'il produit. Un second aspect et que, si une ontologie --
+essentiellement un système logique du premier ordre -- ne remplace pas
+efficacement des outils dédiés au raisonnement, les planificateurs, par exemple,
+elle joue en revanche un rôle clé pour générer les centaines
+d'inférences triviales (du type ``un enfant est un humain''), essentielles pour
+raisonner et interagir dans l'espace cognitif partagé avec l'homme.
 
-\cite{lemaignan2013explicit}
-
+Une autre promesse de cette classe d'outils sémantiques est l'acquisition
+automatique et l'intégration par le robot de connaissances issues du web
+sémantique. Le projet \emph{OpenRobots Ontology} s'appuie déjà sur des
+standards comme {\sc OpenCYC}, et j'ai eu l'occasion d'être invité durant la
+conférence INNOROBOT2013 à présenter les pistes pour approfondir ces
+interactions entre outils sémantiques et robotique.
 
 \subsection{Connaissances et interaction située%
   \label{semantic-tools-for-grounded-interaction}%
 }
 
-PhD LAAS/TUM
+Au-delà des recherches sur les outils sémantiques, mon doctorat visait à
+explorer l'intérêt d'une approche sémantique pour l'interaction située, ce qui
+inclut les questions d'ancrage symbolique (\emph{symbol grounding}), de
+communication, de traduction d'un modèle symbolique en actions, de
+représentation des agents interagissant, et en particulier, de la représentation
+de leur croyances et intentions.
 
-\cite{ros2010which} (ROMAN best paper award)
+L'acquisition d'un modèle symbolique du monde et la capacité du robot à prendre
+le point de vue des autres agents (\emph{prise de perspective}) pour construire
+ce modèle a été un des premiers résultat important~\cite{Lemaignan2011}.
+L'utilisation d'une base de connaissance symbolique a non seulement permis
+aisement de représenter le modèle des croyances de chacun des agents, mais aussi
+d'identifier automatiquement les propriétés discriminantes des objets faisant
+sens pour chaque agent~\cite{ros2010which} (\emph{Best Paper Award} à la
+conférence RoMAN 2010).
 
-\cite{Lemaignan2011} (HRI Pioneers)
+Un autre domaine pour lequel l'introduction de flux de connaissances explicites
+a été particulièrement fructueuse est celui de la communication naturelle,
+située et multi-modale. Parce que le robot manipule en interne des concepts dont
+la sémantique est définie et non-ambigüe, j'ai montré qu'il est bien plus facile
+alors d'analyser et de donner du sens à des interactions verbales en langue
+naturelle~\cite{Lemaignan2011a, Ros2010a, lemaignan2011what,
+lemaignan2011dialogue, lemaignan2013talking}. J'ai aussi montré que
+l'intégration d'autres modalités de communication (comme les gestes) est
+possible et facile, dû au fait que tous les modules du robot produisent des
+connaissances articulées les unes aux autres à travers une même ontologie.
 
 
-\subsubsection{Applications to interaction%
-  \label{applications-to-interaction}%
-}
+La couche d'abstraction sémantique que j'ai proposé à enfin ouvert un certain
+nombre d'opportunités pour la menée d'actions conjointes homme-robot. Parce que
+les croyances non seulement du robot, mais aussi des agents avec lesquels le
+robot interagit sont représentées de manière explicite, le planificateur
+symbolique de tâches peut générer des plans d'action
+conjoints~\cite{alami2011when, Lemaignan2012, clodic2013on}. De même, en
+maintenant le modèle des croyances de l'homme, il est possible d'influer au
+niveau symbolique durant l'exécution de manipulations
+conjointes~\cite{gharbi2013natural}.
 
-Interaction with grounded verbal communication.
+Ces possibilités ont été illustrées dans une série d'expériences menées dans le
+cadre du projet européen CHRIS, dans lequelles le robot construit un modèle de
+l'homme durant l'interaction, et l'exploite pour adapter son comportement durant
+des séquences de jeu includant des inversions de rôle~\cite{Lallee2010b,
+Lallee2011, Lallee2012}.
 
-\cite{Lemaignan2011a}
 
-\cite{Ros2010a}
-\cite{lemaignan2011what}
-\cite{lemaignan2011dialogue}
-\cite{lemaignan2013talking}
-
-Joint action,...
-
-full paper
-The 'CHRIS' suite
-\cite{Lallee2010b, Lallee2011, Lallee2012}
-
-workshop
-\cite{gharbi2013natural}
-\cite{clodic2013on}
 
 \subsection{Cognition pour l'interaction%
   \label{cognition-for-interaction}%
@@ -189,41 +245,6 @@ mettre en place une interaction enfant-robot durant laquelle l'enfant
 de savoir si une telle situation peut créer une forme interaction originale qui
 permette d'établir une relation pérenne et qui soutienne efficacement
 l'apprentissage.
-
-\subsection{Mener des expériences en HRI}
-
-Table \ref{experiences} lists the main experiments I have conducted over the
-last 4 years.
-
-\begin{table*}
-\begin{center}
-
-    \begin{tabular}{lp{5.5cm}l}
-\bf{Expérience} & Objet principal & Référence \\
-\hline
-{\it Point \& Learn} (2010) & Acquisition interactive de connaissances & \cite{Lemaignan2010} \\
-{\it Spy Game} (2010) & Discrimination interactive d'objets & \cite{ros2010which} \\
-{\it Moving to London} (2011) & Interaction multi-modale, \newline prise de perspective & \cite{lemaignan2011what} \\
-{\it Roboscopie} (2011) & Théâtre, \newline réflexion sur le futur de la HRI & \cite{lemaignan2012roboscopie} \\
-{\it Cleaning the table} (2011) & Intégration complète & \cite{alami2011when} \\
-{\it I'm in your shoes} (2012) & Fausses croyances & \cite{Warnier2012a} \\
-{\it Give me this} (2012) & Manipulation naturelle conjointe & \cite{gharbi2013natural} \\
-{\it Aperitif time} (2012) & Interaction multi-modale, \newline prise de perspective & \cite{lemaignan2013talking} \\
-{\it CoWriter 1} (2013) & \emph{Expérience enfant-enfant}, \newline protocoles
-d'interaction, expérience de terrain &  \\
-{\it Ranger} (2013) & Expérience enfant-robot, \newline projections cognitives en HRI &
-\cite{fink2014which, lemaignan2014dynamics} \\
-\hline
-
-\end{tabular}
-\end{center}
-\caption{Principales expériences menées en interaction homme-robot.}
-\label{experiences}
-\end{table*}
-
-postdoc EPFL
-
-\cite{fink2014which}
 
 
 \subsection{Autres activités de support scientifique}
@@ -321,38 +342,80 @@ comme GenoM~\cite{mallet2010genom3}.
 
 \subsection{Pour conclure}
 
-Pour conclure cette première partie, je souhaiterais souligner deux traits de
-mon parcours : sa dimension internationale, et l'importance de
+Pour conclure cette première partie, je souhaiterais revenir sur trois traits de
+mon parcours : la place particulière donnée à la validation expérimentale de mes recherches, la dimension internationale de mon itinéraire, et l'importance de
 l'interdisciplinarité.
 
-Mon parcours de recherche démarre à la période du master : j'ai fait le choix de
-suivre un cursus d'ingénieur franco-allemand, qui m'a conduit près de deux ans
-en Allemagne, au Karlsruhe Institute of Technology (KIT), et m'a finalement
-permis d'obtenir en 2006 la médaille d'or de l'ENSAM/ParisTech. J'ai aussi,
-pendant ce master, mené pendant six mois des travaux de recherche en physique
-fondamentale au Paul Scherrer Institute en Suisse, ce qui a représenté ma
-première immersion dans le monde académique à proprement parler.
+La table~\ref{experiences} liste les principales expériences que j'ai menées
+durant ces dernières années. Comme souvent en robotique, elles sont pour la
+plupart le résultat d'un travail d'équipe, mais j'en ai été, pour chacune
+d'elles, un des principaux instigateurs.
 
-Suite à cela, et bien que cela ne fasse pas partie de mon parcours de chercheur,
-j'ai voyagé pendant une année autour du monde (2007-2008), expérience
-importante tant au niveau personnel qu'au regard de mon ouverture à
+À l'exception de l'expérience \emph{CoWriter 1}, récente, toutes ces expériences
+ont débouchées sur des publications, et, ensemble, montrent l'importance que
+j'accorde à la validation expérimentale de mes recherches. Ces expériences ont
+été réalisées sur des robots réels (non en simulation), et incluent aussi des
+expériences centrées sur l'étude des humains en présence des robots
+(\emph{Roboscopie}, \emph{CoWriter}, \emph{Ranger}).
+
+\begin{table*}
+\begin{center}
+
+    \begin{tabular}{lp{6cm}l}
+\bf{Expérience} & Objet principal & Ref. \\
+\hline
+{\it Point \& Learn} (2010) & Acquisition interactive de connaissances & \cite{Lemaignan2010} \\
+{\it Spy Game} (2010) & Discrimination interactive d'objets & \cite{ros2010which} \\
+{\it Moving to London} (2011) & Interaction multi-modale, \newline prise de perspective & \cite{lemaignan2011what} \\
+{\it Roboscopie} (2011) & Théâtre, \newline réflexion sur le futur de la HRI & \cite{lemaignan2012roboscopie} \\
+{\it Cleaning the table} (2011) & Intégration complète & \cite{alami2011when} \\
+{\it I'm in your shoes} (2012) & Fausses croyances & \cite{Warnier2012a} \\
+{\it Give me this} (2012) & Manipulation naturelle conjointe & \cite{gharbi2013natural} \\
+{\it Aperitif time} (2012) & Interaction multi-modale, \newline prise de perspective & \cite{lemaignan2013talking} \\
+{\it CoWriter 1} (2013) & \emph{Expérience enfant-enfant}, \newline protocoles
+d'interaction, expérience de terrain &  \\
+{\it Ranger} (2013) & Expérience enfant-robot, \newline projections cognitives en HRI &
+\cite{fink2014which, lemaignan2014dynamics} \\
+\hline
+
+\end{tabular}
+\end{center}
+\caption{Principales expériences menées en interaction homme-robot.}
+\label{experiences}
+\end{table*}
+
+
+Le deuxième aspect particulier de mon parcours de jeune chercheur est sa
+composante internationale. Mon parcours de recherche démarre à la période du
+master : j'ai fait le choix de suivre un cursus d'ingénieur franco-allemand, qui
+m'a conduit près de deux ans en Allemagne, au Karlsruhe Institute of Technology
+(KIT), et m'a finalement permis d'obtenir en 2006 la médaille d'or de
+l'ENSAM/ParisTech. J'ai aussi, pendant ce master, mené pendant six mois des
+travaux de recherche en physique fondamentale au Paul Scherrer Institute en
+Suisse, ce qui a représenté ma première immersion dans le monde académique à
+proprement parler.
+
+Suite à cela, et bien que cela ne fasse pas partie de mon parcours de chercheur
+proprement dit, j'ai voyagé pendant une année autour du monde (2007-2008),
+expérience importante tant au niveau personnel qu'au regard de mon ouverture à
 l'international.
 
-Ensuite, j'ai souhaité organisé mon doctorat en co-tutelle à son tour, cette
+J'ai souhaité ensuite organiser mon doctorat à son tour en co-tutelle, cette
 fois avec la Technische Universität de Munich (TUM), ce qui m'a conduit à
 nouveau à séjourner plusieurs mois en Allemagne. Mon doctorat allemand, noté, a
-reçu la meilleure note possible (\emph{Cum Suma Laude}).
+reçu la meilleure appréciation possible (\emph{Cum Suma Laude}) dans le système
+allemand.
 
 Enfin, le post-doctorat que je réalise actuellement à l'École Polytechnique
 Fédérale de Lausanne (EPFL) est la plus récente escale internationale de mon
 parcours.
 
 Cet itinéraire international reflète la diversité des environnements
-intellectuels dans lesquels j'ai évolué, et m'a permis mieux appréhender le
+intellectuels dans lesquels j'ai évolué, et me permet de mieux appréhender le
 tissu scientifique européen, en particulier dans le domaine de la robotique
 cognitive.
 
-Le deuxième aspect particulier de mon parcours est sa dimension
+Le troisième aspect particulier de mon parcours est sa dimension
 interdisciplinaire : depuis la période du master, durant laquelle j'ai suivi en
 parallèle une formation d'ingénieur et un master dans le domaine de
 l'intelligence artificielle appliquée à l'éducation, j'ai tenté de garder une
