@@ -366,7 +366,7 @@ mener des expériences en HRI qui soient pertinentes, écologiquement valides, e
 méthodologiquement solides.
 
 \printbibliography
-
+\clearpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -531,16 +531,64 @@ d'évaluation des compétences cognitives des robots d'interaction.
 
 \begin{figure}
 \includegraphics[width=\textwidth]{figs/robots_home_baby_socket.jpg}
+\caption{Pour comprendre cette situation et anticiper le danger, il est
+    nécessaire de combiner modèle géométrique (l'agencement de la pièce), modèle
+    symbolique (le bébé, la prise), modèle temporel prédictif (déplacement du
+    bébé), modèle des affordances \emph{pour le bébé} et enfin modèle des
+    croyances et intentions du bébé.}
 \label{babyplug}
 \end{figure}
 
-\subsection{Un programme expérimental ambitieux}
+Le travail que j'ai mené durant mon doctorat m'a ammené à analyser huit systèmes
+de représentation des connaissances effectivement déployés sur des robots. Un
+point clé de comparaison de ces systèmes est leur approche de l'ancrage
+symbolique (\emph{symbol grounding}) dans leur environnement physique, et il en
+ressort que la capacité pour un robot à représenter son environnement est à la
+fois la pierre angulaire de ces capacités cognitives supérieures (raisonnement,
+prise de décision, communication) et un défi qui n'est pas aujourd'hui traité
+dans toutes son ampleur.
+
+Les recherches actuelles sont largement focalisée sur la représentation
+géométrique de l'environnement du robot. La construction en ligne de
+\emph{cartes sémantiques}~\cite{Nuechter2008, Galindo2008,
+Blodow2011} ou l'utilisation d'affordances fonctionnelles~\cite{Varadarajan2011}
+sont des exemples de l'état de l'art au regard de la construction de lien
+géométrique-symbolique sur l'environnement spatial du robot.
+
+De même, le travail de Mavridis et Roy~\cite{Mavridis2006} sur une représentation
+\emph{amodale} de l'environnement, et qui propose un modèle continu du géométrique
+au symbolique, prenant en compte les incertitudes et permettant de représenter
+des entités spatiales non-vues (donc de les imaginer), apporte plusieurs idées
+importantes, mais se cantonne essentiellemt aux aspects spatiaux.
+
+La représentation de l'environnement temporel du robot a aussi fait l'objet de
+recherches (avec les idées de \emph{chroniques}~\cite{Ghallab1996}, les
+approches par \emph{fluents}~\cite{mosenlechner2010becoming}, ou encore les
+instantanés proposés par Mavridis~\cite{Mavridis2006}), mais la plupart de ces
+travaux s'apparentent à une journalisation des événements, accompagnée d'outils
+d'analyse et d'apprentissage (en général hors-ligne). Ni la possibilité de
+naviguer naturellement dans les états antérieurs, ni la création et la
+représentation d'états futurs hypothétiques ne sont intégrées au niveau d'une
+représentation globale de l'envrionnement du robot.
+
+Quant à l'intégration de la représentation d'affordances, de contextes (en
+particulier, de contextes sociaux, comme dans la figure~\ref{babyplug}, où le
+robot est dans un contexte du type ``veiller sur le bébé''), de modèles de
+croyances et d'intentions, le travail est à peine entamé (avec la représentation
+de différentes perspectives, par exemple~\cite{ros2010which}). Le premier de ces
+défis étant d'ailleurs comment représenter affordances, contextes, croyances
+afin de les intégrer dans un modèle unifié de l'environnement.
+
+
+\subsection{Programme expérimental}
 
 Je propose de matérialiser les axes de recherche que j'ai présenté autour de
 quatre objectifs expérimentaux, qui vont de la conception et de
 l'implémentation d'une méthodologie expérimentale pour évaluer les compétences
 cognitives des robots, au déploiement d'un robot manipulateur mobile de type
 PR2 dans une famille non-experte pour une durée longue (supérieure à un mois).
+Ces quatre objectifs me permettent aussi de proposer un calendrier prévisionnel
+pour mes trois premières années de recherche.
 
 Le premier objectif consiste donc à formaliser une méthodologie expérimentale
 pour l'évaluation des capacités cognitives d'un robot. Cette méthodologie doit
