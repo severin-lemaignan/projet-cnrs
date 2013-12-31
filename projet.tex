@@ -69,42 +69,43 @@ l'ingénierie des connaissances durant mon master recherche à l'université Par
 au Karslruhe Institute of Technology (KIT). Mon projet de fin d'étude s'est
 intéressé à l'utilisation des ontologies pour le contrôle de systèmes
 multi-agents dans un contexte industriel, et a débouché sur une première
-publication,~\cite{lemaignan2006mason}, depuis citée plus de 80 fois.
+publication~\cite{lemaignan2006mason}, depuis citée plus de 80 fois.
 
 J'ai ensuite rejoint pendant un an l'INRIA en tant qu'ingénieur de recherche,
-sous la supervision de Michel Parent.  J'ai continué d'y développé, de manière concrète,
-l'utilisation d'ontologies pour la robotique, en proposant une architecture de
-contrôle de véhicules autonomes basée sur un réseau d'ontologies dynamiques et
-partagées entre robots~\cite{mehani2007networking}.
+sous la supervision de Michel Parent.  J'ai continué d'y développer, de manière
+concrète, l'utilisation d'ontologies pour la robotique, en proposant une
+architecture de contrôle de véhicules autonomes basée sur un réseau d'ontologies
+dynamiques et partagées entre robots~\cite{mehani2007networking}.
 
 Ces deux premières expériences ont formé le point de départ de mon travail de
-doctorat au LAAS-CNRS, sous la supervision de Rachid Alami. La problématique
-initiale qui se posait alors était la suivante : les robots d'interaction
-développés dans le laboratoire manipulent des états internes complexes et
-dynamiques, mais difficilement observables. L'intuition poussait à croire qu'en
-rendant \emph{explicites} les flux de connaissances entre composants logiciels
-du robot, non seulement le comportement du robot serait plus facile à
-interpréter, mais de plus, de nouvelles opportunités de développement
-s'ouvriraient pour les tâches décisionnelles du robot, comme la planification
-symbolique ou la supervision du robot.
+doctorat au LAAS-CNRS (2008-2012), sous la supervision de Rachid Alami. La
+problématique initiale qui se posait alors était la suivante : les robots
+d'interaction développés dans le laboratoire manipulent des états internes
+complexes et dynamiques, mais difficilement observables. L'intuition poussait à
+croire qu'en rendant \emph{explicites} les flux de connaissances entre
+composants logiciels du robot, non seulement le comportement du robot serait
+plus facile à interpréter, mais de plus, de nouvelles opportunités s'ouvriraient
+pour les tâches décisionnelles du robot, comme la planification symbolique ou la
+supervision du robot.
 
 J'ai donc proposé de concevoir un ``tableau noir'' sémantique à travers lequel
 les différents modules décisionnels du robot communiquent, en échangeant des
 messages dont la sémantique est explicite. Ce projet, \emph{OpenRobots
 Ontology}, est une des contributions importante de mon
-doctorat~\cite{Lemaignan2010}, et représente le ``fil rouge'' des projets
-que j'ai mené à la suite.
+doctorat~\cite{Lemaignan2010}, et représente le fil rouge des projets
+que j'ai menés par la suite.
 
 Je présente dans~\cite{lemaignan2013explicit} les principales leçons tirées du
 déploiement d'une base de connaissances active comme \emph{OpenRobots Ontology}
 dans des architectures robotiques complexes (près de 70 modules logiciels
-fonctionnant en parallèle lors des expériences menées avec le robot PR2). Ainsi
-l'idée de définir les composants du robot en termes d'interfaces sémantiques
-(les connaissances dont il a besoin d'une part, et les
-connaissances qu'il produit d'autre part). Ainsi aussi le principe d'utiliser
-les ontologies pour générer l'ensemble des inférences \emph{triviales} (du type
-``un enfant est un humain''), essentielles pour que le robot puisse raisonner et
-interagir dans un référentiel de connaissances partagé avec l'homme.
+fonctionnant en parallèle lors des expériences menées avec le robot PR2). L'idée
+de définir les composants du robot en terme d'interfaces sémantiques (les
+connaissances dont il a besoin d'une part, et les connaissances qu'il produit
+d'autre part) apparait comme un apport important, de même que le principe
+d'utiliser les ontologies pour générer l'ensemble des inférences
+\emph{triviales} (du type ``tous les enfants sont aussi des humains''),
+essentielles pour que le robot puisse raisonner et interagir dans un référentiel
+de connaissances partagé avec l'homme.
 
 Un autre intérêt de cette classe d'outils sémantiques est l'acquisition
 automatique et l'intégration par le robot de connaissances issues du web
@@ -125,37 +126,36 @@ représentation des agents interagissant, et en particulier, de la représentati
 de leur croyances et intentions.
 
 L'acquisition d'un modèle symbolique du monde et la capacité du robot à prendre
-le point de vue des autres agents (\emph{prise de perspective}) pour construire
-ce modèle a été un des premiers résultats important~\cite{Lemaignan2011}.
-L'utilisation d'une base de connaissance symbolique permet aisément de
-représenter le modèle des croyances de chacun des agents, et ouvre des
-applications comme l'identification automatique des propriétés discriminantes
-des objets de l'environnement pour chaque agent~\cite{ros2010which} (\emph{Best
-Paper Award}, RoMAN 2010).
+le point de vue des autres agents (\emph{prise de perspective}) a été un des
+premiers résultats important~\cite{Lemaignan2011}.  L'utilisation d'une base de
+connaissance symbolique permet de représenter le modèle des croyances de chacun
+des agents, et ouvre des applications comme l'identification automatique des
+propriétés discriminantes des objets de l'environnement du point de vue de
+chaque agent~\cite{ros2010which} (\emph{Best Paper Award}, RoMAN 2010).
 
 Un autre domaine pour lequel l'introduction de flux de connaissances explicites
 a été particulièrement fructueuse est celui de la communication naturelle,
 située et multi-modale. Parce que le robot manipule en interne des concepts dont
-la sémantique est définie et non ambigüe, j'ai montré qu'il est possible
-alors d'analyser et de donner du sens à une gamme étendue d'interactions
-verbales en langue naturelle~\cite{Lemaignan2011a, Ros2010a, lemaignan2011what,
-lemaignan2011dialogue, lemaignan2013talking}. J'ai aussi montré que
-l'intégration d'autres modalités de communication (comme les gestes) devient
-transparente, du fait que tous les modules du robot produisent des
-connaissances déjà articulées les unes aux autres à travers une même ontologie
-générale.
+la sémantique est définie et non ambigüe, j'ai montré qu'il est possible alors
+d'analyser et de donner du sens à une gamme étendue d'interactions verbales en
+langue naturelle~\cite{Ros2010a, lemaignan2011dialogue, lemaignan2013talking}.
+J'ai aussi montré que l'intégration d'autres modalités de communication (comme
+les gestes) devient transparente, du fait que tous les modules du robot
+produisent des connaissances déjà articulées les unes aux autres à travers une
+même ontologie générale~\cite{lemaignan2011what, Lemaignan2011a}.
 
 La couche d'abstraction sémantique que j'ai proposé à enfin ouvert un certain
-nombre d'opportunités  le domaines des actions conjointes homme-robot. Parce que
-les croyances, non seulement du robot, mais aussi des agents avec lesquels le
-robot interagit sont représentées de manière explicite, le planificateur
+nombre d'opportunités dans le domaine des actions conjointes homme-robot. Parce
+que les croyances, non seulement du robot, mais aussi des agents avec lesquels
+le robot interagit, sont représentées de manière explicite, le planificateur
 symbolique de tâches peut générer des plans d'action
 conjoints~\cite{alami2011when, Lemaignan2012, clodic2013on}. De même, en
 maintenant à jour le modèle des croyances de l'homme, il est possible d'influer
-de manière symbolique sur l'exécution de actions conjointes~\cite{gharbi2013natural}.
+de manière symbolique sur l'exécution de ces actions
+conjointes~\cite{gharbi2013natural}.
 
 Ces possibilités ont été illustrées dans une série d'expériences menées dans le
-cadre du projet européen CHRIS, dans lesquelles le robot construit un modèle de
+cadre du projet européen CHRIS, et dans lesquelles le robot construit un modèle de
 l'homme au fil de l'interaction, et l'exploite pour adapter son comportement durant
 des séquences de jeu, incluant des inversions de rôle~\cite{Lallee2010b,
 Lallee2011, Lallee2012}.
@@ -167,15 +167,15 @@ Lallee2011, Lallee2012}.
 }
 
 Le travail que j'ai mené sur la représentation et la manipulation de la
-connaissance pour l'interaction située a naturellement débordé de son périmètre
-initial, pour s'élargir à la question plus générale de la \emph{cognition pour
+connaissance pour l'interaction située a débordé de son périmètre
+initial pour s'élargir à la question plus générale de la \emph{cognition pour
 l'interaction} chez les robots.
 
 Ce champ de recherche est vaste, et est au c\oe ur du projet de recherche que je
 présente dans la seconde partie de ce dossier.
 
 J'ai travaillé sur cette question sous deux angles : une perspective
-intégrative, d'une part, et une perspective plus exploratoire, d'autre part.
+intégrative d'une part, et une perspective plus exploratoire d'autre part.
 
 J'ai ainsi coordonné l'écriture de plusieurs articles de journaux et chapitre de
 livre s'intéressant à l'architecture cognitive du robot dans sa
@@ -192,7 +192,7 @@ spatiale, temporelle et contextualisée de situation. Je montre que ces
 questions peuvent être en partie abordées de manière holistique, en s'appuyant
 sur des interfaces sémantiques clairement définies.
 
-Parallèlement à cet effort de synthèse au niveau de l'architecture globale du
+Parallèlement à cet effort de synthèse au niveau de l'architecture du
 robot, j'ai mené plusieurs expériences centrées sur des aspects cognitifs
 précis. Ainsi, les expériences de \emph{False Beliefs}~\cite{warnier2012when},
 liées à la mise en place d'une théorie de l'esprit chez le robot.
@@ -204,13 +204,13 @@ L'objectif était de concevoir une technique de représentation fusionnant le
 amodal pouvant servir de point d'entrée pour les fonctions cognitives
 supérieures du robot. Le prototype que j'ai développé est construit autour de
 l'idée de \emph{mondes} que le robot peut manipuler en fonction de son contexte
-et de ses besoins.  Chaque monde combine une représentation géométrique et
-une \emph{histoire} dans laquelle on peut librement naviguer. Les différents mondes
-peuvent se synchroniser entre eux, mais aussi évoluer indépendamment (on peut
-alors les concevoir comme des mondes hypothétiques, adaptés par exemple pour
-simuler et représenter le résultat d'une planification).
+et de ses besoins.  Chaque monde combine une représentation géométrique et une
+\emph{histoire} dans laquelle il peut librement naviguer. Les différents mondes
+peuvent évoluer indépendamment, et on peut alors les concevoir comme des mondes
+hypothétiques, adaptés par exemple pour simuler et représenter le résultat d'une
+planification.
 
-Par ailleurs, je me suis aussi intéressé à la question de la cognition pour
+Par ailleurs, je me suis intéressé à la question de la cognition pour
 l'interaction sous l'angle complémentaire des mécanismes cognitifs
 \emph{humains} en jeu durant une interaction.
 
@@ -223,12 +223,12 @@ d'acquérir un certain nombre de bases en interaction homme-machine (HCI), en
 particulier en ergonomie.
 
 Ces deux premières expériences ont guidé le choix de mon post-doctorat à l'École
-Polytechnique Fédérale de Lausanne, où j'ai pris en charge la coordination des
-activités robotiques au sein du laboratoire d'ergonomie éducative. Ce
-laboratoire (CHILI-EPFL) est connu pour son expertise dans l'étude des
-interactions homme-machine et homme-homme durant les phases d'apprentissage. J'y
-ai acquis le savoir-faire nécessaire à la menée et l'analyse d'expériences
-in-situ (écologiquement valides) et contrôlées.
+Polytechnique Fédérale de Lausanne (2013-...), où j'ai pris en charge la
+coordination des activités robotiques au sein du laboratoire d'ergonomie
+éducative. Ce laboratoire (CHILI-EPFL) est connu pour son expertise dans l'étude
+des interactions homme-machine et homme-homme durant les phases d'apprentissage.
+J'y ai acquis le savoir-faire nécessaire à la menée et l'analyse d'expériences
+in-situ (écologiquement valides) impliquant des sujets humains.
 
 J'y supervise deux projets principaux. Le premier s'intéresse aux interactions
 sur la durée entre un robot et des enfants~\cite{fink2014which}. Il m'a
@@ -236,7 +236,7 @@ permis, entre autres, d'étudier l'impact des comportements anthropomorphiques
 sur l'interaction homme-robot sur le long terme~\cite{lemaignan2014dynamics}. Le
 second projet repose sur l'idée du \emph{learning by teaching}, et propose de
 mettre en place une interaction enfant-robot durant laquelle l'enfant
-\emph{montre} au robot (Nao) comment écrire. La question que est de savoir si
+\emph{montre} au robot (Nao) comment écrire. La question est de savoir si
 une telle situation peut créer une forme interaction originale qui permette
 d'établir une relation pérenne et qui soutienne efficacement l'apprentissage.
 
@@ -257,18 +257,18 @@ j'ai été moniteur à l'INSA Toulouse, impliqué en particulier sur les travaux
 dirigés et pratiques en Prolog, sur les ontologies, en Java, ADA et SQL.
 
 J'ai aussi organisé et animé de nombreux cours et ateliers dans plusieurs
-domaines de la robotique et du développement logiciel, destinés principalement
-aux doctorants. Je suis ainsi intervenu sur la programmation avec ROS, les
-techniques de développement collaboratif, les cycles de développement ou encore
-l'utilisation d'outils sémantiques comme les ontologies. J'ai organisé plusieurs
-tutoriels internationaux sur la simulation en robotique (comme lors de la
-conférence EURON, en 2012 au Danemark), et je suis, depuis 2005, formateur au
-sein de l'association \emph{Planète Sciences} sur toutes les questions de
-robotique pédagogique.
+domaines de la robotique et du développement logiciel. Je suis ainsi intervenu
+sur la programmation en robotique avec ROS, les techniques de développement
+collaboratif, les cycles de développement ou encore l'utilisation d'outils
+sémantiques comme les ontologies. J'ai organisé plusieurs tutoriels
+internationaux sur la simulation en robotique (comme lors de la conférence
+EURON, en 2012 au Danemark), et je suis, depuis 2005, formateur au sein de
+l'association \emph{Planète Sciences} sur toutes les questions de robotique
+pédagogique.
 
 Par ailleurs, j'ai été amené à encadrer plusieurs étudiants ces dernières
 années. Une dizaine d'étudiants au niveau master au total (dont le travail, pour
-certains, a débouché ensuite sur des publications, comme~\cite{Lemaignan2011a}),
+certains, a débouché sur des publications, comme~\cite{Lemaignan2011a}),
 et, durant mon post-doctorat à l'EPFL, deux doctorants (Julia Fink et Shruti
 Chandra). L'une travaille sur la question de l'anthropomorphisme lors
 l'interaction homme-machine de longue durée, tandis que l'autre travaille sur
@@ -282,15 +282,15 @@ culture scientifique \emph{Planète Sciences}, dont j'ai présidé pendant deux 
 la section robotique, j'ai été, durant mon doctorat, vice-président de
 l'association \emph{InCOGnu}, antenne Sud-Ouest de la Fédération Française des
 Étudiants et Jeunes Chercheurs en Sciences de la Cognition (FRESCO). Mon
-activité au sein de cette association de jeunes chercheurs m'a permis de
-m'ouvrir assez largement à la dimension interdisciplinaire de la recherche en
-sciences cognitives, en particulier à travers les conférences mensuelles que
-nous avons proposés, et où intervenait des chercheurs confirmés issus de tous
-les domaines des sciences cognitives.  C'est aussi dans le cadre d'InCOGnu que
-j'ai participé à l'organisation de la conférence nationale CJCSC à Toulouse en 2009.
+activité au sein de cette association m'a permis de m'ouvrir à la dimension
+interdisciplinaire de la recherche en sciences cognitives, en particulier à
+travers les conférences mensuelles que nous avons proposés, et où intervenait
+des chercheurs confirmés issus de tous les domaines des sciences cognitives.
+C'est aussi dans le cadre d'InCOGnu que j'ai participé à l'organisation de la
+conférence nationale CJCSC à Toulouse en 2009.
 
 Plus récemment, j'ai organisé et animé en 2012 le premier workshop international
-sur le simulateur MORSE auquel une quinzaine de chercheurs ont participé.
+sur le simulateur MORSE auquel une quinzaine de chercheurs européens ont participé.
 
 Je suis par ailleurs relecteur régulier pour les principales conférences en
 robotique (IROS, ICRA, RoMAN, HRI).
@@ -316,20 +316,20 @@ Le premier de ces projets est le simulateur MORSE~\cite{Echeverria2011,
 echeverria2012simulating}. Le projet a pris une ampleur certaine, avec plus de
 25 contributeurs du monde entier, son intégration officielle dans le projet
 Debian, et un workshop annuel. J'en suis le concepteur initial, l'un des
-principaux contributeurs, et j'anime la communauté des
-développeurs. J'ai en particulier travaillé sur l'utilisation de MORSE pour
-simuler des interactions homme-robot~\cite{lemaignan2012morse}.
+principaux contributeurs, et j'anime la communauté des développeurs. J'ai en
+particulier travaillé sur l'utilisation de MORSE en interactions
+homme-robot~\cite{lemaignan2012morse}.
 
-ROS (Robot Operating System) est un autre projet dans lequel je suis impliqué.
-J'ai plusieurs contributions dans le noyau même de ROS, et je fais partie de
-l'équipe qui a adapté ROS au robot Nao.
+ROS (\emph{Robot Operating System}) est un autre projet dans lequel je suis
+impliqué.  J'ai plusieurs contributions au niveau noyau, et je fais partie de
+l'équipe qui a adapté ROS pour le robot Nao.
 
 Enfin, je suis impliqué dans la conception d'outils logiciels plus spécialisés,
 comme GenoM~\cite{mallet2010genom3}.
 
 \subsection{Pour conclure}
 
-Pour conclure cette première partie, je souhaiterais revenir sur trois traits de
+Pour conclure cette première partie, je souhaiterais souligner trois traits de
 mon parcours : la place particulière donnée à la validation expérimentale de mes recherches, la dimension internationale de mon itinéraire, et l'importance de
 l'interdisciplinarité.
 
@@ -412,7 +412,7 @@ laboratoire centré sur les technologies pour l'éducation, avec un savoir-faire
 fort dans le domaine de l'expérimentation homme-machine. J'y ai acquis une
 expérience essentielle pour pouvoir aujourd'hui mener des expériences en
 interaction homme-robot qui soient pertinentes, écologiquement valides, et
-méthodologiquement solides.
+méthodologiquement rigoureuses.
 
 \printbibliography
 \clearpage
@@ -666,27 +666,24 @@ d'architectures décisionnelles pour les robots.
 \subsection{Architectures cognitives pour l'interaction homme-robot}
 
 La recherche sur les architectures décisionnelles dite cognitives est un champ
-émergent de la recherche en robotique. Par \emph{cognitif}, on entend
-principalement une gestion explicite des connaissances, qui inclue d'une part
-ancrage symbolique, et d'autre part raisonnement symbolique. Si les techniques
-mises en jeu ne sont pas toutes nouvelles (planification symbolique de tâches,
-contrôleur d'exécution basé sur des machines à états finis, logique du premier
-ordre type Prolog, etc.), l'approche générale est originale dans la mesure où la
-représentation et la manipulation des connaissance y joue un rôle central (et
-s'appuie sur les techniques issues de l'ingénierie des connaissances et du Web
-sémantique), et où un certain nombre de processus cognitifs supérieurs peuvent y
-être intégrés (communication multi-modale naturelle~\cite{Chen2010,
-Lemaignan2011a}, raisonnement sur le \emph{common-sense}, mémoires
+émergent de la recherche en robotique. Si les techniques mises en jeu ne sont
+pas toutes nouvelles (planification symbolique de tâches, contrôleur d'exécution
+basé sur des machines à états finis, logique du premier ordre type Prolog,
+etc.), l'approche générale est nouvelle en robotique dans la mesure où la
+représentation et la manipulation des connaissances y joue un rôle central, et
+où un certain nombre de processus cognitifs supérieurs y sont intégrés
+(communication multi-modale naturelle~\cite{Chen2010, Lemaignan2011a},
+raisonnement sur le \emph{common-sense}, mémoires
 bio-inspirées~\cite{trafton2013act}, agrégation de sources d'informations en
 ligne~\cite{Beetz2010}, etc.).
 
-Peu de travaux s'intéressent cependant à l'étude des architectures cognitives
-dans le cadre de l'interaction homme-robot. J'ai montré durant mon doctorat
-qu'il était possible de construire et d'exploiter en ligne des modèles cognitifs
-riches des des autres agents, et d'intégrer ces modèles dans la prise de
+Encore peu de travaux s'intéressent cependant à l'étude des architectures
+cognitives dans le cadre de l'interaction homme-robot. J'ai montré durant mon
+doctorat qu'il était possible de construire et d'exploiter en ligne des modèles
+cognitifs riches des autres agents, et d'intégrer ces modèles dans la prise de
 décision~\cite{alami2011when, warnier2012when, lemaignan2014human}. Pour autant,
 une traduction systématique de mécanismes de cognition sociale en terme
-d'architecture décisionnelle est une question ouverte. La prise
+d'architecture décisionnelle est une question essentiellement ouverte. La prise
 en compte de codes et comportements sociaux implicites (ébauchée au niveau de la
 planification symbolique dans des travaux comme~\cite{Alili2009}) ou l'analyse
 d'environnements particulièrement riches en terme de sémantique (comme
@@ -698,7 +695,7 @@ Ce troisième axe de recherche vise non seulement à bâtir les ponts nécessair
 entre les approches théoriques et fondamentales des deux précédents axes d'une
 part, et les applications expérimentales de cette recherche d'autre part. Il
 s'agit aussi d'implémenter et d'organiser de manière formelle un nombre élevé de
-mécanismes cognitifs en une architecture complète et pertinente, apte à être
+mécanismes cognitifs ego- \emph{et} allocentrés en une architecture complète et pertinente, apte à être
 déployée sur des robots d'interaction autonomes.
 
 \subsection{Programme expérimental}
