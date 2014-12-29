@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1817.1428"
+   height="1362.8572"
+   id="svg26638"
+   version="1.1"
+   inkscape:version="0.48+devel r"
+   sodipodi:docname="signaux.svg">
+  <defs
+     id="defs26640" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.12374369"
+     inkscape:cx="757.30637"
+     inkscape:cy="-151.33577"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1600"
+     inkscape:window-height="838"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata26643">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(834.28571,3.3521075)"
+     sodipodi:insensitive="true">
+    <image
+       sodipodi:absref="/home/lemaigna/projects/projet-cnrs/figs/robots_home.jpg"
+       xlink:href="robots_home.jpg"
+       width="1817.1428"
+       height="1362.8572"
+       id="image27194"
+       x="-834.28571"
+       y="-3.3521075" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <g
+       id="g27203"
+       transform="matrix(0.80000001,0,0,0.80000001,969.14285,203.25314)">
+      <rect
+         transform="translate(-834.28571,-3.3521075)"
+         y="931.42859"
+         x="1094.2858"
+         height="142.85715"
+         width="391.42856"
+         id="rect27201"
+         style="opacity:0.51000001;color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#eeeeee;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text27197"
+         y="1029.8496"
+         x="295.34393"
+         style="font-size:86.55180359px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="1029.8496"
+           x="295.34393"
+           id="tspan27199"
+           sodipodi:role="line">Posture</tspan></text>
+    </g>
+    <g
+       transform="matrix(0.80000001,0,0,0.80000001,1254.8572,-96.746867)"
+       id="g27208">
+      <rect
+         style="opacity:0.51000001;color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#eeeeee;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
+         id="rect27210"
+         width="391.42856"
+         height="142.85715"
+         x="1094.2858"
+         y="931.42859"
+         transform="translate(-834.28571,-3.3521075)" />
+      <text
+         xml:space="preserve"
+         style="font-size:86.55180359px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="295.34393"
+         y="1029.8496"
+         id="text27212"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan27214"
+           x="295.34393"
+           y="1029.8496">Gestes</tspan></text>
+    </g>
+    <g
+       id="g27216"
+       transform="matrix(0.80000001,0,0,0.80000001,1200.7151,-354.47846)">
+      <rect
+         transform="translate(-834.28571,-3.3521075)"
+         y="931.42859"
+         x="1094.2858"
+         height="142.85715"
+         width="391.42856"
+         id="rect27218"
+         style="opacity:0.51000001;color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#eeeeee;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text27220"
+         y="1029.8496"
+         x="295.34393"
+         style="font-size:86.55180359px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="1029.8496"
+           x="295.34393"
+           id="tspan27222"
+           sodipodi:role="line">Regard</tspan></text>
+    </g>
+    <path
+       style="opacity:0.79104477;color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#eeeeee;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
+       d="m 1272.4469,41.816779 189.4988,0 c 31.8933,0 57.5693,25.675884 57.5693,57.569236 l 0,50.373095 c 0,15.94667 -6.419,30.33898 -16.8247,40.74461 -10.4056,10.40565 -24.798,16.82463 -40.7446,16.82463 l 39.1289,56.82102 -133.8783,-56.82102 -94.7494,0 c -31.8934,0 -57.5693,-25.67589 -57.5693,-57.56924 l 0,-50.373095 c 0,-31.893352 25.6759,-57.569236 57.5693,-57.569236 z"
+       id="rect27276"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ssssssccssss" />
+    <text
+       xml:space="preserve"
+       style="font-size:69.24144745px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="1255.1627"
+       y="150.19304"
+       id="text27279"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan27281"
+         x="1255.1627"
+         y="150.19304">Parole</tspan></text>
+    <g
+       id="layer1-3"
+       inkscape:label="Layer 1"
+       transform="translate(2522.6636,409.94108)">
+      <g
+         id="g27332"
+         transform="translate(-68.690373,-1131.3708)">
+        <path
+           style="opacity:0.49500002;color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           d="m -2225.5292,1250.2391 513.5925,-68.7745 117.9797,361.3271 -400.1436,378.876 z"
+           id="rect4731"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="opacity:0.61199999;color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:none;stroke:#373737;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:10, 5;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
+           d="m -894.10061,960.23912 -1331.42859,289.99998 231.4286,671.4286 z"
+           id="path4734"
+           inkscape:connector-curvature="0" />
+        <path
+           style="opacity:0.61199999;color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:none;stroke:#373737;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:10, 5;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
+           d="m -894.10061,960.23912 -813.79549,219.20518 115.9594,361.3271 z"
+           id="path4740"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccc" />
+      </g>
+    </g>
+    <g
+       transform="matrix(0.80000001,0,0,0.80000001,461.28344,-83.757578)"
+       id="g27337">
+      <rect
+         style="opacity:0.51000001;color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#eeeeee;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
+         id="rect27339"
+         width="557.5"
+         height="141.96429"
+         x="260.00006"
+         y="928.96936" />
+      <text
+         xml:space="preserve"
+         style="font-size:86.55180359px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="295.34393"
+         y="1029.8496"
+         id="text27341"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan27343"
+           x="295.34393"
+           y="1029.8496">Perspective</tspan></text>
+    </g>
+  </g>
+</svg>

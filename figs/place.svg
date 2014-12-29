@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1714.3635"
+   height="630.93677"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48+devel r"
+   sodipodi:docname="place.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35355339"
+     inkscape:cx="735.93688"
+     inkscape:cy="23.655427"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="838"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     fit-margin-top="0.5"
+     fit-margin-left="0"
+     fit-margin-right="0.1"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(277.81247,180.0746)">
+    <g
+       id="g4044"
+       transform="translate(-14.28571,-414.85714)">
+      <path
+         sodipodi:type="arc"
+         style="opacity:0.55699978;color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#d40000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.60000002;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
+         id="path4038"
+         sodipodi:cx="260"
+         sodipodi:cy="256.64789"
+         sodipodi:rx="111.42857"
+         sodipodi:ry="102.85714"
+         d="m 371.42857,256.64789 c 0,56.80643 -49.88827,102.85714 -111.42857,102.85714 -61.5403,0 -111.42857,-46.05071 -111.42857,-102.85714 0,-56.80643 49.88827,-102.85714 111.42857,-102.85714 61.5403,0 111.42857,46.05071 111.42857,102.85714 z"
+         transform="matrix(3.275641,0,0,2.4166668,-278.09522,-115.01309)" />
+      <text
+         xml:space="preserve"
+         style="font-size:47.81496048px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="573.77502"
+         y="320.7821"
+         id="text4040"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan4042"
+           x="573.77502"
+           y="320.7821"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;text-anchor:middle;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium">Robotique</tspan><tspan
+           sodipodi:role="line"
+           x="573.77502"
+           y="380.55081"
+           id="tspan4045"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;text-anchor:middle;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium">cognitive</tspan></text>
+    </g>
+    <g
+       id="g4825"
+       transform="translate(-15.176586,0)">
+      <g
+         transform="matrix(1.0238895,0,0,1.0238895,-25.694555,-53.90979)"
+         id="g4049">
+        <path
+           sodipodi:type="arc"
+           style="color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#82cedd;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.60000002;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
+           id="path4032"
+           sodipodi:cx="260"
+           sodipodi:cy="256.64789"
+           sodipodi:rx="111.42857"
+           sodipodi:ry="102.85714"
+           d="m 371.42857,256.64789 c 0,56.80643 -49.88827,102.85714 -111.42857,102.85714 -61.5403,0 -111.42857,-46.05071 -111.42857,-102.85714 0,-56.80643 49.88827,-102.85714 111.42857,-102.85714 61.5403,0 111.42857,46.05071 111.42857,102.85714 z"
+           transform="matrix(2.1940394,0,0,1.4412039,-330.14331,-193.03769)" />
+        <text
+           xml:space="preserve"
+           style="font-size:32.46521378px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           x="241.00443"
+           y="145.21919"
+           id="text4034"
+           sodipodi:linespacing="125%"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+             sodipodi:role="line"
+             id="tspan4036"
+             x="241.00443"
+             y="145.21919">Approches</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+             id="tspan4043"
+             sodipodi:role="line"
+             x="241.00443"
+             y="185.8007">développementales,</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+             id="tspan4759"
+             sodipodi:role="line"
+             x="241.00443"
+             y="226.38223">apprentissage</tspan></text>
+      </g>
+      <g
+         id="g4047"
+         transform="matrix(1.0238895,0,0,1.0238895,515.73401,-47.112822)">
+        <path
+           sodipodi:type="arc"
+           style="color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#82cedd;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.60000002;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
+           id="path4032-4"
+           sodipodi:cx="260"
+           sodipodi:cy="256.64789"
+           sodipodi:rx="111.42857"
+           sodipodi:ry="102.85714"
+           d="m 371.42857,256.64789 c 0,56.80643 -49.88827,102.85714 -111.42857,102.85714 -61.5403,0 -111.42857,-46.05071 -111.42857,-102.85714 0,-56.80643 49.88827,-102.85714 111.42857,-102.85714 61.5403,0 111.42857,46.05071 111.42857,102.85714 z"
+           transform="matrix(2.1940394,0,0,1.4412039,-167.24518,-199.67607)" />
+        <text
+           sodipodi:linespacing="125%"
+           id="text4051"
+           y="158.87158"
+           x="403.10995"
+           style="font-size:32.46521378px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+           xml:space="preserve"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+             y="158.87158"
+             x="403.10995"
+             sodipodi:role="line"
+             id="tspan4055">Approches</tspan><tspan
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+             id="tspan4059"
+             y="199.45309"
+             x="403.10995"
+             sodipodi:role="line">épistémiques/sémantiques</tspan></text>
+      </g>
+      <g
+         transform="matrix(0,-0.77730745,0.77730745,0,350.67215,569.85125)"
+         id="g4807">
+        <path
+           inkscape:transform-center-y="-16.864649"
+           transform="translate(-108.5714,-158.70923)"
+           d="m 673.4375,284.81436 c 9.70792,0 74.19622,111.69703 69.34226,120.10433 -4.85396,8.4073 -133.83057,8.4073 -138.68453,-1e-5 -4.85395,-8.4073 59.63436,-120.10432 69.34227,-120.10432 z"
+           inkscape:randomized="0"
+           inkscape:rounded="0.07"
+           inkscape:flatsided="true"
+           sodipodi:arg2="-0.52359878"
+           sodipodi:arg1="-1.5707963"
+           sodipodi:r2="40.034775"
+           sodipodi:r1="80.06955"
+           sodipodi:cy="364.88391"
+           sodipodi:cx="673.4375"
+           sodipodi:sides="3"
+           id="path4801"
+           style="color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#816647;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.60000002;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
+           sodipodi:type="star" />
+        <path
+           sodipodi:type="star"
+           style="color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#816647;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.60000002;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
+           id="path4803"
+           sodipodi:sides="3"
+           sodipodi:cx="673.4375"
+           sodipodi:cy="364.88391"
+           sodipodi:r1="80.06955"
+           sodipodi:r2="40.034775"
+           sodipodi:arg1="-1.5707963"
+           sodipodi:arg2="-0.52359878"
+           inkscape:flatsided="true"
+           inkscape:rounded="0.07"
+           inkscape:randomized="0"
+           d="m 673.4375,284.81436 c 9.70792,0 74.19622,111.69703 69.34226,120.10433 -4.85396,8.4073 -133.83057,8.4073 -138.68453,-1e-5 -4.85395,-8.4073 59.63436,-120.10432 69.34227,-120.10432 z"
+           transform="matrix(-1,0,0,-1,1238.3036,731.26247)"
+           inkscape:transform-center-y="16.864646" />
+        <rect
+           style="color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#816647;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.60000002;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
+           id="rect4805"
+           width="49.718445"
+           height="134.79224"
+           x="540.0069"
+           y="216.62433" />
+      </g>
+    </g>
+    <g
+       transform="translate(-358.08034,-11.8125)"
+       id="g4073">
+      <path
+         transform="matrix(1.3461539,0,0,0.97222229,185.71429,105.70054)"
+         d="m 371.42857,256.64789 c 0,56.80643 -49.88827,102.85714 -111.42857,102.85714 -61.5403,0 -111.42857,-46.05071 -111.42857,-102.85714 0,-56.80643 49.88827,-102.85714 111.42857,-102.85714 61.5403,0 111.42857,46.05071 111.42857,102.85714 z"
+         sodipodi:ry="102.85714"
+         sodipodi:rx="111.42857"
+         sodipodi:cy="256.64789"
+         sodipodi:cx="260"
+         id="path4075"
+         style="color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#fee47e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.60000002;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
+         sodipodi:type="arc" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4077"
+         y="365.1037"
+         x="536.49573"
+         style="font-size:30.95620537px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="365.1037"
+           x="536.49573"
+           id="tspan4079"
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;text-anchor:middle;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium">Apprentissage</tspan><tspan
+           y="403.79895"
+           x="536.49573"
+           sodipodi:role="line"
+           id="tspan4041"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;text-anchor:middle;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium" /></text>
+    </g>
+    <g
+       id="g4079"
+       transform="translate(-663.52677,-164.3125)">
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#fee47e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.60000002;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
+         id="path4081"
+         sodipodi:cx="260"
+         sodipodi:cy="256.64789"
+         sodipodi:rx="111.42857"
+         sodipodi:ry="102.85714"
+         d="m 371.42857,256.64789 c 0,56.80643 -49.88827,102.85714 -111.42857,102.85714 -61.5403,0 -111.42857,-46.05071 -111.42857,-102.85714 0,-56.80643 49.88827,-102.85714 111.42857,-102.85714 61.5403,0 111.42857,46.05071 111.42857,102.85714 z"
+         transform="matrix(1.3461539,0,0,0.97222229,185.71429,105.70054)" />
+      <text
+         xml:space="preserve"
+         style="font-size:29.14020348px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="534.26294"
+         y="362.6243"
+         id="text4083"
+         sodipodi:linespacing="125%"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;text-anchor:middle;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+           id="tspan4087"
+           sodipodi:role="line"
+           x="534.26294"
+           y="362.6243">Signal (humain)</tspan></text>
+    </g>
+    <g
+       id="g4091"
+       transform="translate(515.38611,-437.65107)">
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#fee47e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.60000002;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
+         id="path4093"
+         sodipodi:cx="260"
+         sodipodi:cy="256.64789"
+         sodipodi:rx="111.42857"
+         sodipodi:ry="102.85714"
+         d="m 371.42857,256.64789 c 0,56.80643 -49.88827,102.85714 -111.42857,102.85714 -61.5403,0 -111.42857,-46.05071 -111.42857,-102.85714 0,-56.80643 49.88827,-102.85714 111.42857,-102.85714 61.5403,0 111.42857,46.05071 111.42857,102.85714 z"
+         transform="matrix(1.3461539,0,0,0.97222229,184.28572,108.55768)" />
+      <text
+         xml:space="preserve"
+         style="font-size:31.12328911px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="532.27765"
+         y="369.35464"
+         id="text4095"
+         sodipodi:linespacing="125%"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;text-anchor:middle;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+           id="tspan4099"
+           sodipodi:role="line"
+           x="532.27765"
+           y="369.35464">Ontologies</tspan></text>
+    </g>
+    <g
+       transform="translate(676.35523,-83.856423)"
+       id="g4103">
+      <path
+         transform="matrix(1.3461539,0,0,0.97222229,184.28572,108.55768)"
+         d="m 371.42857,256.64789 c 0,56.80643 -49.88827,102.85714 -111.42857,102.85714 -61.5403,0 -111.42857,-46.05071 -111.42857,-102.85714 0,-56.80643 49.88827,-102.85714 111.42857,-102.85714 61.5403,0 111.42857,46.05071 111.42857,102.85714 z"
+         sodipodi:ry="102.85714"
+         sodipodi:rx="111.42857"
+         sodipodi:cy="256.64789"
+         sodipodi:cx="260"
+         id="path4105"
+         style="color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#fee47e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.60000002;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
+         sodipodi:type="arc" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4107"
+         y="358.79938"
+         x="534.54352"
+         style="font-size:27.72175026px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="358.79938"
+           x="534.54352"
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;text-anchor:middle;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+           id="tspan4115">Traitement de la</tspan><tspan
+           y="393.45157"
+           x="534.54352"
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;text-anchor:middle;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+           id="tspan4814">langue naturelle</tspan></text>
+    </g>
+    <g
+       id="g4761"
+       transform="translate(376.65181,-7.214287)">
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#fee47e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.60000002;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
+         id="path4763"
+         sodipodi:cx="260"
+         sodipodi:cy="256.64789"
+         sodipodi:rx="111.42857"
+         sodipodi:ry="102.85714"
+         d="m 371.42857,256.64789 c 0,56.80643 -49.88827,102.85714 -111.42857,102.85714 -61.5403,0 -111.42857,-46.05071 -111.42857,-102.85714 0,-56.80643 49.88827,-102.85714 111.42857,-102.85714 61.5403,0 111.42857,46.05071 111.42857,102.85714 z"
+         transform="matrix(1.3461539,0,0,0.97222229,184.28572,108.55768)" />
+      <text
+         xml:space="preserve"
+         style="font-size:27.72175026px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="534.54352"
+         y="354.79938"
+         id="text4765"
+         sodipodi:linespacing="125%"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;text-anchor:middle;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+           sodipodi:role="line"
+           x="534.54352"
+           y="354.79938"
+           id="tspan4816">Analyse symbolique</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;text-anchor:middle;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+           sodipodi:role="line"
+           x="534.54352"
+           y="389.45157"
+           id="tspan4823">de situation</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;text-anchor:middle;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+           sodipodi:role="line"
+           x="534.54352"
+           y="424.10376"
+           id="tspan4775" /></text>
+    </g>
+    <g
+       id="g4777"
+       transform="translate(752.16532,-279.76207)">
+      <path
+         sodipodi:type="arc"
+         style="color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#fee47e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.60000002;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
+         id="path4779"
+         sodipodi:cx="260"
+         sodipodi:cy="256.64789"
+         sodipodi:rx="111.42857"
+         sodipodi:ry="102.85714"
+         d="m 371.42857,256.64789 c 0,56.80643 -49.88827,102.85714 -111.42857,102.85714 -61.5403,0 -111.42857,-46.05071 -111.42857,-102.85714 0,-56.80643 49.88827,-102.85714 111.42857,-102.85714 61.5403,0 111.42857,46.05071 111.42857,102.85714 z"
+         transform="matrix(1.3461539,0,0,0.97222229,184.28572,108.55768)" />
+      <text
+         xml:space="preserve"
+         style="font-size:27.72175026px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         x="534.54352"
+         y="358.79938"
+         id="text4781"
+         sodipodi:linespacing="125%"><tspan
+           id="tspan4785"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;text-anchor:middle;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+           sodipodi:role="line"
+           x="534.54352"
+           y="358.79938">Web sémantique</tspan></text>
+    </g>
+    <g
+       transform="translate(-574.77677,-386.1875)"
+       id="g4789">
+      <path
+         transform="matrix(1.3461539,0,0,0.97222229,185.71429,105.70054)"
+         d="m 371.42857,256.64789 c 0,56.80643 -49.88827,102.85714 -111.42857,102.85714 -61.5403,0 -111.42857,-46.05071 -111.42857,-102.85714 0,-56.80643 49.88827,-102.85714 111.42857,-102.85714 61.5403,0 111.42857,46.05071 111.42857,102.85714 z"
+         sodipodi:ry="102.85714"
+         sodipodi:rx="111.42857"
+         sodipodi:cy="256.64789"
+         sodipodi:cx="260"
+         id="path4791"
+         style="color:#000000;color-interpolation:sRGB;color-interpolation-filters:linearRGB;fill:#fee47e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.60000002;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;clip-rule:nonzero;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto"
+         sodipodi:type="arc" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text4793"
+         y="338.6243"
+         x="534.26294"
+         style="font-size:29.14020348px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+         xml:space="preserve"><tspan
+           y="338.6243"
+           x="534.26294"
+           sodipodi:role="line"
+           id="tspan4795"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;text-anchor:middle;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium">Modèles</tspan><tspan
+           y="375.04956"
+           x="534.26294"
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;text-align:center;text-anchor:middle;font-family:URW Palladio L;-inkscape-font-specification:URW Palladio L Medium"
+           id="tspan4797">probabilistes</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,39 +1,30 @@
 
-TARGET=project.rst past-activities.rst
+TARGET=projet.tex
 
-DOT=$(wildcard images/*.dot)
-SVG=$(wildcard images/*/*.svg)
+DOT=$(wildcard figs/*.dot)
+SVG=$(wildcard figs/*.svg)
 
-all: project projet.pdf
+all: paper
 
-project: $(TARGET:.rst=.pdf)
+%.pdf: %.svg
+	inkscape --export-pdf $(@) $(<)
 
-%.tex: %.rst
-	rst2latex $(<) > $(@)
-
-#%.pdf: %.svg
-#	inkscape --export-pdf $(@) $(<)
-
-%.aux: project
+%.aux: paper
 
 %.svg: %.dot
 
 	twopi -Tsvg -o$(@) $(<)
 
-bib: $(TARGET:.rst=.bbl)
+bib: $(TARGET:.tex=.aux)
 
-%.bbl: %.aux
+	bibtex $(TARGET:.tex=.aux)
 
-	bibtex $(<)
-	touch $(<:.aux=.tex)
+paper: $(TARGET) $(SVG:.svg=.pdf) $(DOT:.dot=.pdf)
 
-%.pdf: %.tex $(SVG:.svg=.pdf) $(DOT:.dot=.pdf)
-
-	TEXFONTS=:./fonts TEXINPUTS=:./fonts:./sty pdflatex $(<)
-	touch $(<) #to make sure we can run several time pdflatex
+	TEXFONTS=:./fonts TEXINPUTS=:./fonts:./sty pdflatex $(TARGET)
 
 clean:
-	rm -f *.bbl *.blg *.aux *.log *.snm *.out *.toc *.nav *intermediate *~ *.glo *.ist $(TARGET:.rst=.tex) $(SVG:.svg=.pdf) $(DOT:.dot=.svg) $(DOT:.dot=.pdf)
+	rm -f *.aux *.log *.snm *.out *.toc *.nav *intermediate *~ *.glo *.ist $(SVG:.svg=.pdf) $(DOT:.dot=.svg) $(DOT:.dot=.pdf)
 
 distclean: clean
-	rm -f $(TARGET:.rst=.pdf)
+	rm -f $(TARGET:.tex=.pdf)
