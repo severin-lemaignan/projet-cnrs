@@ -144,125 +144,142 @@ processus décisionnels du robot?
 \subsection*{Axe 2 -- Unification des représentations, Application aux fonctions
 cognitives}
 
-Le deuxième axe de recherche s'intéresse à l'utilisation effective, en robotique
-cognitive, de cette approche continue, du signal au symbole sémantique. Il
-s'intéresse d'abord à la question de la représentation \emph{unifiée} des
-différentes modalités, ensuite à l'application de cette représentation pour
-implémenter de nouvelles compétences cognitives supérieures chez les robots. Je
-propose de focaliser cette recherche sur le domaine de la modélisation mutuelle
-homme-robot : comment le robot peut construire un modèle cognitif des
-connaissances et croyances de l'homme. Ceci pour donner au robot une
-\emph{théorie de l'esprit} au niveau des \emph{représentations} et non pas
-uniquement des perceptions, ce qui représente une avancée notable de l'état de
-l'art dans le domaine de la robotique socio-cognitive.
-
-\subsubsection*{Système de représentation}
-
 \begin{figure}
     \centering
 \includegraphics[width=0.8\textwidth]{figs/signaux}
 \caption{\small Un robot reconnait une situation de danger : le bébé se dirige
     vers une prise électrique. Cette interprétation nécessite une représentation
     \emph{unifiée} de l'environnement, incluant (a) un modèle géométrique et
-    temporel (permettant la reconnaissance probabiliste de séquences), (b) un
-    modèle de l'humain construit à partir des signaux qu'il émet (déplacement,
-    parole...) et de prise de perspective, (c) un modèle sémantique qui inclue
-    une représentation des affordances de l'environnement, une représentation du
-    contexte et un modèle du \emph{common-sense} (ici par exemple ``une prise est
-    dangereuse'').  }
+    temporel, (b) un modèle des croyances de l'humain construit à partir des
+    signaux qu'il émet (déplacement, parole...) et de prise de perspective, (c)
+    un modèle sémantique qui inclue une représentation des affordances de
+    l'environnement, une représentation du contexte et un modèle du
+    \emph{common-sense} (ici par exemple ``une prise est dangereuse'').}
 
 \label{babyplug}
 \end{figure}
 
-Le travail que j'ai mené durant mon doctorat m'a amené à analyser huit systèmes
-de représentation des connaissances effectivement déployés sur des robots. Un
-point clé de comparaison de ces systèmes est leur approche de l'ancrage
-symbolique (\emph{symbol grounding}) dans leur environnement physique, et il en
-ressort que la capacité pour un robot à représenter son environnement de manière
-(au moins partiellement) symbolique est à la
-fois la pierre angulaire de ses capacités cognitives supérieures (raisonnement,
-prise de décision, communication) et un défi qui n'est pas aujourd'hui traité
-dans toute son ampleur.
+Le deuxième axe de recherche s'intéresse à l'utilisation effective, en robotique
+cognitive, de cette approche continue, du signal au symbole sémantique. Il
+s'intéresse d'abord à la question de la représentation \emph{unifiée} des
+différentes modalités, ensuite à l'application de cette représentation pour
+implémenter de nouvelles compétences cognitives supérieures chez les robots.
+
+Je propose de focaliser cette recherche sur le domaine de la modélisation
+mutuelle homme-robot, \ie la construction par le robot d'un modèle riche des
+connaissances et croyances de l'homme (figure~\ref{babyplug}). Ce champ
+d'application est intéressant à plusieurs titres : d'un point de vue technique,
+il requiert des approches très multi-modales (chaque modalités venant enrichir
+le modèle) et exige une perception fine et rapide pour reconnaitre des signaux
+humains subtils ; d'un point de vue scientifique, il fait partie des sujets qui
+focalisent actuellement l'attention de la communauté, se situe à un carrefour
+disciplinaire particulièrement intéressant, entre psychologie, robotique et
+intelligence artificielle, et il représente une compétence socio-cognitive
+humaine complexe dont une implémentation générique serait une avancée notable de
+l'état de l'art.
+
+\paragraph{Systèmes de représentation}
+
+L'état de l'art dans le domaine des systèmes de représentation d'environnement
+pour les robots est divisé entre les systèmes géométriques/symboliques
+(typiquement \emph{amodaux}, et utilisés par l'essentiel des systèmes robotiques
+autonomes de haut-niveau, type robotique de service ou robotique d'extérieure),
+les approches ancrées (typiquement \emph{modales}), et un certain nombre de
+techniques mixtes. Dans la continuité de l'Axe 1, je souhaite rechercher et
+introduire un nouveau modèle de l'environnement qui \textbf{unifie} l'ensemble
+des outils ancrés présentés ci-dessus avec une représentation symbolique
+abstraite de haut-niveau.
 
 Les recherches actuelles sont essentiellement focalisées sur la représentation
-géométrique de l'environnement du robot. La construction en ligne de
-cartes sémantiques~\cite{Nuechter2008, Galindo2008,
-Blodow2011} ou l'utilisation d'affordances fonctionnelles~\cite{Varadarajan2011}
-sont des exemples de l'état de l'art au regard de la construction de liens
-géométrique-symbolique sur l'environnement spatial du robot.
+géométrique de l'environnement du robot. La construction en ligne de cartes
+sémantiques~\cite{Nuechter2008, Galindo2008, Blodow2011} ou l'utilisation
+d'affordances fonctionnelles~\cite{Varadarajan2011} sont des exemples de l'état
+de l'art au regard de la construction de liens géométrique-symbolique sur
+l'environnement spatial du robot. Ceci débouche sur des représentations
+\emph{amodales} (plusieurs modalités sont abstraites dans une représentation
+commune) de l'environnement, prenant éventuellement en compte les incertitudes,
+voire permettant de représenter des entités spatiales non-vues (fusion avec une
+modalité de dialogue qui décrit un objet non-visible pour le
+robot)~\cite{Mavridis2006}. Ces approches sont cependant cantonnées à des
+percepts spatiaux.
 
-De même, le travail sur une représentation \emph{amodale} de
-l'environnement~\cite{Mavridis2006}, prenant en compte les incertitudes et
-permettant de représenter des entités spatiales non-vues (donc de les imaginer),
-apporte plusieurs idées importantes, mais se cantonne essentiellement aux
-aspects spatiaux.
-
-La représentation de l'environnement temporel du robot a aussi fait l'objet de
-recherches (avec les idées de \emph{chroniques}~\cite{Ghallab1996}, les
-approches par \emph{fluents}~\cite{mosenlechner2010becoming}, l'idée
-d'\emph{instantanés}~\cite{Mavridis2006}), mais la plupart de ces travaux
-s'apparentent à une journalisation des événements, accompagnée d'outils
-d'analyse et d'apprentissage (en général hors-ligne). Ni la possibilité de
-naviguer naturellement dans les états antérieurs, ni la création et la
-représentation d'états futurs hypothétiques ne sont intégrées au niveau d'une
+La représentation symbolique de l'environnement temporel du robot a aussi fait
+l'objet de recherches (avec les idées de \emph{chroniques}~\cite{Ghallab1996},
+toutes les logiques temporelles comme la \emph{Linear Temporal Logic}, ou encore
+l'idée d'\emph{instantanés}~\cite{Mavridis2006}).  La possibilité de se projeter
+naturellement dans les états antérieurs du robot, ou de créer et de représenter
+des états futurs hypothétiques n'est cependant pas intégrée au niveau d'une
 représentation globale de l'environnement du robot.
 
-Quant à l'intégration de la représentation d'affordances, de contextes (en
-particulier, de contextes sociaux, comme dans la figure~\ref{babyplug}), de
-modèles de croyances et d'intentions, le travail reste largement à faire (on
-peut toutefois mentionner la représentation de différentes perspectives, comme
+Quant à l'intégration de la représentation symbolique d'affordances, de
+contextes (comme illustré dans la figure~\ref{babyplug}), de modèles de
+croyances et d'intentions, le travail reste largement à faire (on peut toutefois
+mentionner la représentation de différentes perspectives, comme
 dans~\cite{ros2010which}). Le premier de ces défis étant d'ailleurs de concevoir
 une modalité de représentation pour les affordances, contextes, croyances qui
 puisse être unifiée dans un modèle de l'environnement.
 
-Cette axe de recherche, qui prend son point de départ dans mon travail de
-post-doctorat au LAAS, vise à faire progresser l'état de l'art dans le domaine
-de l'ancrage symbolique en proposant de concevoir et d'implémenter une
-représentation unifiée de l'environnement du robot, fusionnant les modèles
-continus (modèles géométrique, historique des évènements, etc.) et les modèles
-symboliques (connaissances symboliques générales sur le monde, croyances des
-agents, affordances, etc.). Je conçois ce modèle de l'\emph{Umwelt} du robot (le
-monde \emph{perçu}, \emph{propre} du robot) comme une brique importante devant
-servir de support pour le développement et l'intégration d'architectures
-décisionnelles pour les robots.
+À l'opposé, les approches développementales traitent la question de la
+représentation de l'environnement de manière modale : chaque modalité existe en
+tant que telle, et les interactions entre modalités sont découverte et apprise
+par le système au sein de boucle sensori-motrices. Cependant, comme souligné
+par Pezzulo~\cite{pezzulo2012computational}, l'organisation de ces interactions
+pour alimenter des processus cognitifs abstraits reste essentiellement une
+question ouverte.
 
+[TBD: DyKnow, CAST...]
 
-\cite{pezzulo2012computational} -> p5: modal vs amodal representation -> ``zones
-de convergences'' des représentations chez [Damasio, 1989] et [Simmons et Barsalou,
-2003].
+\begin{figure}
+    \centering
+\includegraphics[width=1.0\textwidth]{figs/worlds}
+\caption{\small Le système \emph{underworlds} envisage la représentation de
+    l'environnement sous la forme de mondes (\emph{world A, B, C...}) qui
+    évoluent de manière indépendante les uns des autres. Chaque monde a son
+    propre historique (\emph{timeline}) et sa propre géométrie (\emph{scene}).
+    Les mondes dérivent les uns des autres par des transformations
+    (\emph{filters}) successives qui sont alimentées par la perception et les
+    connaissances du robot.  }
 
-\subsubsection*{Modélisation mutuelle homme-robot}
+\label{worlds}
+\end{figure}
 
-Comme je l'ai présenté dans~\cite{lemaignan2014human}, si la robotique
-cognitive, qui hérite à ce titre de la psychologie cognitive, s'intéresse aux
-processus mentaux comme l'\emph{attention}, l'utilisation du \emph{langage}, la
-\emph{mémoire} ou les processus de \emph{prise de décision}, la cognition
-sociale y ajoute les aspects lié à la prise en compte des interactions avec
-d'autres agents : \emph{représentation des croyances}, \emph{prise de
-perspective}, \emph{action conjointe}, et tous les aspects liés à la
-\emph{communication}.
+Je propose de faire avancer cette question : La figure~\ref{worlds} propose un
+point de départ, conçu et prototypé durant mes post-doctorats, vers un nouveau
+paradigme de représentation de l'environnement, basé sur l'idée de
+\textbf{mondes} existant et évoluant indépendamment (et donc, pouvant
+représenter des facettes différentes de la réalité du robot, comme un état futur
+hypothétique, l'état du monde tel que perçu par un autre agent, etc.), mais
+dérivant les uns des autres via des \textbf{filtres cognitifs} (similaires aux
+\emph{zones de convergences} suggérées par Damasio~\cite{damasio1989time} en
+neurosciences). Je souhaite approfondir cette approche pour y intégrer les
+techniques présentées dans l'Axe 1, et valider ce modèle de représentation dans
+des scénarios expérimentaux.
 
-Les dynamiques sociales humains s'appuient sur la capacité à attribuer de
-manière pertinente des croyances, des buts et des percepts aux autres. Cet
-ensemble de capacités meta-représentationelles forment ce qu'on appelle une
-théorie de l'esprit, et conduit à la modélisation mutuelle : la capacité
-réciproque d'établir un modèle mental de l'autre. Ceci se retrouve au c\oe ur
-des interactions humains : une interaction sociale normale dépend de la
-reconnaissance de perspectives sensorielles différentes, de la compréhension
-d'états mentaux différents, et de la reconnaissance d'indices attentionels et
-émotionels non-verbaux complexes. Transférer de telles compétences cognitives aux
-robots sociaux apparait ainsi comme un objet de recherche important en
-interaction homme-robot.
+\paragraph{Modélisation mutuelle homme-robot}
 
-Cependant, jusqu'à présent, la communauté de l'interaction homme-machine n'a
-qu'effleuré cette question : Scassellati donnait en 2002
-dans~\cite{scassellati2002theory} un premier aperçu des modèles de Leslie et
-Baron-Cohen de la construction d'une théorie de l'esprit du point de vue de la
-robotique, sans réelle implémentation. Depuis, la recherche dans ce domaine
-s'est essentiellement focalisée sur des applications de prise de perspective
-(``\emph{je vois que tu ne vois pas le livre}''), utilisant la vision comme
-principale (souvent unique) modalité sensorielle. Les principaux travaux sur
-cette questions sont par Breazeal~\cite{breazeal2006using},
+Je propose de travailler sur cette problématique de la représentation dans le cadre
+précis de la modélisation mutuelle homme-robot. Les dynamiques sociales humains
+s'appuient sur la capacité à attribuer de manière pertinente des croyances, des
+buts et des percepts aux autres. Cet ensemble de capacités
+meta-représentationelles forment ce qu'on appelle une théorie de l'esprit, et
+conduit à la modélisation mutuelle : la capacité réciproque d'établir un modèle
+mental de l'autre. Ceci se retrouve au c\oe ur des interactions humaines : une
+interaction sociale normale dépend de la reconnaissance de perspectives
+sensorielles différentes, de la compréhension d'états mentaux différents, et de
+la reconnaissance d'indices attentionels et émotionels non-verbaux complexes.
+Ce mélange complexe de signal humain et social, et de modélisation sémantique
+constitue un défi qui fait de la modélisation mutuelle un bon champ
+d'application pour traiter la question de la représentation de l'environnement
+du robot.
+
+Jusqu'à présent, la communauté de l'interaction homme-machine n'a qu'effleuré
+cette question : Scassellati donnait en 2002 dans~\cite{scassellati2002theory}
+un premier aperçu de la construction d'une théorie de l'esprit du point de vue
+de la robotique, sans réelle implémentation. Depuis, la recherche dans ce
+domaine s'est essentiellement focalisée sur des applications de prise de
+perspective (``\emph{je vois que tu ne vois pas le livre}''), utilisant la
+vision comme principale (souvent unique) modalité sensorielle. Les principaux
+travaux sur cette questions sont par Breazeal~\cite{breazeal2006using},
 Trafton~\cite{Trafton2005} et Ros~\cite{Ros2010} (j'ai étroitement travaillé
 avec cette dernière sur ces questions).
 
@@ -286,29 +303,20 @@ avec cette dernière sur ces questions).
 En se basant sur une prise de perspective uniquement visuelle, Breazeal
 \etal\cite{breazeal2009embodied} et Warnier \etal\cite{warnier2012when} (travail
 auquel j'ai participé) ont pu implémenter le test classique de théorie de
-l'esprit, l'expérience de Sally et Anne (figure~\ref{false-beliefs}, introduite
-par Wimmer~\cite{wimmer1983beliefs}, protocole expérimental par
-Baron-Cohen~\cite{baron1985does}). Ils ont pu faire la démonstration de systèmes
-complets dans lesquels le robot reconnait et prend en compte des
-situations de croyances fausses durant des interactions dyadiques ou triadiques,
-et met en \oe uvre des comportements permettant d'aider le partenaire humain en
-fonction des connaissances manquantes ou fausses de celui-ci.
+l'esprit, l'expérience de Sally et Anne (figure~\ref{false-beliefs}). Ils ont pu
+faire la démonstration de systèmes complets dans lesquels le robot reconnait et
+prend en compte des situations de croyances fausses et met en \oe uvre des
+comportements permettant d'aider le partenaire humain en fonction des
+connaissances manquantes ou fausses de celui-ci.
 
-Ces résultats sont importants et rassurant quant à la possibilité de doter les
-robots de compétences socio-cognitives avancées. Intuitivement, on voit
-cependant aussi que la modélisation mutuelle ne se résume pas au calcul de ce
-que l'humain voit ou ne voit pas. Les perceptions se traduisent en
-représentations subjectives : comment pouvons nous y accéder ? comment mesurer
-ce que l'autre sait de moi-même ? les modèles mutuels se superposent à l'infini
-en ``Je sais que tu sais que je sais...'' : comment les représenter et
-les manipuler ? Se pose aussi la question de la dimensionalité de ces modèles :
-doivent-ils être locaux à la tâche en cours, ou plus généraux ? Comment
-différencier une réelle modélisation cognitive d'une simple imitation durant une
-action conjointe ? Toutes ces questions soulingent la complexité d'un mécanisme
-cognitif dont l'étude se situe au croisement de plusieurs champs académiques. La
-robotique, en tant que science de l'intelligence artificielle incarnée, peut et
-doit être le point de convergence pour valider notre compréhension de cette
-compétence socio-cognitive.
+Un travail considérable reste à mener pour généraliser ces résultats au-delà de
+percepts visuels simples (``je vois que tu vois...'').
+J'ai ébauché dans~\ref{lemaignan2015mutual} un certain nombre de pistes (issues
+de la psychologie expérimentale, de la communauté du \emph{Collaborative
+Learning} et de l'épistémologie formelle) pour avancer dans cette direction.
+L'apport d'un système de représentation unifiant signaux et symboles est l'un
+des points clés pouvant effectivement permettre un progrès significatif de
+l'état de l'art dans ce domaine.
 
 \subsection*{Axe 3 -- Décision distribuée et architecture cognitive pour l'interaction homme-robot}
 
