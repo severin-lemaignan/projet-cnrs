@@ -17,7 +17,7 @@ all: paper
 
 bib: $(TARGET:.tex=.aux)
 
-	bibtex $(TARGET:.tex=.aux)
+	biber $(TARGET:.tex=)
 
 paper: $(TARGET) $(SVG:.svg=.pdf) $(DOT:.dot=.pdf)
 

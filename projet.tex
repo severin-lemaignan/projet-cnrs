@@ -22,7 +22,7 @@
 
 \graphicspath{{figs/}}
 
-\title{Vers le robot cognitif : unifier le signal et le symbole\\ 
+\title{Vers le robot cognitif :\\ unifier le signal et le symbole\\ 
     {\large Programme de recherche}}
 
 \author{Séverin Lemaignan}
@@ -40,66 +40,68 @@
 \end{figure}
 
 
-Deux courants majeurs structurent la recherche en robotique cognitive:
-les approches dite épigénétiques ou ancrées d'une part, dans lesquelles
-un certains nombre de mécanismes cognitifs émergent ou sont appris par le robot
-au contact de son environnement et de ses interactions (en particulier avec les
-humains) ; les approches épistémiques d'autre part, dans lesquelles les robots
-manipulent des corpus pré-existants de connaissances, et qui travaillent avec des
-concepts essentiellement symboliques et abstraits, dont la sémantique est explicite.
+Deux courants majeurs structurent la recherche en robotique cognitive: les
+approches dite épigénétiques (ou développementales, ou encore ancrées) d'une
+part, dans lesquelles un certains nombre de mécanismes cognitifs émergent ou
+sont appris par le robot au contact de son environnement et de ses interactions
+(en particulier avec les humains) ; les approches épistémiques d'autre part,
+dans lesquelles les robots manipulent des corpus pré-existants de connaissances,
+et qui travaillent avec des concepts essentiellement symboliques et abstraits,
+dont la sémantique est explicite.
 
 Mes activités de recherche antérieures se sont focalisées sur les secondes, dans
-un cadre particulier, qui a l'intérêt d'amener des situations riches et complexes
-d'un point de vue sémantique : l'interaction homme-robot. Ce choix m'a permis de
-mener de premières recherches fructueuses, tant sur la représentation des
-connaissances du robot que sur l'implémentation de capacités cognitives
-avancées chez les robots (dans le domaine du langage naturel par exemple). Ces
-recherches ont été sanctionnées par un prix de thèse en robotique.
+le cadre particulier de l'interaction homme-robot, qui a l'intérêt d'imposer des
+situations riches et complexes d'un point de vue sémantique. Ce choix m'a permis
+de mener de premières recherches fructueuses -- sanctionnées par le prix de
+thèse du GdR Robotique -- tant sur la représentation des connaissances du robot
+que sur l'implémentation de capacités cognitives avancées chez les robots (dans
+le domaine du langage naturel par exemple). 
 
-Pourtant, ces approches épistémiques et symboliques souffrent d'un manque de
-polyvalence et d'adaptibilité. Elles ne sont pas bien adaptées à la
-représentation des phénomènes continus ou stochastiques, et ne permettent pas
-facilement d'apprendre et de généraliser à partir de situations vécues par le
-robot. Ce sont là au contraire les points forts des approches développementales.
-Jusqu'à récemment, ces dernières ont cependant souvent été limitées à des
-fonctions cognitives simples. Des efforts récents~\cite{morse2010epigenetic,
+Les approches symboliques souffrent cependant d'un manque de polyvalence et
+d'adaptibilité. Elles ne sont pas bien adaptées à la représentation des
+phénomènes continus ou stochastiques, et ne permettent pas facilement
+d'apprendre et de généraliser à partir de situations vécues par le robot. Ce
+sont là au contraire les points forts des approches développementales.  Jusqu'à
+récemment, ces dernières ont cependant souvent été limitées à des fonctions
+cognitives simples. Des efforts récents~\cite{morse2010epigenetic,
 pezzulo2012computational} tentent de construire un pont entre les deux
 approches, en proposant d'employer la robotique cognitive comme
 \emph{méthodologie} pour étudier une cognition ancrée et computationelle. Ces
-travaux visent en premier lieu à mieux comprendre la cognition \emph{humaine} en
-employant le robot comme un support de modélisation.
+travaux visent toutefois en premier lieu à mieux comprendre la cognition
+\underline{humaine} en employant uniquement le robot comme un support de
+modélisation.
 
-Le c\oe ur du projet scientifique que je propose se situe de même au carrefour
+Le c\oe ur du projet scientifique que je propose se situe lui aussi au carrefour
 de ces deux approches, mais garde une perspective essentiellement robotique :
-mon objectif est d'accroitre l'autonomie des robots dans des environnements
-particulièrement complexes. La problématique que je propose de traiter est ainsi
-comment \textbf{mettre en place les ponts entre robotique cognitive
-développementale d'une part et épistémique d'autre part, afin de faire
-progresser de manière disruptive la qualité et la puissance des modèles
-construits et manipulés par les robots, et ainsi, leur autonomie}.
+mon objectif est d'\textbf{accroitre l'autonomie des robots} dans les
+environnements particulièrement complexes que sont les environnements humains.
+La problématique que je propose de traiter est ainsi comment \textbf{mettre en
+place les ponts entre robotique cognitive développementale d'une part et
+épistémique d'autre part, afin de faire progresser de manière disruptive la
+qualité et la puissance des modèles construits et manipulés par les robots, et
+ainsi, leur autonomie}.
 
 Je propose de plus de poser un cadre de recherche précis pour cette
 problématique : l'interaction homme-robot. Je veux y appliquer une double
 approche, à la fois \emph{bottom-up} en m'intéressant directement au
-\emph{signal humain émis durant l'interaction}, et \emph{top-down} en
-définissant a priori un certain nombre de tâches cognitives de haut-niveau que
-le robot doit pouvoir maitriser, incluant par exemple un dialogue multi-modal
-riche et pertinent ou encore l'implémentation de formes poussées de théorie de
-l'esprit.
+\emph{signal humain émis durant l'interaction}, et \emph{top-down} en étudiant
+explicitement un certain nombre de tâches cognitives de haut-niveau que le robot
+doit pouvoir maitriser, incluant un dialogue multi-modal riche et pertinent ou
+encore l'implémentation de formes poussées de théorie de l'esprit.
 
 L'idée maitresse sur laquelle je propose de mener mes recherches est ainsi la
-\textbf{combinaison nouvelle de techniques symboliques de type ontologies
-ancrées et de techniques d'apprentissage basées sur les signaux humains émis
-durant l'interaction homme-robot}. On peut ainsi parler d'\textbf{ontologies
-multimodales ancrées}, et à ce titre, ce projet de recherche se situe
-au carrefour de la robotique, de la cognition ancrée (``grounded'') qui inclue
-des techniques d'apprentissage, et de la cognition symbolique
-(figure~\ref{place}).
+\textbf{combinaison nouvelle de techniques d'apprentissage basées sur les
+signaux humains émis durant l'interaction homme-robot et de techniques
+symboliques de type ontologies ancrées}. On peut ainsi parler
+d'\textbf{ontologies multimodales ancrées}, et à ce titre, ce projet de
+recherche se situe au carrefour de la robotique, de la cognition ancrée
+(``grounded'') qui inclue les techniques d'apprentissage, et de la cognition
+symbolique (figure~\ref{place}).
 
 De manière symétrique, je propose aussi de travailler sur le pendant décisionnel
 de cette approche duale cognition ancrée/cognition symbolique en introduisant
 une rupture vis-à-vis des approches traditionnelles de type architectures en
-couche (contrôle bas-niveau/haut-niveau décisionnel) et architectures
+couche (contrôle bas-niveau/décision haut-niveau) et architectures
 hiérarchiques de type ``subsumption''. L'idée clé est ici de proposer un
 \textbf{schéma de décision semi-distribué} où un \textbf{composant cognitif
 symbolique orchestre (via des activations et des inhibitions) des boucles
@@ -119,31 +121,6 @@ Dans la continuité de l'expertise que j'ai acquise en post-doctorat, je propose
 d'ancrer et de valider mon travail dans un programme expérimental ambitieux, qui
 sache ``sortir du laboratoire'' pour se confronter à des environnements
 réalistes et complexes.
-
-Ce programme de recherche mêle étroitement robots et humains. Bien que mise en
-avant de manière répétée dans les orientations scientifiques européennes (au
-sein des \emph{Future and Emerging Technologies} (FETs), les technologies
-cognitives sont une des priorités affichées de l'agenda Horizon2020), la
-robotique cognitive est relativement peu représentée dans le paysage
-scientifique français, les principales équipes de dimensions internationales
-étant Flowers, à l'INRIA, et les laboratoires LAAS et ISIR au sein du CNRS. Je
-souhaiterais cependant, en premier choix, rejoindre le GIPSA Lab à Grenoble.
-Nouveau venu dans le domaine de la robotique, mais de réputation internationale
-dans le domaine de l'acquisition et du traitement du signal humain (en
-particulier de la parole), il me semble être un environnement remarquable pour
-faire progresser la recherche en interaction homme-robot avec des approches
-nouvelles et disruptives. Le laboratoire a de plus récemment acquis un robot iCub,
-parfaitement adapté à la recherche en interaction homme-robot, et prend depuis
-peu une orientation résoluement ``robotique cognitive'', comme le traduit le
-nouveau nom de l'équipe ``Cognitive Robotics, Interactive Systems and Speech
-Processing'' (CRISSP), anciennement MAGIC.  L'expertise en robotique
-d'interaction que je suis susceptible d'apporter s'inscrirait tout à fait dans
-cette dynamique.
-
-De plus, d'autres équipes du GIPSA Lab comme l'équipe PCMD (\emph{Parole
-Cerveau Multimodalité Développement}) sont spécialistes en cognition et en
-psychologie expérimentale, et représentent à ce titre un atout supplémentaire et
-renforcent l'intérêt de ce laboratoire pour mener mon programme de recherche.
 
 \subsection*{Axe 1 -- Du signal humain au modèle sémantique}
 
@@ -183,14 +160,17 @@ l'art dans le domaine de la robotique socio-cognitive.
 
 \begin{figure}
     \centering
-\includegraphics[width=0.7\textwidth]{figs/signaux}
-\caption{\small Pour comprendre ce type de situation, il est
-    nécessaire de construire une représentation \emph{unifiée} de
-    l'environnement, incluant un modèle géométrique, un modèle de l'humain
-    construit à partir des signaux qu'il émet, un modèle
-    sémantique (qui inclue une représentation des affordances), un modèle
-    temporel (qui puisse aussi être utilisé comme modèle prédictif), et enfin,
-    un modèle des croyances et intentions de l'humain.}
+\includegraphics[width=0.8\textwidth]{figs/signaux}
+\caption{\small Un robot reconnait une situation de danger : le bébé se dirige
+    vers une prise électrique. Cette interprétation nécessite une représentation
+    \emph{unifiée} de l'environnement, incluant (a) un modèle géométrique et
+    temporel (permettant la reconnaissance probabiliste de séquences), (b) un
+    modèle de l'humain construit à partir des signaux qu'il émet (déplacement,
+    parole...) et de prise de perspective, (c) un modèle sémantique qui inclue
+    une représentation des affordances de l'environnement, une représentation du
+    contexte et un modèle du \emph{common-sense} (ici par exemple ``une prise est
+    dangereuse'').  }
+
 \label{babyplug}
 \end{figure}
 
@@ -288,7 +268,7 @@ avec cette dernière sur ces questions).
 
 \begin{figure}[h!t]
         \centering
-        \includegraphics[width=0.7\linewidth]{sally_ann}
+        \includegraphics[width=1.0\linewidth]{sally_ann}
         \caption{\small L'expérience de ``False belief'': deux poupées, Anne
             et Sally, se font face, avec deux boites entre elles. Un enfant
             (le sujet) observe la scène. Sally place une balle dans la boite
@@ -335,26 +315,27 @@ compétence socio-cognitive.
 [TDB: A faire! développer vers l'idée de décision distribuée -- boucle
 sensori-motrices]
 
-L'idée de \emph{robotique cognitive} n'est pas récente (elle est mentionnée dès
-le début des années 1990 par Reiter~\cite{Levesque2008}), et est déjà établie
-comme un champ de recherche actif, formant le pendant des approches
-développementales de la robotique. Si ce domaine n'est pas nouveau, il est
-cependant traité de manière essentiellement atomique en robotique : les
-compétences cognitives sont implémentées et testées indépendamment les unes des
-autres, et comme le note Kurup~\cite{kurup2012what}, ce n'est que récemment que
-la robotique s'intéresse aux architectures cognitives holistiques développées en
-intelligence artificielle. Les travaux de Chen~\cite{Chen2010}, de
-Beetz~\etal~\cite{Beetz2010}, de Trafton~\etal sur
-ACT-R/E~\cite{trafton2013act}, les recherches menées par Baxter dans le cadre du
-projet européen ALIZ-E~\cite{baxter2013cognitive} et les travaux du
-LAAS-CNRS~\cite{lemaignan2014human} en sont les principaux exemples récents.
+Comme souligné par Kurup~\cite{kurup2012what}, les compétences cognitives des
+robots actuels sont la plupart du temps implémentées et testées indépendamment
+les unes des autres, sous forme de modules autonomes, et ce n'est que récemment
+que la robotique s'intéresse aux architectures cognitives holistiques
+développées en intelligence artificielle. Les travaux de Chen~\cite{Chen2010},
+de Beetz~\etal~\cite{Beetz2010}, de Trafton~\etal sur
+ACT-R/E~\cite{trafton2013act} et les travaux auxquels j'ai participé au
+LAAS-CNRS~\cite{lemaignan2014human} en sont parmi les principaux exemples
+récents. Ces architectures adoptent toutes une approche symbolique, dans
+laquelle les perceptions sont explicitement transformées en objets symboliques
+abstraits (typiquement, des formules de logique du premier ordre), avec lesquels
+les processus décisionnels travaillent.
 
+En parallèle, un second courant de recherche, animé en premier lieu par
+l'université de Plymouth (Cangelosi, Belpaeme~\etal), propose de considérer les
+architectures cognitives à travers une approche
+ancrée, s'appuyant sur des réseaux de neurones~\cite{morse2010epigenetic,
+baxter2013cognitive}. Ils montrent qu'un certain nombre de fonctions cognitives
+haut-niveau peuvent émerger ainsi, comme le phénomène d'alignement
+comportemental entre partenaires d'une interaction.
 
-
-~\cite{morse2010epigenetic}
-
-~\cite{baxter2013cognitive}: cognition as a memory activation issue, amorçage, importance
-de l'alignement comportemental entre partenaires d'une interaction
 %ACT-R/E est un exemple intéressant dans la mesure où l'architecture est conçue
 %en premier lieu pour l'interaction homme-robot, et elle est évaluée en se
 %référant explicitement à la psychologie développementale. Elle illustre aussi le
@@ -375,137 +356,147 @@ de l'alignement comportemental entre partenaires d'une interaction
 \end{figure}
 
 
-Mais de manière générale, encore peu de travaux s'intéressent à l'étude des
-architectures cognitives dans le cadre spécifique de l'interaction homme-robot,
-qui synthétise beaucoup des défis de la robotique : environements dynamiques dont la
-sémantique est complexe, suivi et représentation de l'homme, action conjointe,
-nécessité d'une grande réactivité pour assurer une interaction de qualité.
+De plus, peu d'architectures cognitives se sont spécifiquement confrontées au
+domaine de l'interaction homme-robot qui synthétise beaucoup des défis de la
+robotique : environnements dynamiques dont la sémantique est complexe, suivi et
+représentation de l'homme, action conjointe, nécessité d'une grande réactivité
+et d'un parallélisme fort pour assurer une interaction de qualité.
 
-J'ai montré
-durant mon doctorat qu'il était possible de construire et d'exploiter en ligne
-des modèles cognitifs riches des autres agents, et d'intégrer ces modèles dans
-la prise de décision~\cite{alami2011when, warnier2012when, lemaignan2014human}.
-Pour autant, une traduction systématique de mécanismes de cognition sociale en
-terme d'architecture décisionnelle est une question essentiellement ouverte. La
-prise en compte de codes et comportements sociaux implicites (ébauchée au niveau
-de la planification symbolique dans des travaux comme~\cite{Alili2009}) ou
-l'analyse d'environnements particulièrement riches en terme de sémantique (comme
-l'illustre la figure~\ref{babyplug}) sont des exemples des spécificités de
+J'ai montré durant mon doctorat qu'il était possible de construire et
+d'exploiter en ligne des modèles cognitifs riches des autres agents, et
+d'intégrer ces modèles dans la prise de décision~\cite{alami2011when,
+warnier2012when, lemaignan2014human}.  Pour autant, une traduction systématique
+de mécanismes de cognition sociale en terme d'architecture décisionnelle est une
+question essentiellement ouverte. La prise en compte de codes et comportements
+sociaux implicites (ébauchée au niveau de la planification symbolique dans des
+travaux comme~\cite{Alili2009}) ou l'analyse d'environnements particulièrement
+riches en terme de sémantique sont des exemples des spécificités de
 l'interaction homme-robot qui ont un impact important sur la conception d'une
 architecture de contrôle.
 
-Ce troisième axe de recherche vise non seulement à bâtir les ponts nécessaires
-entre les approches théoriques et fondamentales des deux précédents axes d'une
-part, et les applications expérimentales de cette recherche d'autre part. Il
-s'agit aussi d'implémenter et d'organiser de manière formelle un nombre élevé de
-mécanismes cognitifs ego- \emph{et} allocentrés en une architecture complète et pertinente, apte à être
-déployée sur des robots d'interaction autonomes.
 
 \subsection*{Programme expérimental}
 
 En me basant sur mon expérience acquise dans la menée d'expérience d'interaction
-homme-robot en environnements écologiques~\cite{lemaignan2010oro,ros2010which,lallee2011towards,lemaignan2012roboscopie,warnier2012when,hood2015when}, y compris avec des robots
-complexes type PR2,
-je propose de matérialiser les axes de recherche que j'ai présenté sous la forme de
-plusieurs objectifs expérimentaux, à la fois en laboratoire et sur le terrain.
-Une première série d'expériences vise à démontrer l'intérêt d'une représentation
-unifiée de l'environnement du robot pour développer des capacités cognitives
-nouvelles ; une série d'expériences suivante s'intéresse à l'utilisation de ces
-capacités nouvelles dans des scénarios d'interactions complets.  Ce
-programme expérimental vise à faire avancer significativement l'état de l'art en
-ce qui concerne la robotique d'interaction, aussi bien en terme algorithmique,
-qu'en terme d'intégration concrète et d'usages en situation réelle.
-
+homme-robot en environnements écologiques sur des plateformes allant du Nao au
+PR2 en passant par
+l'iCub~\cite{lemaignan2010oro,ros2010which,lallee2011towards,lemaignan2012roboscopie,warnier2012when,hood2015when},
+je propose de matérialiser les axes de recherche que j'ai présenté sous la forme
+de plusieurs objectifs expérimentaux, à la fois en laboratoire et sur le
+terrain.  Une première série d'expériences vise à démontrer l'intérêt d'une
+représentation unifiée de l'environnement du robot pour développer des capacités
+cognitives nouvelles ; une seconde série d'expériences s'intéresse à la mise en
+place au sein du laboratoire d'une plateforme rigoureuse d'expérimentation sur
+le terrain, et à son utilisation pour démontrer ces capacités nouvelles dans des
+scénarios d'interactions complets. Ce programme expérimental vise à faire
+avancer significativement l'état de l'art en ce qui concerne la robotique
+d'interaction, aussi bien en terme algorithmique, qu'en terme d'intégration
+concrète et d'usages en situation réelle.
 
 Je propose dans un premier temps de recréer en laboratoire un ensemble de
 situations d'interaction dans l'esprit de la figure~\ref{babyplug}: de court
-(~ 10 min) épisodes
-de la vie courante impliquant robots et humains dans des tâches réalistes de
-reconnaissance de situation et de manipulation d'objets, et pour lesquelles une
-interprétation correcte nécessite de combiner représentations multi-modales
-ancrées et représentations sémantiques, d'être capable de construire un modèle
-fin de l'homme, incluant la reconnaissance de séquences d'actions, et de
-reconnaitre et mobiliser l'ensemble des contextes de l'interaction. La qualité
-et la pertinence des modèles et de l'interprétation de la scène réalisée par le
-robot est ensuite évalué en les comparant aux interprétations produites par des
-observateurs humains dans le même contexte.
+(environ 10 min) épisodes de la vie courante -- rigoureusement définis pour être
+reproductibles -- impliquant robots et humains dans des tâches réalistes de
+reconnaissance de situation et de manipulation d'objets. Pour ces scénarios, une
+interprétation correcte nécessite typiquement de combiner représentations
+multi-modales ancrées et représentations sémantiques, d'être capable de
+construire un modèle fin de l'homme (incluant la reconnaissance de séquences
+d'actions), et de reconnaitre et mobiliser l'ensemble des contextes de
+l'interaction (Axes 1 et 2). La qualité et la pertinence des modèles et de
+l'interprétation de la scène réalisée par le robot sera ensuite évalué en les
+confrontant aux interprétations produites par des observateurs humains placés
+dans le même contexte.
 
-Je prévois ensuite une seconde famille d'expériences s'intéressant à la prise de
-perspective au niveau des \emph{représentations} : il s'agit de tester la
-capacité du robot à construire un modèle des représentations \emph{abstraites}
-des autres, et je propose d'explorer cette question à travers l'idée de
-\emph{tromperie adaptative} : dans une séquence de jeu, le robot à la
+Je prévois ensuite une famille d'expériences s'intéressant à la prise de
+perspective au niveau des \emph{représentations} (Axe 2) : il s'agit de tester
+la capacité du robot à construire un modèle des représentations
+\emph{abstraites} des autres, et je propose d'explorer cette question à travers
+l'idée de \emph{tromperie adaptative} : dans une séquence de jeu, le robot à la
 possibilité de \emph{mentir} (\ie, de tromper son partenaire) afin de renouveler
 l'intérêt ludique et de maintenir l'engagement d'autre joueur. Le choix de
-mentir à un instant donné sur base sur la représentation (telle qu'estimée par
-le robot) qu'à le joueur de la situation courante. Un exemple d'une situation
-de jeu se prêtant à cette idée de \emph{tromperie adaptative} est le protocole
-en psychologie expérimentale du \emph{Penny Hiding Game} (protocole initialement
-proposé par Oswald and Ollendick~\cite{oswald1989role}, et répliqué et étendu
-par Baron-Cohen dans~\cite{baron1992out}) : un joueur cache dans une main un
-objet, et l'autre joueur doit deviner la main. Après quelques essais, des
-stratégies de jeu se mettent en place pour tromper l'adversaire et l'inciter à
-choisir la main incorrecte. Dans un tel scénario, le robot peut adapter cette
-stratégie de jeu en fonction de ce qu'il perçoit du comportement, et
-indirectement, des représentations, de l'autre joueur.
+mentir à un instant donné se base sur la représentation, estimée par le robot,
+qu'à le joueur de la situation courante. Le protocole du \emph{Penny Hiding
+Game}, issu de la psychologie expérimentale (protocole de Oswald and
+Ollendick~\cite{oswald1989role}), met en évidence ces mécanismes : un joueur
+cache dans une main un objet, et l'autre joueur doit deviner la main.  Après
+quelques essais, des stratégies de jeu se mettent en place pour tromper
+l'adversaire et l'inciter à choisir la main incorrecte. Dans un tel scénario,
+que je propose d'implémenter sur la plateforme robotique du GIPSA Lab, le robot
+peut adapter cette stratégie de jeu en fonction de ce qu'il perçoit du
+comportement, et indirectement, des représentations, de l'autre joueur.
 
-%La troisième expérience s'intéresse à la fois au déploiement d'une architecture
-%cognitive pour l'interaction en autonomie, et aux facteurs cognitifs d'une
-%interaction de longue durée. L'objectif est de déployer des robots de type Nao avec
-%des schémas d'interaction restant simples (tâches du type lecture de recette ou
-%d'histoire pour les enfants) dans des familles non-expertes, et sur des
-%périodes longues (de l'ordre de 3 mois). Cela vise à acquérir et valider les
-%facteurs, tant humains que robotiques, qui permettent d'établir un engagement
-%durable.  Je souhaite échelonner plusieurs déploiements dans plusieurs familles
-%en parallèle, et cette expérience pourrait s'étaler de J+24 mois à J+30 mois.
-%
-%Enfin, en s'appuyant sur les enseignements issus de l'expérience précédente, le
-%dernier objectif expérimental, plus ambitieux, consiste à déployer un robot
-%complexe type PR2, dans une famille, pour une durée longue, et avec un
-%répertoire d'interactions étendu, incluant autonomie complète, dialogue
-%multi-modal, manipulation conjointe. Je situe cet objectif expérimental à un
-%horizon J+36 mois. Au-delà du défi scientifique que cela représente (il
-%s'agirait d'une première internationale), cette expérience aurait probablement
-%un impact sociétal, et représenterait à ce titre une étape dans la recherche en
-%interaction homme-robot.
-%
+En parallèle de ces expériences de laboratoire ``in vitro'', je souhaite
+\textbf{concevoir et mettre en place une plateforme expérimentale ``in vivo''}
+pour mener des expériences d'interaction homme-robot sur le terrain. Cette
+plateforme aura un axe méthodologique (développement de techniques non-invasives
+de mesure de l'engagement humain et de la perception des robots par les humains,
+comme j'ai exploré
+dans~\cite{lemaignan2014dynamics,lemaignan2014cognitive,fink2014dynamics,sharma2015measuring})
+et un axe technologique (en particulier en terme d'architecture logicielle
+robuste pour l'interaction, dans la lignée du travail que j'ai mené sur cette
+question~\cite{lemaignan2014human,lemaignan2015pyrobots}).
 
-\subsection*{Conclusion}
+Les expériences que je planifie une fois cette plateforme en place s'intéressent
+à la fois au déploiement d'une architecture cognitive pour l'interaction en
+autonomie, et aux facteurs cognitifs d'une interaction de longue durée.
+L'objectif est typiquement de déployer dans une première phase des robots de
+type Nao avec des schémas d'interaction restant simples (tâches du type lecture
+de recette ou d'histoire pour les enfants) dans des familles non-expertes, et
+sur des périodes longues (de l'ordre de 3 mois), et dans une seconde phase, de
+déployer un robot complexe type PR2/iCub dans une famille, pour une durée
+longue, et avec un répertoire d'interactions étendu, incluant autonomie
+complète, dialogue multi-modal, manipulation conjointe. Je situe cet objectif
+expérimental à un horizon J+3 ans.
 
-[TDB: a faire]
+\subsection*{Conclusion, impact et laboratoire d'accueil}
 
-%
-%En paraphrasant McCarthy, on peut dire de ce projet de recherche qu'il s'inscrit
-%dans le programme (à long terme) d'une ``intelligence incarnée de niveau
-%humain''. Il se positionne sur la question particulière de \emph{l'intelligence
-%sociale} dans le contexte d'interactions entre agents artificiels physiques et
-%humains.
-%
-%Je propose dans un premier temps de poser des bases rigoureuses, qui semblent
-%aujourd'hui manquer, à l'analyse et l'évaluation des performances cognitives des
-%robots, en particulier dans ce contexte social.
-%
-%Je propose ensuite d'attaquer la question de la fusion des représentations
-%multiples de l'environnement du robot, parfois continues, parfois symboliques,
-%en un modèle unifié. Ce modèle doit de plus intégrer des dimensions nouvelles
-%(contextes, affordances, modèles de croyances des différents agents), et
-%construire ainsi des fondations solides pour les processus cognitifs supérieurs.
-%C'est une question de recherche aujourd'hui ouverte, qui fait appel à des
-%techniques de représentations hybrides qui sont à découvrir.
-%
-%Sur cette base, je propose de travailler sur l'intégration de mécanismes
-%cognitifs multiples au sein d'une architecture logicielle pertinente pour un
-%robot d'interaction. C'est ici au contraire un travail de synthèse, qui
-%s'appuie, en le développant, sur le corpus scientifique existant, tant en
-%robotique qu'en intelligence artificielle (architectures cognitives), qu'en
-%sciences et neuro-sciences cognitives (modèles décisionnels humains).
-%
-%Enfin, parce que la recherche en robotique a aussi cette spécificité d'être une
-%science de l'intégration technologique, je propose d'organiser mon travail de
-%chercheur autour d'objectifs expérimentaux ambitieux, qui puissent aussi donner
-%à voir et à réfléchir sur l'impact de la recherche sur la vie de tous les
-%citoyens.
-%
+Je propose dans ce projet trois axes : la recherche de
+\textbf{techniques nouvelles permettant de lier signal bas-niveau et modèle
+sémantique} ; la conception d'un \textbf{système de représentation unifié,
+autour de l'idée d'ontologie multi-modale ancrée} ; la transposition de ces
+techniques à la \textbf{décision en robotique, avec la recherche d'une nouvelle
+génération d'architectures décisionnelles duales et semi-distribuées}.
+
+Ensemble, ils constituent un ensemble ambitieux, qui :
+\begin{itemize}
+    \item cherche à unifier deux approches scientifiques majeures en robotique
+        cognitive ;
+    \item a un potentiel disruptif en terme de capacités de perception, de
+        compréhension et d'autonomie pour la robotique ;
+    \item se situe à un carrefour interdisciplinaire remarquable, entre
+        techniques avancées de traitement de signal complexe, intelligence
+        artificielle et sciences cognitives.
+\end{itemize}
+
+Le développement de ces axes est par ailleurs soutenu par \textbf{un programme
+expérimental fort} qui donne à ces recherches légitimité et impact, y compris au
+niveau de la société civile.
+
+Ce programme de recherche mêle étroitement robots et humains. Bien que mise en
+avant de manière répétée dans les orientations scientifiques européennes (au
+sein des \emph{Future and Emerging Technologies} (FETs), les technologies
+cognitives sont une des priorités affichées de l'agenda Horizon2020), la
+robotique cognitive est relativement peu représentée dans le paysage
+scientifique français, les principales équipes de dimensions internationales
+étant Flowers, à l'INRIA, et les laboratoires LAAS et ISIR au sein du CNRS. Je
+souhaiterais cependant, en premier choix, rejoindre le GIPSA Lab à Grenoble.
+Nouveau venu dans le domaine de la robotique, mais de réputation internationale
+dans le domaine de l'acquisition et du traitement du signal humain (en
+particulier de la parole), il me semble être un environnement remarquable pour
+faire progresser la recherche en interaction homme-robot avec des approches
+nouvelles et disruptives. Le laboratoire a de plus récemment acquis un robot
+iCub, parfaitement adapté à la recherche en interaction homme-robot, et prend
+depuis peu une orientation résolument ``robotique cognitive'', comme le traduit
+le nouveau nom de l'équipe MAGIC, désormais CRISSP: ``Cognitive Robotics,
+Interactive Systems and Speech Processing''.  L'expertise en robotique
+d'interaction que je suis susceptible d'apporter s'inscrirait tout à fait dans
+cette dynamique.
+
+De plus, d'autres équipes du GIPSA Lab comme l'équipe PCMD (\emph{Parole
+Cerveau Multimodalité Développement}) sont spécialistes en cognition et en
+psychologie expérimentale, et représentent à ce titre un atout supplémentaire et
+renforcent l'intérêt de ce laboratoire pour mener mon programme de recherche.
+
 \printbibliography
 
 \end{document}
