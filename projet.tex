@@ -32,14 +32,6 @@
 \begin{document}
 \maketitle
 
-\begin{figure}
-    \centering
-    \includegraphics[width=1.0\linewidth]{place}
-    \caption{}
-    \label{place}
-\end{figure}
-
-
 Deux courants majeurs structurent la recherche en robotique cognitive: les
 approches dites épigénétiques (dites aussi développementales, ou encore ancrées) d'une
 part, dans lesquelles un certains nombre de mécanismes cognitifs émergent ou
@@ -71,6 +63,15 @@ approches, en proposant d'employer la robotique cognitive comme
 travaux visent toutefois en premier lieu à mieux comprendre la cognition
 \underline{humaine} en employant uniquement le robot comme un support de
 modélisation.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\linewidth]{place}
+    \caption{Un projet au carrefour entre robotique cognitive développementale
+    et symbolique.}
+    \label{place}
+\end{figure}
+
 
 Le c\oe ur du projet scientifique que je propose se situe lui aussi au carrefour
 de ces deux approches, mais garde une perspective essentiellement robotique :
@@ -111,7 +112,7 @@ sensori-motrices dites ``réflexes'', construites par apprentissage}.
 Mon projet s'articule ainsi en trois axes scientifiques : (i) la recherche de
 \textbf{techniques nouvelles permettant de lier signaux bas-niveau et modèle
 sémantique} ; (ii) la conception d'un \textbf{système de représentation unifié,
-autour de l'idée d'ontologie multi-modale ancrée} ; (iii) la transposition de ces
+incluant l'idée d'ontologie multi-modale ancrée} ; (iii) la transposition de ces
 techniques à la \textbf{décision en robotique, avec la recherche d'une
 architecture décisionnelle duale et semi-distribuée}.
 
@@ -155,18 +156,6 @@ d'apprentissage automatique : le système apprend à reconnaitre et labéliser d
 manière automatique des situations ou des séquences d'actions dans le flux
 multi-modal des signaux perçu.
 
-Pour autant, l'état de l'art en prise de décision autonome en robotique s'appuie
-sur des modèles symboliques abstraits, qui ont le bénéfice de manipuler une
-sémantique explicite et de permettre une intégration forte avec les outils
-classiques et puissants de l'intelligence artificielle (planification de tâche,
-traitement de la langue naturelle, etc.).
-
-Le premier défi sur lequel je souhaite travailler est ainsi celui-ci :
-\textbf{concevoir et construire les ponts entre l'état de l'art des techniques
-d'apprentissage automatique pour le traitement de signaux (sociaux)
-complexes, et l'état de l'art des représentations logiques probabilistes
-abstraites}.
-
 L'essentiel des recherches récentes dans ce domaine se sont focalisées sur
 l'analyse et la reconnaissance d'épisodes d'interaction en se basant sur des
 techniques d'apprentissage automatique de type classification (essentiellement
@@ -180,17 +169,17 @@ séquences, \ie à l'association automatique de sémantique aux signaux. Les
 approches actuelles se basent sur des grammaires
 simples~\cite{mihoub2014modeling}, mais \textbf{ne reflètent pas de manière
 pertinente les fonctions que traduisent les signaux}: un regard, par exemple,
-peut participer à l'encodage de contenus linguistiques (signal
+peut participer à l'encodage de contenus sémantiques (signal
 \emph{linguistique}), peut jouer un rôle \emph{para-linguistique} (traduire la
-peur par exemple) ou \emph{non-linguistique} (dû à une lumière forte, ou à de la
-fièvre,...). Autre exemple, certaines caractéristiques (par exemple, l'étirement
-des lèvres) peuvent être les conséquences de la génération d'un signal
-(prononciation d'une voyelle, par exemple), ou être intrinsèquement des signaux
-(par exemple, un sourire).
+peur par exemple) ou avoir une fonction \emph{non-linguistique} (dû à une
+lumière forte, ou à de la fièvre,...). Autre exemple, certaines caractéristiques
+(par exemple, l'étirement des lèvres) peuvent être les conséquences de la
+génération d'un signal (prononciation d'une voyelle, par exemple), ou être
+intrinsèquement des signaux (par exemple, un sourire).
 
-Ces aspects fonctionnels sont aujourd'hui des objets de recherche ouverts,
-auquel je me propose de travailler en adoptant une approche
-\textbf{sensori-motrice}: il s'agit d'encapsuler dans un même formalisme
+La reconnaissance contextuelle de ces aspects fonctionnels est aujourd'hui un
+objet de recherche ouvert, auquel je me propose de travailler en adoptant une
+approche ancrée \textbf{sensori-motrice} qui encapsule dans un même formalisme
 d'apprentissage sensori-moteur d'une part les attentes que le robot forme sur
 les conséquences de ses actions (qui génèrent des signaux dont la fonction est
 définie), et d'autre part les réponses générées par les humains interagissant
@@ -202,8 +191,20 @@ contexte.
 
 \paragraph{Modèles logiques probabilistes}
 
-Intégrer ces modèles ancrés dans des mécanismes cognitifs de
-haut-niveau, typiquement abstraits, est un corollaire qui a lui aussi fait
+Pour autant, l'état de l'art en prise de décision autonome en robotique s'appuie
+sur des modèles symboliques abstraits, qui ont le bénéfice de manipuler une
+sémantique explicite et de permettre une intégration forte avec les outils
+classiques et puissants de l'intelligence artificielle (planification de tâche,
+traitement de la langue naturelle, etc.).
+
+Le premier défi sur lequel je souhaite travailler est ainsi celui-ci :
+\textbf{concevoir et construire les ponts entre l'état de l'art des techniques
+d'apprentissage automatique pour le traitement de signaux (sociaux)
+complexes, et l'état de l'art des représentations logiques probabilistes
+abstraites}.
+
+Intégrer les modèles ancrés dans des mécanismes cognitifs de
+haut-niveau, typiquement abstraits, est une question qui a elle aussi fait
 l'objet de nombreuses recherches ces dernières années, essentiellement sous la
 forme de structures symboliques probabilistes. De Raedt et Kersting donnent un
 aperçu général de la question dans~\cite{deraedt2008probabilistic}, et, appliqué
@@ -221,8 +222,7 @@ très fragmentées}, se focalisent la plupart du temps sur un domaine
 d'application précis, et ne considèrent souvent pas les problèmes liés à une
 utilisation effective sur des systèmes temps-réel.
 
-
-Au-delà de ces difficultés, établir un pont entre les systèmes d'apprentissage
+Et au-delà de ces difficultés, établir un pont entre les systèmes d'apprentissage
 et de traitement bas-niveau des signaux et les représentations logiques
 probabilistes est une question largement ouverte en robotique. Je
 propose de contribuer à cette question à travers le développement du concept
@@ -236,7 +236,7 @@ système de représentation unifié pour la robotique, multi-modal, capable de
 représenter des mondes hypothétiques, et formant un support adéquat pour l'implémentation
 de fonctions cognitives supérieures. Ceci constitue mon second axe de recherche.
 
-\subsection*{Axe 2 -- Unification des représentations, Application aux fonctions
+\subsection*{Axe 2 -- Unification des représentations et application aux fonctions
 cognitives}
 
 \begin{figure}
@@ -255,7 +255,7 @@ cognitives}
 \end{figure}
 
 Le deuxième axe de recherche s'intéresse à l'utilisation effective, en robotique
-cognitive, de cette approche continue, des signaux au symbole sémantique. Il
+cognitive, de cette approche continue des signaux au symbole sémantique. Il
 s'intéresse d'abord à la question de la représentation \emph{unifiée} des
 différentes modalités, ensuite à l'application de cette représentation pour
 implémenter de nouvelles compétences cognitives supérieures chez les robots.
@@ -315,7 +315,7 @@ question ouverte.
 \caption{\small La représentation de l'environnement est envisagée sous la forme
     de mondes (\emph{world A, B, C...}) qui évoluent de manière indépendante les
     uns des autres. Chaque monde a son propre historique (\emph{timeline}), sa
-    propre géométrie (\emph{scene}) et son propre modèle cognitif ancré
+    propre géométrie (\emph{scene}) et son propre modèle ancré de connaissances
     (\emph{grounded ontology}).  Les mondes dérivent les uns des autres par des
     transformations (\emph{filters}) successives qui sont alimentées par la
     perception et les connaissances du robot.  }
@@ -327,7 +327,7 @@ Intégrer et unifier ces différentes représentations nécessite de largement
 repenser les approches actuelles. La figure~\ref{worlds} illustre les premiers
 éléments d'une nouvelle proposition allant dans ce sens, que j'ai prototypé en
 post-doctorat. Il s'agit d'un paradigme de représentation de l'environnement
-basé sur l'idée de \textbf{mondes} existant et évoluant indépendamment et
+basé sur l'idée de \textbf{mondes} existant et évoluant indépendamment, et
 pouvant représenter des facettes différentes de la réalité du robot, comme un
 état futur hypothétique, l'état du monde tel que perçu par un autre agent,
 etc. Ces mondes dérivent les uns des autres via des \textbf{filtres cognitifs}
@@ -372,16 +372,16 @@ intelligence artificielle et psychologie, et il représente une compétence
 socio-cognitive humaine complexe dont une implémentation générique serait une
 avancée notable de l'état de l'art.
 
-Jusqu'à présent, la communauté de l'interaction homme-machine n'a qu'effleuré
-cette question : Scassellati donnait en 2002 dans~\cite{scassellati2002theory}
-un premier aperçu de la construction d'une théorie de l'esprit du point de vue
-de la robotique, sans réelle implémentation. Depuis, la recherche dans ce
-domaine s'est essentiellement focalisée sur des applications de prise de
-perspective (``\emph{je vois que tu vois la prise}''), utilisant la vision comme
-principale (souvent unique) modalité sensorielle. Les principaux travaux sur
-cette questions sont par Breazeal~\cite{breazeal2006using},
-Trafton~\cite{Trafton2005} et Ros~\cite{Ros2010} (avec laquelle j'ai étroitement
-travaillé sur ces questions).
+Jusqu'à présent, la communauté de l'interaction homme-machine n'a en effet
+qu'effleuré cette question : Scassellati donnait en 2002
+dans~\cite{scassellati2002theory} un premier aperçu de la construction d'une
+théorie de l'esprit du point de vue de la robotique, sans réelle implémentation.
+Depuis, la recherche dans ce domaine s'est essentiellement focalisée sur des
+applications de prise de perspective (``\emph{je vois que tu vois la prise}''),
+utilisant la vision comme principale (souvent unique) modalité sensorielle. Les
+principaux travaux sur cette questions sont par
+Breazeal~\cite{breazeal2006using}, Trafton~\cite{Trafton2005} et
+Ros~\cite{Ros2010} (avec laquelle j'ai étroitement travaillé sur ces questions).
 
 \begin{figure}[h!t]
         \centering
@@ -420,7 +420,7 @@ lesquels il interagit.  L'apport d'un système de représentation unifiant signa
 et symboles est l'un des points clés pouvant effectivement permettre un progrès
 significatif dans cette direction.
 
-\subsection*{Axe 3 -- Décision distribuée et architecture cognitive pour l'interaction homme-robot}
+\subsection*{Axe 3 -- Décision distribuée et architecture cognitive}
 
 Comme souligné par Kurup~\cite{kurup2012what}, les compétences cognitives des
 robots actuels sont la plupart du temps implémentées et testées indépendamment
@@ -432,14 +432,15 @@ participé au CNRS/LAAS~\cite{lemaignan2015human} en sont parmi les principaux
 exemples récents. Ces architectures adoptent toutes une approche symbolique,
 dans laquelle les perceptions sont explicitement transformées en objets
 symboliques abstraits (typiquement, des formules de logique du premier ordre),
-avec lesquels les processus décisionnels travaillent. J'ai montré en particulier
-durant mon doctorat qu'il était possible de construire et d'exploiter en ligne
-des modèles cognitifs riches des autres agents, et d'intégrer ces modèles dans
-la prise de décision~\cite{alami2011when, warnier2012when, lemaignan2015human}.
-Pour autant, ces approches ne répondent pas de manière satisfaisante à la
-réalité d'une interaction dynamique : la réactivité des robots d'interaction est
-aujourd'hui clairement limitée par la complexité et la lenteur des mécanismes
-décisionnels en jeu (nécessitant typiquement raisonnement et planification).
+avec lesquels les processus décisionnels travaillent. J'ai montré durant mon
+doctorat qu'il était en particulier possible de construire et d'exploiter en
+ligne des modèles cognitifs riches des autres agents, et d'intégrer ces modèles
+dans la prise de décision~\cite{alami2011when, warnier2012when,
+lemaignan2015human}.  Pour autant, ces approches ne répondent pas de manière
+satisfaisante à la réalité d'une interaction dynamique : la réactivité des
+robots d'interaction est aujourd'hui clairement limitée par la complexité et la
+lenteur des mécanismes décisionnels en jeu (nécessitant typiquement raisonnement
+et planification).
 
 En parallèle, un second courant de recherche, animé en particulier par
 l'université de Plymouth (Cangelosi, Belpaeme~\etal), propose de considérer les
@@ -475,26 +476,27 @@ La figure~\ref{archi} illustre une direction que pourrait prendre cette approche
 composants du type de ceux que j'ai étudié durant mon doctorat et présentés
 dans~\cite{lemaignan2015human} : supervision, traitement de la langue naturelle,
 planification symbolique de tâches,...), manipulant essentiellement des
-représentations abstraites et amodales, forment une \emph{zone cognitive}
-centrale. Celle-ci coordonne un ensemble de boucles sensori-motrices autonomes,
-évoluant au sein d'une \emph{zone pré-cognitive} : elle sélectionne, active,
-désactive et paramétrise les boucles sensori-motrices par des mécanismes
-d'activation/inhibition. Le système de représentation que je propose à l'Axe 2
-sert alors d'interface entre ces deux zones.
+représentations abstraites et amodales, forment une \textbf{zone cognitive}
+centrale. Celle-ci coordonne un ensemble de boucles sensori-motrices autonomes
+et apprises, évoluant au sein d'une \textbf{zone pré-cognitive} : elle
+sélectionne, active, désactive et paramétrise les boucles sensori-motrices par
+des mécanismes d'activation/inhibition. Le système de représentation unifié que
+je propose à l'Axe 2 sert alors d'interface entre ces deux zones.
 
 Une telle architecture, qui a le potentiel de réunir de manière cohérente des
 approches traditionnellement éloignées, soulève de nombreuses questions (comme
 sur la contrôlabilité de l'ensemble du système ou sur le partage d'accès aux
-ressources du robot), et peut représenter une porte vers un champ vaste de
+ressources du robot), et représente à ce titre une porte vers un champ vaste de
 recherche.
 
 Je souhaite par ailleurs ici aussi valider cette approche en confrontant
 spécifiquement une telle architecture au domaine de l'interaction homme-robot
-qui synthétise beaucoup des défis de la robotique : environnements dynamiques
-dont la sémantique est complexe, suivi et représentation de l'homme, action
-conjointe, nécessité d'une grande réactivité et d'un parallélisme fort pour
-assurer une interaction de qualité. Le programme expérimental que je propose,
-présenté ci-dessous, fournit un tel environnement de validation.
+dans la mesure où il synthétise beaucoup des défis de la robotique :
+environnements dynamiques dont la sémantique est complexe, suivi et
+représentation de l'homme, action conjointe, nécessité d'une grande réactivité
+et d'un parallélisme fort pour assurer une interaction de qualité. Le programme
+expérimental que je propose, présenté ci-dessous, fournit un tel environnement
+de validation.
 
 \subsection*{Programme expérimental}
 
@@ -514,15 +516,15 @@ expérimental vise à faire avancer significativement l'état de l'art en ce qui
 concerne la robotique d'interaction, aussi bien en termes algorithmiques, qu'en
 terme d'intégration concrète et d'usages en situation réelle.
 
-Je propose dans un premier temps de recréer en laboratoire un ensemble de
-situations d'interaction dans l'esprit de la figure~\ref{babyplug}: de court
-(environ 10 min) épisodes de la vie courante, rigoureusement définis pour former
-un benchmark reproductible, et impliquant robots et humains dans des tâches
-réalistes de reconnaissance de situation et de manipulation d'objets. Pour ces
-scénarios, une interprétation correcte nécessite typiquement de combiner
-représentations multi-modales ancrées et représentations sémantiques, d'être
-capable de construire un modèle fin de l'homme (incluant la reconnaissance de
-séquences d'actions), et de reconnaitre et mobiliser l'ensemble des contextes de
+Je propose ainsi, dans un premier temps, de recréer en laboratoire un ensemble
+de situations d'interaction dans l'esprit de la figure~\ref{babyplug}: de court
+épisodes de la vie courante, rigoureusement définis pour former un benchmark
+reproductible, et impliquant robots et humains dans des tâches réalistes de
+reconnaissance de situation et de manipulation d'objets. Pour ces scénarios, une
+interprétation correcte nécessite typiquement de combiner représentations
+multi-modales ancrées et représentations sémantiques, d'être capable de
+construire un modèle fin de l'homme (incluant la reconnaissance de séquences
+d'actions), et de reconnaitre et mobiliser l'ensemble des contextes de
 l'interaction (Axes 1 et 2). La qualité et la pertinence des modèles et de
 l'interprétation de la scène réalisée par le robot sera ensuite évalué en les
 confrontant aux interprétations produites par des observateurs humains placés
@@ -531,20 +533,21 @@ dans le même contexte.
 Je prévois ensuite une famille d'expériences s'intéressant à une théorie de
 l'esprit au niveau des \emph{représentations} (Axe 2) : il s'agit de tester la
 capacité du robot à construire un modèle des représentations \emph{abstraites}
-des autres (comme je le présente dans~\cite{lemaignan2015mutual}), et je propose
-d'explorer cette question à travers l'idée de \emph{tromperie adaptative} : dans
-une séquence de jeu, le robot à la possibilité de \emph{mentir} (\ie, de tromper
-son partenaire) afin de renouveler l'intérêt ludique et de maintenir
-l'engagement de l'autre joueur. Le choix de mentir à un instant donné se base sur
-la représentation, estimée par le robot, qu'à le joueur de la situation
-courante. Le protocole du \emph{Penny Hiding Game}~\cite{oswald1989role}, issu
-de la psychologie expérimentale, met en évidence ces mécanismes : un joueur
-cache dans une main un objet, et l'autre joueur doit deviner la main.  Après
-quelques essais, des stratégies de jeu se mettent en place pour tromper
-l'adversaire et l'inciter à choisir la main incorrecte. Dans un tel scénario,
-que je propose d'implémenter sur une plateforme robotique type iCub, le robot
-peut adapter cette stratégie de jeu en fonction de ce qu'il perçoit du
-comportement, et indirectement, des représentations, de l'autre joueur.
+des autres, et je propose d'explorer cette question à travers l'idée de
+\emph{tromperie adaptative} (comme je le suggère
+dans~\cite{lemaignan2015mutual}) : dans une séquence de jeu, le robot à la
+possibilité de \emph{mentir} (\ie, de tromper son partenaire) afin de renouveler
+l'intérêt ludique et de maintenir l'engagement de l'autre joueur. Le choix de
+mentir à un instant donné se base sur la représentation, estimée par le robot,
+qu'à le joueur de la situation courante. Le protocole du \emph{Penny Hiding
+Game}~\cite{oswald1989role}, issu de la psychologie expérimentale, met en
+évidence ces mécanismes : un joueur cache dans une main un objet, et l'autre
+joueur doit deviner la main.  Après quelques essais, des stratégies de jeu se
+mettent en place pour tromper l'adversaire et l'inciter à choisir la main
+incorrecte. Dans un tel scénario, que je propose d'implémenter sur une
+plateforme robotique type iCub, le robot peut adapter cette stratégie de jeu en
+fonction de ce qu'il perçoit du comportement, et indirectement, des
+représentations, de l'autre joueur.
 
 En parallèle de ces expériences de laboratoire ``in vitro'', je souhaite
 \textbf{concevoir et mettre en place une plateforme expérimentale ``in vivo''}
@@ -566,7 +569,7 @@ de recette ou d'histoire pour les enfants) dans des familles non-expertes, et
 sur des périodes longues (de l'ordre de 3 mois), et dans une seconde phase, de
 déployer un robot complexe type PR2/iCub dans une famille, pour une durée
 longue, et avec un répertoire d'interactions étendu, incluant autonomie
-complète, dialogue multi-modal, manipulation conjointe. Je situe cet objectif
+complète, dialogue multi-modal, manipulation conjointe. Je situe ce dernier objectif
 expérimental à un horizon J+3 ans.
 
 \subsection*{Conclusion, impact et laboratoire d'accueil}
@@ -616,12 +619,14 @@ Cerveau Multimodalité Développement}) sont spécialistes en cognition et en
 psychologie expérimentale, et représentent à ce titre un atout supplémentaire et
 renforcent l'intérêt de ce laboratoire pour mener mon programme de recherche.
 
+\vspace{1em}
+
 Ce programme de recherche, ambitieux et interdisciplinaire, mêle étroitement
 robots et humains. Bien que mise en avant de manière répétée dans les
 orientations scientifiques européennes (au sein des \emph{Future and Emerging
-Technologies}, les technologies cognitives sont une des priorités affichées de
-l'agenda Horizon2020\footnote{Programme ``Knowing, doing and being: cognition
-beyond problem solving'',
+Technologies}, les technologies cognitives sont en effet une des priorités
+affichées de l'agenda Horizon2020\footnote{Programme ``Knowing, doing and being:
+cognition beyond problem solving'',
 \url{https://ec.europa.eu/programmes/horizon2020/en/h2020-section/fet-proactive}}),
 la robotique cognitive est relativement peu représentée dans le paysage
 scientifique français. Je souhaite m'y consacrer, et faire significativement
