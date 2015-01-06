@@ -84,8 +84,8 @@ ainsi, leur autonomie}.
 
 Je propose de plus de poser un cadre de recherche précis pour cette
 problématique : l'interaction homme-robot. Je veux y appliquer une double
-approche, à la fois \emph{bottom-up} en m'intéressant directement au
-signal humain émis durant l'interaction, et \emph{top-down} en étudiant
+approche, à la fois \emph{bottom-up} en m'intéressant directement aux
+signaux humains émis durant l'interaction, et \emph{top-down} en étudiant
 explicitement un certain nombre de tâches cognitives de haut-niveau que le robot
 doit pouvoir maitriser, incluant un dialogue multi-modal riche et pertinent ou
 encore l'implémentation de formes poussées de théorie de l'esprit.
@@ -109,7 +109,7 @@ symbolique orchestre (via des activations et des inhibitions) des boucles
 sensori-motrices dites ``réflexes'', construites par apprentissage}.
 
 Mon projet s'articule ainsi en trois axes scientifiques : (i) la recherche de
-\textbf{techniques nouvelles permettant de lier signal bas-niveau et modèle
+\textbf{techniques nouvelles permettant de lier signaux bas-niveau et modèle
 sémantique} ; (ii) la conception d'un \textbf{système de représentation unifié,
 autour de l'idée d'ontologie multi-modale ancrée} ; (iii) la transposition de ces
 techniques à la \textbf{décision en robotique, avec la recherche d'une
@@ -123,51 +123,86 @@ post-doctorat, je propose d'ancrer et de valider mon travail dans un programme
 expérimental ambitieux, qui sache ``sortir du laboratoire'' pour se confronter à
 des environnements réalistes et complexes.
 
-\subsection*{Axe 1 -- Du signal humain au modèle sémantique}
+\subsection*{Axe 1 -- Des signaux humains au modèle sémantique}
 
-Durant une interaction, l'idée de \emph{signal humain} groupe plusieurs
+\paragraph{Signaux, fonctions et boucles sensori-motrices}
+
+Durant une interaction, l'idée de \emph{signaux humains} groupe plusieurs
 dimensions : la familles des signaux verbaux (parole, dialogue), para-verbaux
 (uttérances non verbales) et co-verbaux (gestes accompagnant la parole,
-attitudes de la voix), le regard (notamment les mécanismes d'attention
-conjointe), la posture, et l'ensemble des gestes déictiques.
+attitudes de la voix), et les signaux non-verbaux : le regard (notamment les
+mécanismes d'attention conjointe), la posture, et l'ensemble des gestes
+(représentatifs, déictiques, gestes de battement). Parallèlement, ces signaux
+peuvent être \emph{linguistiques} s'ils transmettent une charge sémantique,
+\emph{para-linguistiques} s'ils traduisent l'état psychologique de l'individu ou
+\emph{non-linguistiques}.
 
-Ces dimensions sont essentiellement continues, bruitées, et couvrent un large
-spectre de valeurs, avec une variabilité inter-individus élevée. De plus, une
-interprétation correcte requiert d'analyser les interactions de ces signaux les
-uns avec les autres (en premier lieu, les co-occurences).  Ces caractéristiques
-font que le traitement du signal humain se prête particulièrement bien aux
-approches s'appuyant sur diverses formes de \emph{machine learning} : le système
-apprend à reconnaitre et labéliser de manière automatique des séquences
-d'actions dans le flux multi-modal du signal perçu.
+Ces différentes dimensions sont essentiellement continues, bruitées, souvent
+multi-échelles (aspects segmentaux et supra-segmentaux de parole par exemple) et
+couvrent un large spectre de valeurs, avec une variabilité inter-individus
+élevée. Les espaces d'observation qu'ils génèrent sont ainsi typiquement de
+grande dimension.
 
-Pour autant, l'état de l'art en prise de décision autonome en robotique
-s'appuie sur des modèles symboliques abstraits, qui ont le bénéfice de manipuler
-une sémantique explicite et de permettre une intégration forte avec les outils
-classiques de l'intelligence artificielle (planification de tâche, traitement de
-la langue naturelle, etc.).
+De plus, une interprétation correcte requiert d'analyser les interactions
+multi-modales de ces signaux les uns avec les autres : les co-occurences, mais
+aussi des interactions plus complexes, comme par exemple les gestes représentatifs
+accompagnant la parole, les expressions faciales concordant (ou non) avec la
+posture, ou encore les interactions entre regards et gestes déictiques.
+
+Cette complexité fait que le traitement des signaux humains se prête
+particulièrement bien aux approches s'appuyant sur diverses formes
+d'apprentissage automatique : le système apprend à reconnaitre et labéliser de
+manière automatique des situations ou des séquences d'actions dans le flux
+multi-modal des signaux perçu.
+
+Pour autant, l'état de l'art en prise de décision autonome en robotique s'appuie
+sur des modèles symboliques abstraits, qui ont le bénéfice de manipuler une
+sémantique explicite et de permettre une intégration forte avec les outils
+classiques et puissants de l'intelligence artificielle (planification de tâche,
+traitement de la langue naturelle, etc.).
 
 Le premier défi sur lequel je souhaite travailler est ainsi celui-ci :
-concevoir et construire les ponts entre l'état de l'art des techniques d'apprentissage
-automatique pour le traitement de signaux (sociaux) complexes, et l'état de
-l'art des représentations logiques probabilistes abstraites.
-
-\paragraph{Signal et apprentissage}
+\textbf{concevoir et construire les ponts entre l'état de l'art des techniques
+d'apprentissage automatique pour le traitement de signaux (sociaux)
+complexes, et l'état de l'art des représentations logiques probabilistes
+abstraites}.
 
 L'essentiel des recherches récentes dans ce domaine se sont focalisées sur
 l'analyse et la reconnaissance d'épisodes d'interaction en se basant sur des
-techniques d'apprentissage automatique de type classification (essentiellement SVM
-et Decision Trees) ou modélisation statistique séquentielle (essentiellement
-modèles de Markov cachés HMM et réseaux bayésiens dynamiques DBN).
+techniques d'apprentissage automatique de type classification (essentiellement
+SVM~\cite{jayagopi2009modeling} et Decision Trees) ou modélisation statistique
+séquentielle (essentiellement modèles de Markov cachés
+HMM~\cite{zhang2006modeling,mihoub2014modeling} et réseaux bayésiens dynamiques
+DBN~\cite{otsuka2007automatic}).
 
-L'un des aspects clés est lié à la labélisation automatique
-de situations ou séquences, \ie à l'association automatique de sémantique au
-signal. ~\cite{mihoub2014modeling}
+L'un des aspects clés est lié à la labélisation automatique de situations ou
+séquences, \ie à l'association automatique de sémantique aux signaux. Les
+approches actuelles se basent sur des grammaires
+simples~\cite{mihoub2014modeling}, mais \textbf{ne reflètent pas de manière
+pertinente les fonctions que traduisent les signaux}: un regard, par exemple,
+peut participer à l'encodage de contenus linguistiques (signal
+\emph{linguistique}), peut jouer un rôle \emph{para-linguistique} (traduire la
+peur par exemple) ou \emph{non-linguistique} (dû à une lumière forte, ou à de la
+fièvre,...). Autre exemple, certaines caractéristiques (par exemple, l'étirement
+des lèvres) peuvent être les conséquences de la génération d'un signal
+(prononciation d'une voyelle, par exemple), ou être intrinsèquement des signaux
+(par exemple, un sourire).
 
-[A DEVELOPPER]
+Ces aspects fonctionnels sont aujourd'hui des objets de recherche ouverts,
+auquel je me propose de travailler en adoptant une approche
+\textbf{sensori-motrice}: il s'agit d'encapsuler dans un même formalisme
+d'apprentissage sensori-moteur d'une part les attentes que le robot forme sur
+les conséquences de ses actions (qui génèrent des signaux dont la fonction est
+définie), et d'autre part les réponses générées par les humains interagissant
+avec le robot. Cette approche se situe dans la lignée du travail de Bailly
+\etal~\cite{mihoub2014modeling}. L'idée sous-jacente est qu'apprendre à
+interagir revient à apprendre conjointement à agir et percevoir les signaux
+appropriés à la réalisation d'un état conjoint de soi et de l'autre, en
+contexte.
 
 \paragraph{Modèles logiques probabilistes}
 
-Intégrer ces modèles probabilistes ancrés dans des mécanismes cognitifs de
+Intégrer ces modèles ancrés dans des mécanismes cognitifs de
 haut-niveau, typiquement abstraits, est un corollaire qui a lui aussi fait
 l'objet de nombreuses recherches ces dernières années, essentiellement sous la
 forme de structures symboliques probabilistes. De Raedt et Kersting donnent un
@@ -188,7 +223,7 @@ utilisation effective sur des systèmes temps-réel.
 
 
 Au-delà de ces difficultés, établir un pont entre les systèmes d'apprentissage
-et de traitement bas-niveau du signal et les représentations logiques
+et de traitement bas-niveau des signaux et les représentations logiques
 probabilistes est une question largement ouverte en robotique. Je
 propose de contribuer à cette question à travers le développement du concept
 d'\textbf{ontologie ancrée}, qui \textbf{généralise l'idée de \emph{computable}}
@@ -220,7 +255,7 @@ cognitives}
 \end{figure}
 
 Le deuxième axe de recherche s'intéresse à l'utilisation effective, en robotique
-cognitive, de cette approche continue, du signal au symbole sémantique. Il
+cognitive, de cette approche continue, des signaux au symbole sémantique. Il
 s'intéresse d'abord à la question de la représentation \emph{unifiée} des
 différentes modalités, ensuite à l'application de cette représentation pour
 implémenter de nouvelles compétences cognitives supérieures chez les robots.
@@ -232,10 +267,12 @@ pour les robots est divisé entre les systèmes géométriques/symboliques
 (typiquement \emph{amodaux}, et utilisés par l'essentiel des systèmes robotiques
 autonomes de haut-niveau, type robotique de service ou robotique d'extérieure),
 les approches ancrées (typiquement \emph{modales}), et un certain nombre de
-techniques mixtes. Dans la continuité de l'Axe 1, je souhaite rechercher et
-introduire un nouveau modèle de l'environnement qui \textbf{unifie} ces
-techniques, en s'appuyant sur l'idée d'un \textbf{ensemble de mondes
-indépendants}, conjuguant perception ancrée et modélisation symbolique et amodale.
+techniques mixtes (type flux de connaissances~\cite{heintz2004dyknow} ou
+connaissance distribuée~\cite{hawes2007balt}). Dans la continuité de l'Axe 1, je
+souhaite rechercher et introduire un nouveau modèle de l'environnement qui
+\textbf{unifie} ces techniques, en s'appuyant sur l'idée d'un \textbf{ensemble
+de mondes indépendants}, conjuguant perception ancrée et modélisation symbolique
+et amodale.
 
 Les recherches actuelles sont essentiellement focalisées sur la représentation
 géométrique de l'environnement du robot. La construction en ligne de cartes
@@ -271,8 +308,6 @@ mihoub2014modeling}. Cependant, comme souligné
 par Pezzulo~\cite{pezzulo2012computational}, l'organisation de ces interactions
 pour alimenter des processus cognitifs abstraits reste essentiellement une
 question ouverte.
-
-[TBD: DyKnow, CAST...]
 
 \begin{figure}
     \centering
@@ -322,7 +357,7 @@ réciproque d'établir un modèle mental de l'autre. Ceci se retrouve au c\oe ur
 des interactions humaines : une interaction sociale normale dépend de la
 reconnaissance de perspectives sensorielles différentes, de la compréhension
 d'états mentaux différents, et de la reconnaissance d'indices attentionels et
-émotionels non-verbaux complexes.  Ce mélange complexe de signal humain et
+émotionels non-verbaux complexes.  Ce mélange complexe de signaux humains et
 social, et de modélisation sémantique constitue un défi qui fait de la
 modélisation mutuelle un bon champ d'application pour traiter la question de la
 représentation de l'environnement du robot.
@@ -375,15 +410,15 @@ comportements permettant d'aider le partenaire humain en fonction des
 connaissances manquantes ou fausses de celui-ci.
 
 Un travail considérable reste à mener pour généraliser ces résultats au-delà de
-percepts visuels simples (``je vois que tu vois...'').
-J'ai ébauché dans~\cite{lemaignan2015mutual} un certain nombre de pistes (issues
-de la psychologie expérimentale, de la communauté du \emph{Collaborative
-Learning} et de l'épistémologie formelle) pour avancer dans cette direction.
-L'apport d'un système de représentation unifiant signaux et symboles est l'un
-des points clés pouvant effectivement permettre un progrès significatif de
-l'état de l'art dans ce domaine.
-
-[A DEVELOPPER: dire ce que je compte faire]
+percepts visuels simples (``je vois que tu vois...'').  J'ai ébauché
+dans~\cite{lemaignan2015mutual} un certain nombre de pistes (issues de la
+psychologie expérimentale, de la communauté du \emph{Collaborative Learning} et
+de l'épistémologie formelle) pour avancer dans cette direction, l'un des défis
+principaux auquel je souhaite m'intéresser étant de permettre au robot de
+construire un modèle des représentations abstraites des autres agents avec
+lesquels il interagit.  L'apport d'un système de représentation unifiant signaux
+et symboles est l'un des points clés pouvant effectivement permettre un progrès
+significatif dans cette direction.
 
 \subsection*{Axe 3 -- Décision distribuée et architecture cognitive pour l'interaction homme-robot}
 
@@ -421,7 +456,7 @@ d'interaction, et simultanément générer les actions adaptées à ces situatio
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\linewidth]{archi}
+    \includegraphics[width=1.0\linewidth]{archi}
     \caption{\small Intégrer un contrôle cognitif explicite avec des boucles
         sensori-motrices ``réflexes'', dites \emph{pré-cognitives}, au sein
     d'un nouveau type d'architecture cognitive pour les robots d'interaction.}
@@ -429,20 +464,37 @@ d'interaction, et simultanément générer les actions adaptées à ces situatio
 \end{figure}
 
 Le troisième axe de recherche que je propose de développer s'intéresse à
-l'unification des techniques décisionnelles en robotique. Je propose à cette fin
-d'explorer une nouvelle architecture semi-distribuée (figure~\ref{archi}) dans
-laquelle un composant symbolique interagit avec un ensemble de boucle
-sensori-motrice de manière faiblement couplée, à travers des mécanismes
-d'activation/inhibition.
+l'unification de ces techniques symboliques et développementales en robotique.
+Je propose à cette fin d'explorer une \textbf{nouvelle architecture
+semi-distribuée} dans laquelle un composant symbolique
+interagit avec un ensemble de boucle sensori-motrice de manière faiblement
+couplée.
 
-[A DEVELOPPER]
+La figure~\ref{archi} illustre une direction que pourrait prendre cette approche
+: un ensemble de processus décisionnels de haut-niveau (typiquement, des
+composants du type de ceux que j'ai étudié durant mon doctorat et présentés
+dans~\cite{lemaignan2015human} : supervision, traitement de la langue naturelle,
+planification symbolique de tâches,...), manipulant essentiellement des
+représentations abstraites et amodales, forment une \emph{zone cognitive}
+centrale. Celle-ci coordonne un ensemble de boucles sensori-motrices autonomes,
+évoluant au sein d'une \emph{zone pré-cognitive} : elle sélectionne, active,
+désactive et paramétrise les boucles sensori-motrices par des mécanismes
+d'activation/inhibition. Le système de représentation que je propose à l'Axe 2
+sert alors d'interface entre ces deux zones.
 
-Je souhaite ici aussi valider cette approche en confrontant spécifiquement cette
-architecture au domaine de l'interaction homme-robot qui synthétise beaucoup des
-défis de la robotique : environnements dynamiques dont la sémantique est
-complexe, suivi et représentation de l'homme, action conjointe, nécessité d'une
-grande réactivité et d'un parallélisme fort pour assurer une interaction de
-qualité.
+Une telle architecture, qui a le potentiel de réunir de manière cohérente des
+approches traditionnellement éloignées, soulève de nombreuses questions (comme
+sur la contrôlabilité de l'ensemble du système ou sur le partage d'accès aux
+ressources du robot), et peut représenter une porte vers un champ vaste de
+recherche.
+
+Je souhaite par ailleurs ici aussi valider cette approche en confrontant
+spécifiquement une telle architecture au domaine de l'interaction homme-robot
+qui synthétise beaucoup des défis de la robotique : environnements dynamiques
+dont la sémantique est complexe, suivi et représentation de l'homme, action
+conjointe, nécessité d'une grande réactivité et d'un parallélisme fort pour
+assurer une interaction de qualité. Le programme expérimental que je propose,
+présenté ci-dessous, fournit un tel environnement de validation.
 
 \subsection*{Programme expérimental}
 
@@ -500,7 +552,7 @@ pour mener des expériences d'interaction homme-robot sur le terrain. Cette
 plateforme aura un axe méthodologique (développement de techniques non-invasives
 de mesure de l'engagement humain et de la perception des robots par les humains,
 comme j'ai exploré
-dans~\cite{lemaignan2014dynamics,lemaignan2014cognitive,fink2015dynamics,sharma2015measuring})
+dans~\cite{lemaignan2014dynamics,lemaignan2014cognitive,fink2015anthropomorphism,sharma2015measuring})
 et un axe technologique (en particulier en terme d'architecture logicielle
 robuste pour l'interaction, dans la lignée du travail que j'ai mené sur cette
 question~\cite{lemaignan2015human,lemaignan2015pyrobots}).
@@ -520,7 +572,7 @@ expérimental à un horizon J+3 ans.
 \subsection*{Conclusion, impact et laboratoire d'accueil}
 
 Je propose dans ce projet trois axes : la recherche de
-\textbf{techniques nouvelles permettant de lier signal bas-niveau et modèle
+\textbf{techniques nouvelles permettant de lier signaux bas-niveau et modèle
 sémantique} ; la conception d'un \textbf{système de représentation unifié,
 autour de l'idée d'ontologie multi-modale ancrée} ; la transposition de ces
 techniques à la \textbf{décision en robotique, avec la recherche d'une nouvelle
@@ -536,7 +588,7 @@ Ensemble, ils constituent un ensemble ambitieux, qui :
     \item a un \textbf{potentiel disruptif} en terme de capacités de représentation, de
         compréhension et d'autonomie pour la robotique ;
     \item se situe à un \textbf{carrefour interdisciplinaire remarquable}, entre
-        techniques avancées de traitement de signal complexe, intelligence
+        techniques avancées de traitement de signaux complexes, intelligence
         artificielle et sciences cognitives.
 \end{itemize}
 
@@ -548,8 +600,8 @@ Les principales équipes françaises de dimensions internationales travaillant s
 ces problématiques sont Flowers, à l'INRIA, et les laboratoires LAAS et ISIR au
 sein du CNRS. Je souhaiterais cependant, en premier choix, rejoindre le GIPSA
 Lab à Grenoble.  Nouveau venu dans le domaine de la robotique, mais de
-réputation internationale dans le domaine de l'acquisition et du traitement du
-signal humain (en particulier de la parole), il me semble être un environnement
+réputation internationale dans le domaine de l'acquisition et du traitement des
+signaux humains (en particulier de la parole), il me semble être un environnement
 remarquable pour faire progresser la recherche en interaction homme-robot avec
 des approches nouvelles et disruptives. Le laboratoire a de plus récemment
 acquis un robot iCub, parfaitement adapté à la recherche en interaction
