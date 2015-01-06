@@ -18,7 +18,7 @@ $(SVG:.svg=.pdf): %.pdf: %.svg
 %.bbl: %.aux
 	biber $(<:.aux=)
 
-bib: $(TARGET:.pdf=.bbl)
+bib: cleanbbls $(TARGET:.pdf=.bbl)
 
 
 %.pdf: %.tex
@@ -32,5 +32,8 @@ clean:
 cleanpdfs:
 	rm -f $(TARGET)
 
-distclean: clean
-	rm -f $(TARGETpdf)
+cleanbbls:
+	rm -f $(TARGET:.pdf=.bbl)
+
+
+distclean: clean cleanpdfs cleanbbls
