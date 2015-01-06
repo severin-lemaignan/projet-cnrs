@@ -1,0 +1,97 @@
+\documentclass[a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{fixme}
+
+\usepackage[english, french]{babel}
+
+\usepackage{hyperref}
+
+\usepackage[sorting=ynt, maxnames=10, doi=false, url=false]{biblatex}
+\addbibresource{biblio.bib}
+\AtEveryBibitem{\clearfield{note}}
+
+\usepackage{palatino}
+
+\newcommand{\eg}{{\textit{e.g.~}}}
+\newcommand{\etal}{{\textit{et al.~}}}
+\newcommand{\ie}{{\textit{i.e.~}}}
+
+\title{Grounding the Interaction: Knowledge Management for Interactive Robots}
+
+\author{Thèse de Doctorat soutenue par Séverin Lemaignan le 17 juillet 2012}
+\date{}
+
+%%% Body
+\begin{document}
+\maketitle
+
+\section{Résumé}
+
+
+Avec le développement de la \emph{robotique cognitive}, le besoin d'outils
+avancés pour représenter, manipuler, raisonner sur les connaissances acquises
+par un robot a clairement été mis en avant. Mais stocker et manipuler des
+connaissances requiert tout d'abord d'éclaircir ce que l'on nomme
+\emph{connaissance} pour un robot, et comment celle-ci peut-elle être
+représentée de manière intelligible pour une machine.
+
+Ce travail s'efforce dans un premier temps d'identifier de manière systématique
+les besoins en terme de représentation de connaissance des applications
+robotiques modernes, dans le contexte spécifique de la robotique de service et
+des interactions homme-robot. Nous proposons une typologie originale des
+caractéristiques souhaitables des systèmes de représentation des connaissances,
+appuyée sur un état de l'art détaillé des outils existants dans notre
+communauté.
+
+Dans un second temps, nous présentons en profondeur ORO, une instanciation
+particulière d'un système de représentation et manipulation des connaissances,
+conçu et implémenté durant la préparation de cette thèse. Nous détaillons le
+fonctionnement interne du système, ainsi que son intégration dans plusieurs
+architectures robotiques complètes. Un éclairage particulier est donné sur la
+modélisation de la prise de perspective dans le contexte de l'interaction, et de
+son interprétation en terme de théorie de l'esprit.
+
+La troisième partie de l'étude porte sur une application importante des
+systèmes de représentation des connaissances dans ce contexte de l'interaction
+homme-robot : le traitement du dialogue situé. Notre approche et les
+algorithmes qui amènent à l'ancrage interactif de la communication verbale non
+contrainte sont présentés, suivis de plusieurs expériences menées au
+\emph{Laboratoire d'Analyse et d'Architecture des Systèmes} au CNRS à Toulouse,
+et au groupe \emph{Intelligent Autonomous System} de l'université technique de
+Munich.
+
+Nous concluons cette thèse sur un certain nombre de considérations sur la
+viabilité et l'importance d'une gestion explicite des connaissances des agents,
+ainsi que par une réflexion sur les éléments encore manquant pour réaliser le
+programme d'une robotique \emph{``de niveau humain''}.
+
+
+\section{Composition du jury}
+
+\subsection{Président du jury}
+
+\textbf{Prof. GHALLAB Malik} ({\tt malik@laas.fr}), HDR, LAAS, CNRS, Toulouse FRANCE
+
+
+\subsection{Rapporteurs}
+
+\textbf{Prof. SAFFIOTTI Alessandro} ({\tt asaffio@aass.oru.se}), Directeur du \emph{Cognitive Robotic Systems Laboratory}, Université d'Örebro, SUÈDE
+
+\textbf{Prof. HERTZBERG Joachim} ({\tt joachim.hertzberg@uos.de}), Directeur du \emph{Robotics Innovation Center}, DFKI/Université d'Osnabrück, ALLEMAGNE
+
+\subsection{Autres examinateurs}
+
+\textbf{Prof. CHETOUANI Mohamed} ({\tt mohamed.chetouani@upmc.fr}), HDR, ISIR, CNRS, Paris FRANCE
+
+\textbf{ Prof. LEE Dongheui} ({\tt dhlee@tum.de}), TUM, Munich ALLEMAGNE 
+
+\subsection{Directeurs de thèse}
+
+\textbf{Prof. BEETZ Michael} ({\tt beetz@in.tum.de}), Directeur du laboratoire \emph{Intelligent Autonomous Systems}, TUM, Munich ALLEMAGNE 
+
+\textbf{Prof. ALAMI Rachid} ({\tt rachid@laas.fr}), HDR, Directeur du thème robotique, LAAS, CNRS, Toulouse FRANCE 
+
+\end{document}
