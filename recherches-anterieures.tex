@@ -43,8 +43,8 @@ connaissance et interaction située, puis enfin mes contributions plus récentes
 sur la question de la cognition en robotique dans le contexte de l'interaction.
 
 Je terminerai cette première partie en présentant mes autres activités de
-support scientifique (enseignement, organisation de colloques et de rencontres
-scientifiques, développement logiciels notables).
+support scientifique (encadrement, enseignement, organisation de colloques et de
+rencontres scientifiques, développement logiciels notables).
 
 Toutes les références bibliographiques mentionnées dans cette première partie
 sont par ailleurs des références vers des publications dont je suis auteur ou
@@ -61,7 +61,7 @@ l'ingénierie des connaissances durant mon master recherche à l'université Par
 au Karslruhe Institute of Technology (KIT). Mon projet de fin d'étude s'est
 intéressé à l'utilisation des ontologies pour le contrôle de systèmes
 multi-agents dans un contexte industriel, et a débouché sur une première
-publication~\cite{lemaignan2006mason}, depuis citée plus de 80 fois.
+publication~\cite{lemaignan2006mason}, depuis citée plus de 110 fois.
 
 J'ai ensuite rejoint pendant un an l'INRIA en tant qu'ingénieur de recherche,
 sous la supervision de Michel Parent.  J'ai continué d'y développer, de manière
@@ -70,10 +70,10 @@ architecture de contrôle de véhicules autonomes basée sur un réseau d'ontolo
 dynamiques et partagées entre robots~\cite{mehani2007networking}.
 
 Ces deux premières expériences ont formé le point de départ de mon travail de
-doctorat poursuivi conjointement au LAAS-CNRS (2008-2012) sous la supervision de
+doctorat (2008-2012) poursuivi conjointement au LAAS-CNRS sous la supervision de
 Rachid Alami, et à l'université technique de Munich (TUM) sous la direction de
 Michael Beetz. La problématique initiale qui se posait alors était la suivante :
-les robots d'interaction développés dans le laboratoire manipulent des états
+les robots d'interaction développés dans ces laboratoires manipulent des états
 internes complexes et dynamiques, mais difficilement observables. L'intuition
 poussait à croire qu'en rendant \emph{explicites} les flux de connaissances
 entre composants logiciels du robot, non seulement le comportement du robot
@@ -84,28 +84,29 @@ symbolique ou la supervision du robot.
 J'ai donc proposé de concevoir un ``tableau noir'' sémantique à travers lequel
 les différents modules décisionnels du robot communiquent, en échangeant des
 messages dont la sémantique est explicite. Ce projet, \emph{OpenRobots
-Ontology}, est une des contributions importante de mon
-doctorat~\cite{lemaignan2010oro}, et représente le fil rouge des projets que j'ai
-menés par la suite. L'originalité de l'outil tient à l'introduction d'une
-ontologie comme support de représentation des connaissances du robot et des
-autres agents (cette technique a depuis été reprise dans de nombreux systèmes de
-représentation des connaissances en robotique~\cite{lemaignan2012symbolic}). Cette
-ontologie s'appuie sur des concepts de haut niveau dont la sémantique est standard
-(issue du projet {\sc OpenCYC}) et non-spécifique à la robotique. Ceci ouvre
-en particulier de nouvelles modalités d'introspection et d'interaction avec le
-robot, utilisant des concepts plus directement intelligibles par l'homme.
+Ontology}, est une des contributions importante de mon doctorat
+(\cite{lemaignan2010oro}, plus de 60 citations), et représente le fil rouge des
+projets que j'ai menés par la suite. L'originalité de l'outil tient à
+l'introduction d'une ontologie comme support de représentation des connaissances
+du robot et des autres agents (cette technique a depuis été reprise dans de
+nombreux systèmes de représentation des connaissances en
+robotique~\cite{lemaignan2012symbolic}). Cette ontologie s'appuie sur des
+concepts de haut niveau dont la sémantique est standard (issue du projet {\sc
+OpenCYC}) et non-spécifique à la robotique. Ceci ouvre de nouvelles possibilités
+en terme de communication inter-systèmes, d'introspection et d'interaction avec
+le robot, utilisant des concepts plus directement intelligibles par l'homme.
 
-Je discute cet aspect dans~\cite{lemaignan2013explicit}, ainsi que les
-principales leçons tirées du déploiement d'une base de connaissances active
-comme \emph{OpenRobots Ontology} dans des architectures robotiques complexes
-(près de 70 modules logiciels fonctionnant en parallèle lors des expériences
-menées avec le robot PR2). L'idée de définir les composants du robot en terme
-d'interfaces sémantiques (les connaissances dont il a besoin d'une part, et les
-connaissances qu'il produit d'autre part) apparait comme un apport important, de
-même que le principe d'utiliser les ontologies pour générer l'ensemble des
-inférences \emph{triviales} (du type ``tous les enfants sont aussi des
-humains''), essentielles pour que le robot puisse raisonner et interagir dans un
-référentiel de connaissances partagé avec l'homme.
+Je discute spécifiquement cet aspect dans~\cite{lemaignan2013explicit}, ainsi
+que les principales leçons tirées du déploiement d'une base de connaissances
+active comme \emph{OpenRobots Ontology} dans des architectures robotiques
+complexes (près de 70 modules logiciels fonctionnant en parallèle lors des
+expériences menées avec le robot PR2). L'idée de définir les composants du robot
+en terme d'interfaces sémantiques (les connaissances dont il a besoin d'une
+part, et les connaissances qu'il produit d'autre part) apparait comme un apport
+important, de même que le principe d'utiliser les ontologies pour générer
+l'ensemble des inférences \emph{triviales} (du type ``tous les enfants sont
+aussi des humains''), essentielles pour que le robot puisse raisonner et
+interagir dans un référentiel de connaissances partagé avec l'homme.
 
 Un autre intérêt de cette classe d'outils sémantiques est l'acquisition
 automatique et l'intégration par le robot de connaissances issues du web
@@ -127,11 +128,12 @@ de leur croyances et intentions.
 
 L'acquisition d'un modèle symbolique du monde et la capacité du robot à prendre
 le point de vue des autres agents (\emph{prise de perspective}) a été un des
-premiers résultats important~\cite{lemaignan2011anchoring}.  L'utilisation d'une base de
-connaissance symbolique permet de représenter le modèle des croyances de chacun
-des agents, et ouvre des applications comme l'identification automatique des
-propriétés discriminantes des objets de l'environnement du point de vue de
-chaque agent~\cite{ros2010which} (travail primé lors de la conférence RoMAN 2010).
+premiers résultats important~\cite{lemaignan2011anchoring}.  L'utilisation d'une
+base de connaissance symbolique permet de représenter le modèle des croyances de
+chacun des agents, et ouvre des applications comme l'identification automatique
+des propriétés discriminantes des objets de l'environnement du point de vue de
+chaque agent (\cite{ros2010which}, \emph{Best Paper Award} lors de la conférence
+RoMAN 2010).
 
 Un autre domaine pour lequel l'introduction de flux de connaissances explicites
 a été particulièrement fructueuse est celui de la communication naturelle,
@@ -155,16 +157,16 @@ de manière symbolique sur l'exécution de ces actions
 conjointes~\cite{gharbi2013natural}.
 
 Ces possibilités ont été illustrées dans une série d'expériences menées dans le
-cadre du projet européen CHRIS, et dans lesquelles le robot construit un modèle
-de l'homme au fil de l'interaction, et l'exploite pour adapter son comportement
-durant des séquences de jeu, incluant des inversions de
+cadre du projet européen CHRIS, et dans lesquelles plusieurs robots construisent
+un modèle de l'homme au fil de l'interaction, et l'exploitent pour adapter leurs
+comportements durant des séquences de jeu, incluant des inversions de
 rôle~\cite{lallee2010towards, lallee2011towards, lallee2012towards}. Ce projet a
 été mené en collaboration interdisciplinaire avec l'INSERM et le Max Planck
 Institute for Evolutionary Anthropology de Leipzig.
 
-L'ensemble de mon travail de thèse a été recompensé par une mention d'excellence
-à l'université de Munich (``Summa Cum Laude'') et le prix de la meilleure
-thèse en robotique, décerné par le Groupe de Recherche (GdR) Robotique du CNRS.
+L'ensemble de ce travail de thèse a été recompensé par une mention d'excellence
+de l'université de Munich (\emph{Summa Cum Laude}) et le prix de la meilleure
+thèse en robotique 2012, décerné par le Groupe de Recherche (GdR) Robotique du CNRS.
 
 \subsection*{Cognition pour l'interaction%
   \label{cognition-for-interaction}%
@@ -174,9 +176,6 @@ Le travail que j'ai mené sur la représentation et la manipulation de la
 connaissance pour l'interaction située a débordé de son périmètre
 initial pour s'élargir à la question plus générale de la \emph{cognition pour
 l'interaction} chez les robots.
-
-Ce champ de recherche est vaste, et est au c\oe ur du projet de recherche que je
-présente dans la seconde partie de ce dossier.
 
 J'ai travaillé sur cette question sous deux angles : une perspective
 intégrative d'une part, et une perspective plus exploratoire d'autre part.
@@ -196,19 +195,19 @@ spatiale, temporelle et contextualisée de situation. Je montre que ces
 questions peuvent être en partie abordées de manière holistique, en s'appuyant
 sur des interfaces sémantiques clairement définies.
 
-Parallèlement à cet effort de synthèse au niveau de l'architecture du
-robot, j'ai mené plusieurs expériences centrées sur des aspects cognitifs
-précis. Ainsi, les expériences de \emph{False Beliefs}~\cite{warnier2012when},
-liées à la mise en place d'une théorie de l'esprit chez le robot. Je poursuis
-cette ligne de recherche en post-doctorat à l'EPFL, avec en particulier un article
-prospectif récemment accepté dans la conférence Human-Robot
-Interaction (HRI 2015)~\cite{lemaignan2015mutual}.
+Parallèlement à cet effort de synthèse au niveau de l'architecture du robot,
+j'ai mené plusieurs expériences centrées sur des aspects cognitifs précis.
+Ainsi, les expériences de \emph{False Beliefs}~\cite{warnier2012when}, liées à
+la mise en place d'une théorie de l'esprit chez le robot. Je poursuis
+actuellement cette ligne de recherche en post-doctorat à l'EPFL, avec la
+publication récente d'un article prospectif~\cite{lemaignan2015mutual} et
+l'encadrement d'un doctorant sur ce sujet.
 
-Ainsi aussi, le travail que j'ai mené durant mon post-doctorat au LAAS-CNRS
-(2012-2013) sur les besoins spécifiques de représentation pour l'interaction.
-L'objectif était de concevoir une technique de représentation fusionnant le
-\emph{Umwelt} (\emph{monde propre}) spatial et temporel du robot en un modèle
-amodal pouvant servir de point d'entrée pour les fonctions cognitives
+Le travail que j'ai mené durant mon post-doctorat au LAAS-CNRS (2012-2013) étend
+mes recherches sur la cognition en robotique à la problématique de la
+\emph{représentation}. L'objectif était de concevoir une technique de
+représentation fusionnant l'environnement spatial et temporel du robot en un
+modèle amodal pouvant servir de point d'entrée pour les fonctions cognitives
 supérieures du robot. Le prototype que j'ai développé est construit autour de
 l'idée de \emph{mondes} que le robot peut manipuler en fonction de son contexte
 et de ses besoins.  Chaque monde combine une représentation géométrique et une
@@ -234,8 +233,8 @@ Polytechnique Fédérale de Lausanne (2013-...), où j'ai pris en charge la
 coordination des activités robotiques au sein du laboratoire d'ergonomie
 éducative. Ce laboratoire (CHILI-EPFL) est connu pour son expertise dans l'étude
 des interactions homme-machine et homme-homme durant les phases d'apprentissage.
-J'y ai acquis le savoir-faire nécessaire à la menée et l'analyse d'expériences
-in-situ (écologiquement valides) impliquant des sujets humains.
+J'y ai acquis un savoir-faire approfondi quant à la menée et l'analyse d'expériences
+in-situ, écologiquement valides et impliquant des sujets humains.
 
 J'y supervise plusieurs étudiants, autour de deux projets principaux. Le
 premier s'intéresse aux interactions sur la durée entre un robot et des
@@ -245,14 +244,14 @@ l'impact des comportements anthropomorphiques sur l'interaction homme-robot sur
 le long terme~\cite{lemaignan2014dynamics,lemaignan2014cognitive}, travail qui a
 été primé lors de la conférence HRI'2014. Le second projet repose sur l'idée du
 \emph{learning by teaching}, et propose de mettre en place une interaction
-enfant-robot durant laquelle l'enfant \emph{montre} au robot (Nao) comment
-écrire, et par là même développe ses compétences. Ce travail a mis en évidence
+enfant-robot durant laquelle l'enfant montre au robot (Nao) comment
+écrire, et par là même développe ses propres compétences. Ce travail a mis en évidence
 une forme d'interaction originale, permettant d'établir une relation pérenne et
-soutienant efficacement l'apprentissage. Il a fait l'objet de plusieurs
+soutenant efficacement l'apprentissage. Il a fait l'objet de plusieurs
 publications et
 communications~\cite{hood2015when,lemaignan2014taught,hood2015cowriter}, et a
 récemment été primé par la prestigieuse société américaine d'intelligence
-artificielle (AAAI).
+artificielle (AAAI, prix devant être annoncé publiquement le 29 janvier 2015).
 
 \subsection*{Autres activités de support scientifique}
 
@@ -273,18 +272,18 @@ dirigés et pratiques en Prolog, sur les ontologies, en Java, ADA et SQL.
 J'ai aussi organisé et animé de nombreux cours et ateliers dans plusieurs
 domaines de la robotique et du développement logiciel. Je suis ainsi intervenu
 sur la programmation en robotique avec ROS (\emph{Robot Operating System}), les
-techniques de développement collaboratif, les cycles de développement ou encore
-l'utilisation d'outils sémantiques comme les ontologies. J'ai organisé plusieurs
-tutoriels internationaux sur la simulation en robotique (comme lors de la
-conférence EURON, en 2012 au Danemark), et je suis, depuis 2005, formateur au
+techniques de développement collaboratif, les cycles de développement logiciel
+ou encore l'utilisation d'outils sémantiques comme les ontologies. J'ai organisé
+plusieurs tutoriels internationaux sur la simulation en robotique (comme lors de
+la conférence EURON, en 2012 au Danemark), et je suis, depuis 2005, formateur au
 sein de l'association \emph{Planète Sciences} sur toutes les questions de
 robotique pédagogique.
 
-Par ailleurs, j'ai été amené à encadrer plusieurs étudiants ces dernières
+J'ai encadré par ailleurs plusieurs étudiants ces dernières
 années. Trois étudiants au niveau master, dont le travail a débouché sur des
 publications~\cite{lemaignan2011grounding,hood2015when,hood2015cowriter}, et,
 durant mon post-doctorat à l'EPFL, quatre doctorants : Julia Fink sur la question
-de l'anthropomorphisme lors l'interaction homme-machine de longue durée, Shruti
+de l'anthropomorphisme lors d'interaction homme-machine de longue durée, Shruti
 Chandra sur l'utilisation de robots compagnons pour aider les enfants en
 difficulté face à l'apprentissage de l'écriture, Ayberk Özgür sur le
 développement de nouveaux robots pour l'éducation et Alexis Jacq sur les
@@ -310,10 +309,12 @@ C'est aussi dans le cadre d'InCOGnu que j'ai participé à l'organisation de la
 conférence nationale CJCSC à Toulouse en 2009.
 
 Plus récemment, j'ai organisé et animé en 2012 le premier workshop international
-sur le simulateur MORSE auquel une quinzaine de chercheurs européens ont participé.
+sur le simulateur MORSE auquel une quinzaine de chercheurs européens ont
+participé, puis le second, en mars 2014, focalisé sur les applications de la
+simulation à l'interaction homme-robot.
 
-Je suis par ailleurs relecteur régulier pour les principales conférences en
-robotique (IROS, ICRA, RoMAN, HRI).
+Je suis par ailleurs relecteur régulier pour les principaux journaux et
+conférences en robotique (IJRR, IROS, ICRA, RoMAN, HRI).
 
 Parmi les actions que j'ai mené à destination du grand public, la pièce de
 théâtre Roboscopie~\cite{lemaignan2012roboscopie} peut être mentionné : à l'automne
@@ -321,16 +322,18 @@ théâtre Roboscopie~\cite{lemaignan2012roboscopie} peut être mentionné : à l
 comédien professionnel, une pièce de théâtre d'une vingtaine de minutes dans
 laquelle un robot PR2 donne la réplique à un homme. La pièce interroge sur un
 mode métaphorique comment hommes et robots peuvent trouver un espace de vie et
-de compréhension mutuels. La pièce a été présentée devant environ 400 personnes
+de compréhension mutuels. La pièce a été présentée devant 400 personnes
 durant le festival La Novela 2011, à Toulouse.
 
 \subsubsection*{Contributions logicielles notables}
 
 Au-delà des développements logiciels directement en lien avec mon travail de
 doctorat, et précédemment mentionnés (\emph{OpenRobots
-Ontology}~\cite{lemaignan2010oro} et le module d'analyse de la langue naturelle
-{\sc Dialogs}~\cite{lemaignan2011grounding}), je me suis impliqué dans le développement
-de plusieurs autres projets significatifs dans la communauté robotique.
+Ontology}~\cite{lemaignan2010oro}, le module d'analyse de la langue naturelle
+{\sc Dialogs}~\cite{lemaignan2011grounding} ou encore la bibliothèque de
+supervision {\sc pyRobots}\cite{lemaignan2015pyrobots}), je me suis impliqué
+dans le développement de plusieurs autres projets significatifs dans la
+communauté robotique.
 
 Le premier de ces projets est le simulateur MORSE~\cite{echeverria2011modular,
 echeverria2012simulating}. Le projet a pris une ampleur certaine, avec plus de
@@ -355,7 +358,7 @@ recherches, la dimension internationale de mon itinéraire, et l'importance de
 l'interdisciplinarité.
 
 La table~\ref{experiences} liste les principales expériences que j'ai menées
-durant ces dernières années. Comme souvent en robotique, elles sont le résultat
+jusqu'à ce jour. Comme souvent en robotique, elles sont le résultat
 d'un travail d'équipe, mais j'en ai été, pour chacune d'elles, un des
 principaux instigateurs.
 
@@ -381,7 +384,7 @@ j'accorde à la validation expérimentale de mes recherches. Ces expériences on
 {\it Give me this} (2012) & Manipulation naturelle conjointe & \cite{gharbi2013natural} \\
 {\it Aperitif time} (2012) & Interaction multi-modale, \newline prise de perspective & \cite{lemaignan2013talking} \\
 {\it Ranger} (2013) & Expérience enfant-robot, \newline projections cognitives en HRI & \cite{fink2014which, lemaignan2014dynamics} \\
-{\it CoWriter} (2013-2014) & Interaction enfant-robot, education \newline \emph{learning by teaching}, expérience de terrain & \cite{hood2015when,lemaignan2014taught, hood2015cowriter} \\
+{\it CoWriter} (2013-2014) & Interaction enfant-robot, éducation \newline expérience in-situ & \cite{hood2015when,lemaignan2014taught, hood2015cowriter} \\
 \hline
 
 \end{tabular}
@@ -408,7 +411,7 @@ l'international.
 J'ai souhaité ensuite organiser mon doctorat en co-tutelle, cette
 fois avec la Technische Universität de Munich (TUM), ce qui m'a conduit à
 nouveau à séjourner plusieurs mois en Allemagne. Mon doctorat allemand, noté, a
-reçu la meilleure appréciation possible (\emph{Cum Suma Laude}) dans le système
+reçu la meilleure appréciation possible (\emph{Summa Cum Laude}) dans le système
 allemand.
 
 Enfin, le post-doctorat que je réalise actuellement à l'École Polytechnique
